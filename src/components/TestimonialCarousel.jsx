@@ -81,15 +81,23 @@ const TestimonialCarousel = () => {
         </button>
       </div>
       <div className="flex justify-center mt-6 space-x-2">
-          {testimonials.map((_, i) => (
-            <div
-              key={i}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                i === index ? 'bg-[#346909]' : 'bg-gray-500'
+        {testimonials.map((_, i) => (
+          <div
+            key={i}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${i === index ? 'bg-[#346909]' : 'bg-gray-500'
               }`}
-            ></div>
-          ))}
-        </div>
+          ></div>
+        ))}
+      </div>
+
+      <div className="mt-12 flex justify-center">
+        <button
+          onClick={() => window.open ("https://share.google/743LJO5oOTcFTMPrw", "_blank")}
+          className="bg-[#346909] hover:bg-green-950 border cursor-pointer text-white px-6 py-2 rounded-md font-semibold text-sm md:text-base transform hover:scale-105 transition duration-300 ease-in-out"
+        >
+          Review
+        </button>
+      </div>
     </section>
   );
 };
