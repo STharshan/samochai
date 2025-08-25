@@ -46,13 +46,17 @@ export default function ChaiSection() {
     };
 
     return (
-        <div className="bg-[#f7f0eb] px-4 py-10">
-            <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
+        <div className="bg-[#96dd99] px-4 py-10">
+            <div className="flex flex-col xl:flex-row justify-center items-center gap-10">
                 {/* Left Text */}
-                <div className="relative max-w-md border-3 border-black shadow-lg bg-white p-6">
+                <div className="relative max-w-md ml-5 border-3 border-black shadow-lg bg-white p-6">
                     <div className="absolute -left-2 -top-2 w-full h-full -z-10" />
                     <p className="text-black font-medium text-base leading-relaxed">
-                        The real beauty of Chai stems from its uniqueness. Recipes are often passed down through generations, and, depending on who makes it, can have varying levels of spice, different ratios of milk to tea, as well as sweetness. This makes chai a truly personal drink that many hold close to their hearts.
+                       The true charm of Bengali Chai lies in its soulfulness. More than just a cup of tea, 
+                       it’s a ritual woven into everyday life — mornings that begin with its aroma, conversations that flow around it, 
+                       and quiet evenings made warmer by its taste. Recipes differ from one household to another, some with a touch of cardamom
+                       or ginger, others brewed longer for a stronger depth of flavor. Whether enjoyed sweet and creamy or light and spiced, 
+                       Bengali Chai is deeply personal, carrying with it the warmth of tradition and the comfort of home.
                     </p>
                     {/* Right full border */}
                     <div className="absolute top-1 -left-4 h-full w-[15px] bg-yellow-400"></div>
@@ -62,7 +66,7 @@ export default function ChaiSection() {
                 </div>
 
                 {/* Carousel */}
-                <div className="relative max-w-5xl w-full">
+                <div className="relative max-w-4xl w-full">
                     <div
                         ref={scrollRef}
                         className="flex gap-4 overflow-x-scroll scroll-smooth no-scrollbar px-2 border-3 p-5 pl-5"
@@ -105,13 +109,13 @@ export default function ChaiSection() {
                     </button>
                 </div>
             </div>
-
             {/* Learn More Button */}
-            <div className="mt-8 px-8">
+            <div className="mt-8 px-8 text-center">
                 <button className="border-3 border-black px-6 py-3 text-xl font-bold hover:bg-black hover:text-white transition">
                     LEARN MORE
                 </button>
             </div>
+
         </div>
     );
 }

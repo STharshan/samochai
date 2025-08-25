@@ -21,7 +21,7 @@ const NavbarWithHero = () => {
           Craving a taste of
         </h1>
         <h1 className="text-4xl md:text-7xl font-bold mb-4">
-          <span className="text-[#56b806]">Dhaka?</span>
+          <span className="text-[#96dd99]">Dhaka?</span>
         </h1>
         <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10">
           SAMOCHAI brings the vibrant, authentic flavors of Bangladeshi street food

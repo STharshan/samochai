@@ -78,11 +78,11 @@ const Menu = () => {
     : allItems.filter((item) => item.category === selected);
 
   return (
-    <section id='menu' className="w-full bg-gradient-to-b from-green-950 via-green-900 to-black text-white py-16 px-6">
+    <section id='menu' className="w-full bg-[#96dd99] text-black py-16 px-6">
       {/* Title */}
       <div className="text-center mb-8">
         <h2 className="text-4xl md:text-6xl font-bold mb-5">Our Best & Delicious Menu</h2>
-        <p className="text-gray-300 text-md md:text-xl font-semibold mt-2 mb-15">
+        <p className="text-gray-700 text-md md:text-xl font-semibold mt-2 mb-15">
           Discover the authentic taste of Dhaka’s street food scene
         </p>
       </div>

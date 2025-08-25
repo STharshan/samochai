@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-green-900 text-white px-4 py-5">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-[#96dd99] text-white px-4 py-3">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
           <img
@@ -52,10 +52,10 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-gradient-to-b from-black to-green-900 text-white px-6 py-4 space-y-4 text-left z-40">
-            <a href="#hero" className="block py-1 hover:text-yellow-300">Home</a>
-            <a href="#menu" className="block py-1 hover:text-yellow-300">Menu</a>
-            <a href="#about" className="block py-1 hover:text-yellow-300">About</a>
-            <a href="#contact" className="block py-1 hover:text-yellow-300">Contact</a>
+            <a href="#hero" className="block py-1 hover:text-green-400">Home</a>
+            <a href="#menu" className="block py-1 hover:text-green-400">Menu</a>
+            <a href="#about" className="block py-1 hover:text-green-400">About</a>
+            <a href="#contact" className="block py-1 hover:text-green-400">Contact</a>
             <button
               onClick={openModal}
               className="flex items-center gap-2 bg-white text-green-800 px-4 py-2 rounded-md shadow hover:bg-green-50"

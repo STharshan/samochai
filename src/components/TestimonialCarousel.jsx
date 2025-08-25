@@ -38,11 +38,11 @@ const TestimonialCarousel = () => {
   }, [index]);
 
   return (
-    <section className="w-full bg-gradient-to-b from-green-950 via-green-950 to-black text-white py-16 px-4">
+    <section className="w-full bg-[#96dd99] text-black py-16 px-4">
       {/* Heading */}
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-6xl font-bold mb-5">What Our Customers Say</h2>
-        <p className="text-gray-300 text-sm md:text-lg font-semibold">
+        <p className="text-black text-sm md:text-lg font-semibold">
           Don’t just take our word for it – hear from our satisfied customers
         </p>
       </div>
@@ -60,7 +60,7 @@ const TestimonialCarousel = () => {
         </div>
 
         {/* Name */}
-        <div className="text-center mt-6 font-bold text-[#346909] text-lg">
+        <div className="text-center mt-6 font-bold text-black text-lg">
           {testimonials[index].name}
         </div>
 
