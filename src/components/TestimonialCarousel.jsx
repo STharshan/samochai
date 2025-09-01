@@ -50,7 +50,7 @@ const TestimonialCarousel = () => {
       {/* Testimonial Card */}
       <div className="max-w-3xl mx-auto bg-[#0e1b0e]/70 backdrop-blur border-1 border-[#163002] rounded-lg p-8 relative shadow-md transition-all duration-300">
         {/* Gold stars */}
-        <div className="text-center mb-4 text-yellow-400 text-xl">
+        <div className="text-center mb-4 text-black text-xl">
           {'★'.repeat(5)}
         </div>
 
@@ -93,7 +93,7 @@ const TestimonialCarousel = () => {
       <div className="mt-12 flex justify-center">
         <button
           onClick={() => window.open ("https://share.google/743LJO5oOTcFTMPrw", "_blank")}
-          className="bg-[#346909] hover:bg-green-950 border cursor-pointer text-white px-6 py-2 rounded-md font-semibold text-sm md:text-base transform hover:scale-105 transition duration-300 ease-in-out"
+          className="bg-[#346909] hover:bg-green-950 border cursor-pointer mb-10 text-white px-6 py-2 rounded-md font-semibold text-sm md:text-base transform hover:scale-105 transition duration-300 ease-in-out"
         >
           Review
         </button>

@@ -4,7 +4,7 @@ import { FiMapPin, FiPhone, FiMail } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#96dd99] text-black px-6 py-5">
+    <footer className="bg-white text-black px-6 py-5">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-left mt-15">
         {/* Column 1 */}
         <div>

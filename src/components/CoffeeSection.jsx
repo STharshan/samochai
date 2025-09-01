@@ -3,13 +3,12 @@ import { Coffee, CupSoda } from "lucide-react";
 
 export default function CoffeeSection() {
     return (
-        <section className="bg-[#96dd99] min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20 py-12 relative">
+        <section className="bg-[#96dd99] py-4 flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20 ">
             {/* Left Content */}
             <div className="flex-1 lg:text-left z-10 max-w-sm mx-auto">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight mb-6">
                     FUELING YOUR DAY
-                    <br />
-                    THE <span className="text-orange-500">RIGHT</span> WAY.
+                    THE <span className="text-white">RIGHT</span> WAY.
                 </h1>
                 <p className="text-gray-600 max-w-lg mx-auto lg:mx-0 mb-6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
@@ -44,7 +43,7 @@ export default function CoffeeSection() {
                     </div>
 
                     <div className="flex items-center gap-4">
-                        <div className="bg-orange-500 text-white p-3 rounded-full">
+                        <div className="bg-black text-white p-3 rounded-full">
                             <CupSoda size={20} />
                         </div>
                         <div>

@@ -46,7 +46,7 @@ export default function ChaiSection() {
     };
 
     return (
-        <div className="bg-[#96dd99] px-4 py-10">
+        <div className="bg-white px-4 py-10">
             <div className="flex flex-col xl:flex-row justify-center items-center gap-10">
                 {/* Left Text */}
                 <div className="relative max-w-md ml-5 border-3 border-black shadow-lg bg-white p-6">
@@ -59,10 +59,10 @@ export default function ChaiSection() {
                        Bengali Chai is deeply personal, carrying with it the warmth of tradition and the comfort of home.
                     </p>
                     {/* Right full border */}
-                    <div className="absolute top-1 -left-4 h-full w-[15px] bg-yellow-400"></div>
+                    <div className="absolute top-1 -left-4 h-full w-[15px] bg-[#96dd99]"></div>
 
                     {/* Bottom fixed half-border */}
-                    <div className="absolute -bottom-4 -left-4 w-full h-[15px] bg-yellow-400"></div>
+                    <div className="absolute -bottom-4 -left-4 w-full h-[15px] bg-[#96dd99]"></div>
                 </div>
 
                 {/* Carousel */}
@@ -88,22 +88,22 @@ export default function ChaiSection() {
                         ))}
 
                         {/* Right full border */}
-                        <div className="absolute top-0 -left-3.5 h-full w-[15px] bg-yellow-400"></div>
+                        <div className="absolute top-0 -left-3.5 h-full w-[15px] bg-[#96dd99]"></div>
 
                         {/* Bottom fixed half-border */}
-                        <div className="absolute -bottom-3.5 right-3.5 w-full h-[15px] bg-yellow-400"></div>
+                        <div className="absolute -bottom-3.5 right-3.5 w-full h-[15px] bg-[#96dd99]"></div>
                     </div>
 
                     {/* Scroll buttons */}
                     <button
                         onClick={() => scroll('left')}
-                        className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-orange-400 p-3 rounded-full z-20 shadow-md"
+                        className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-green-600 p-3 rounded-full z-20 shadow-md"
                     >
                         <FaChevronLeft className="text-white text-xl" />
                     </button>
                     <button
                         onClick={() => scroll('right')}
-                        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-orange-400 p-3 rounded-full z-20 shadow-md"
+                        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-green-600 p-3 rounded-full z-20 shadow-md"
                     >
                         <FaChevronRight className="text-white text-xl" />
                     </button>

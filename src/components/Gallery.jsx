@@ -15,7 +15,7 @@ const images = [
 
 const Gallery = () => {
   return (
-    <section className="w-full bg-[#96dd99] text-black py-16 -mt-15">
+    <section className="w-full bg-white text-black py-16 -mt-15">
       {/* Heading */}
       <div className="text-center mb-10">
         <h2 className="text-4xl md:text-6xl font-bold mb-7">Our Gallery</h2>
