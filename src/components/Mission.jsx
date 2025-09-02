@@ -50,7 +50,7 @@ const Mission = () => {
 
                 {/* Right Section - Orange Box with Image */}
                 <div className="relative z-10">
-                    <div className="bg-[#96dd99] rounded-2xl p-8 sm:p-8 text-white relative overflow-hidden min-h-[340px] pr-28 md:pr-32">
+                    <div className="bg-[#96dd99] rounded-2xl p-8 sm:p-18 text-white relative overflow-hidden min-h-[340px] pr-28 md:pr-32">
                         <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 leading-snug">
                             BREWED WITH LOVE, <br />
                             SERVED WITH A SMILE
@@ -85,7 +85,7 @@ const Mission = () => {
                     <img
                         src="/cup3.png"
                         alt="Coffee Cup"
-                        className="absolute left-[200px] bottom-[-20px] w-[140px] sm:w-[180px] md:w-[220px] lg:w-[260px] xl:w-[280px] z-0 "
+                        className="absolute left-[200px] bottom-[-18px] w-[180px] md:w-[220px] lg:w-[260px] xl:w-[280px] z-0 "
                     />
                 </div>
             </div>
