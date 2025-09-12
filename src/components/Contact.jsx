@@ -41,7 +41,14 @@ const Contact = () => {
             </div>
             <div>
               <h3 className="font-semibold">Location</h3>
-              <p className="text-sm">9a Great Central Road, Loughborough, England, LE11 1RW</p>
+              <a 
+                href="https://www.google.com/maps?q=9a+Great+Central+Road,+Loughborough,+England,+LE11+1RW" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-black hover:underline"
+              >
+                9a Great Central Road, Loughborough, England, LE11 1RW
+              </a>
             </div>
           </div>
 
@@ -52,7 +59,12 @@ const Contact = () => {
             </div>
             <div>
               <h3 className="font-semibold">Phone</h3>
-              <p className="text-sm">+880 1234-567890</p>
+              <a 
+                href="tel:+8801234567890" 
+                className="text-black hover:underline"
+              >
+                +880 1234 567890
+              </a>
             </div>
           </div>
 
@@ -63,7 +75,12 @@ const Contact = () => {
             </div>
             <div>
               <h3 className="font-semibold">Email</h3>
-              <p className="text-sm">hello@samochai.com</p>
+              <a 
+                href="mailto:hello@samochai.com" 
+                className="text-black hover:underline"
+              >
+                hello@samochai.com
+              </a>
             </div>
           </div>
 
@@ -86,7 +103,7 @@ const Contact = () => {
           <div className="rounded-lg overflow-hidden">
             <iframe
               className="w-full h-64 rounded-lg"
-              src="https://www.google.com/maps?q=9a+Great+Central+Road,+Loughborough,+England,+LE11+1RW&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2414.0029190128184!2d-1.2021149240990698!3d52.768221217823445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879e0a439be36ad%3A0xe71820265bdba5fe!2s9a%20Great%20Central%20Rd%2C%20Loughborough%20LE11%201RW%2C%20UK!5e0!3m2!1sen!2slk!4v1757667304293!5m2!1sen!2slk"
               allowFullScreen
               loading="lazy"
               title="map"

@@ -1,32 +1,25 @@
-import About from "./components/About"
-import ChaiSection from "./components/ChaiSection"
-import CoffeeSection from "./components/CoffeeSection"
-import Contact from "./components/Contact"
-import Footer from "./components/Footer"
-import Gallery from "./components/Gallery"
-import Menu from "./components/Menu"
-import Mission from "./components/Mission"
-import Navbar from "./components/Navbar"
-import NavbarWithHero from "./components/NavbarWithHero"
-import TestimonialCarousel from "./components/TestimonialCarousel"
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import TermsConditions from "./components/Term";
+import Home from "./page/Home";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-
   return (
-    <>
-      <Navbar/>
-      <NavbarWithHero/>
-      <ChaiSection />
-      <Menu/>
-      <Mission />
-      <CoffeeSection />
-      <About/>
-      <TestimonialCarousel/>
-      <Gallery/>
-      <Contact/>
-      <Footer/>
-    </>
-  )
+    <Router>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/terms&condition" element={<TermsConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;
