@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { FaCheck, FaLinkedinIn, FaPinterestP, FaTumblr } from "react-icons/fa";
+import { FaCheck, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Mission = () => {
     const [activeTab, setActiveTab] = useState("");
 
     const tabs = [
         { id: "mission", label: "OUR MISSION" },
-        { id: "vision", label: "OUR VISSION" },
+        { id: "vision", label: "OUR VISION" },
     ];
 
     return (
@@ -69,15 +69,30 @@ const Mission = () => {
 
                         <p className="font-medium text-sm mb-2">SOCIAL MEDIA :</p>
                         <div className="flex gap-3 mb-4">
-                            <div className="bg-white text-black p-2 rounded-full">
-                                <FaLinkedinIn size={14} />
-                            </div>
-                            <div className="bg-white text-black p-2 rounded-full">
-                                <FaTumblr size={14} />
-                            </div>
-                            <div className="bg-white text-black p-2 rounded-full">
-                                <FaPinterestP size={14} />
-                            </div>
+                            <a
+                                href="https://www.facebook.com/ChaiGuysUk/" // Replace with your Facebook URL
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-white text-black p-2 rounded-full hover:text-blue-600"
+                            >
+                                <FaFacebookF size={14} />
+                            </a>
+                            <a
+                                href="https://www.instagram.com/samochaihouse/" // Replace with your Instagram URL
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-white text-black p-2 rounded-full hover:text-pink-600"
+                            >
+                                <FaInstagram size={14} />
+                            </a>
+                            <a
+                                href="https://twitter.com/samochai" // Replace with your Twitter URL
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-white text-black p-2 rounded-full hover:text-blue-400"
+                            >
+                                <FaTwitter size={14} />
+                            </a>
                         </div>
                     </div>
 
@@ -85,7 +100,7 @@ const Mission = () => {
                     <img
                         src="/cup3.png"
                         alt="Coffee Cup"
-                        className="absolute left-[200px] bottom-[-18px] w-[180px] md:w-[220px] lg:w-[260px] xl:w-[280px] z-0 "
+                        className="absolute left-[200px] bottom-[-18px] w-[180px] md:w-[220px] lg:w-[260px] xl:w-[280px] z-0 hover:rotate-12"
                     />
                 </div>
             </div>

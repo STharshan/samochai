@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { LuChefHat } from "react-icons/lu";
+import MenuModal from "./MenuModal"; // Ensure this import path is correct
 
 const NavbarWithHero = () => {
+  const [modalOpen, setModalOpen] = useState(false); // Modal state
+
+  // Function to open the modal
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  // Function to close the modal
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <section id="hero" className="relative text-white text-center px-4">
       {/* Background Video */}
@@ -39,11 +52,17 @@ const NavbarWithHero = () => {
             <LuChefHat className="w-5 h-5" />
             See Menu
           </button>
-          <button className="bg-white text-[#4a821d] text-lg hover:bg-[#4a821d] hover:text-white border-2 font-bold px-8 py-3 rounded-md border-[#4a821d] w-auto min-w-[160px] transition transform hover:-translate-y-1 hover:shadow-lg">
+          <button
+            onClick={openModal} // Open the modal when clicked
+            className="bg-white text-[#4a821d] text-lg hover:bg-[#4a821d] hover:text-white border-2 font-bold px-8 py-3 rounded-md border-[#4a821d] w-auto min-w-[160px] transition transform hover:-translate-y-1 hover:shadow-lg"
+          >
             Order Now
           </button>
         </div>
       </div>
+
+      {/* Modal */}
+      <MenuModal isOpen={modalOpen} onClose={closeModal} />
     </section>
   );
 };

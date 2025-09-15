@@ -3,7 +3,7 @@ import { FiMapPin, FiPhone, FiMail, FiClock } from 'react-icons/fi';
 
 const Contact = () => {
   return (
-    <div id='contact' className="scroll-mt-28 min-h-screen w-full bg-[#96dd99] text-black font-sans p-6 md:p-12">
+    <div id='contact' className="scroll-mt-15 min-h-screen w-full bg-[#96dd99] text-black font-sans p-6 md:p-12">
       {/* Heading */}
       <div className="text-center mb-10">
         <h2 className="text-4xl md:text-6xl font-bold mb-7">Get In Touch</h2>
@@ -19,13 +19,13 @@ const Contact = () => {
           <h2 className="text-2xl font-bold mb-6">Send us a Message via WhatsApp</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input type="text" placeholder="Your Name" className="bg-transparent border border-white/30 rounded-md p-2 text-gray-700 placeholder-text-gray-700 focus:ring-2 focus:ring-green-400" />
-            <input type="email" placeholder="Your Email" className="bg-transparent border border-white/30 rounded-md p-2 text-gray-700 placeholder-text-gray-700 focus:ring-2 focus:ring-green-400" />
+            <input type="text" placeholder="Your Name" className="bg-transparent border border-gray-900  rounded-md p-2 text-gray-700 placeholder-text-gray-700 focus:ring-2 focus:ring-green-400" />
+            <input type="email" placeholder="Your Email" className="bg-transparent border border-gray-900  rounded-md p-2 text-gray-700 placeholder-text-gray-700 focus:ring-2 focus:ring-green-400" />
           </div>
 
-          <input type="text" placeholder="Subject" className="bg-transparent border border-white/30 rounded-md p-2 text-gray-700 placeholder-text-gray-700 mt-4 w-full  focus:ring-2 focus:ring-green-400" />
+          <input type="text" placeholder="Subject" className="bg-transparent border border-gray-900 rounded-md p-2 text-gray-700 placeholder-text-gray-700 mt-4 w-full  focus:ring-2 focus:ring-green-400" />
 
-          <textarea placeholder="Your Message" rows="12" className="bg-transparent border border-white/30 rounded-md p-2 text-gray-700 placeholder-text-gray-700 mt-4 w-full focus:ring-2 focus:ring-green-400"></textarea>
+          <textarea placeholder="Your Message" rows="12" className="bg-transparent border border-gray-900  rounded-md p-2 text-gray-700 placeholder-text-gray-700 mt-4 w-full focus:ring-2 focus:ring-green-400"></textarea>
 
           <button className="mt-6 w-full bg-green-700 hover:bg-green-600 text-black font-semibold py-2 rounded-md transition-all">
             Send via WhatsApp
@@ -60,10 +60,10 @@ const Contact = () => {
             <div>
               <h3 className="font-semibold">Phone</h3>
               <a 
-                href="tel:+8801234567890" 
+                href="tel:07850 053653" 
                 className="text-black hover:underline"
               >
-                +880 1234 567890
+                07850 053653
               </a>
             </div>
           </div>
@@ -76,10 +76,10 @@ const Contact = () => {
             <div>
               <h3 className="font-semibold">Email</h3>
               <a 
-                href="mailto:hello@samochai.com" 
+                href="mailto:samochaihouse@gmail.com" 
                 className="text-black hover:underline"
               >
-                hello@samochai.com
+                samochaihouse@gmail.com
               </a>
             </div>
           </div>

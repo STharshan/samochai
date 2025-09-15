@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id='about' className="w-full bg-white text-black py-20 px-6">
+    <section id='about' className="w-full bg-white text-black py-20 px-6 scroll-m-10">
       {/* Heading */}
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-6xl font-bold mb-4">
@@ -21,7 +21,7 @@ const About = () => {
           <img
             src="/resturant.png"
             alt="Dhaka food culture"
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 hover:z-10"
           />
         </div>
 

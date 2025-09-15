@@ -1,23 +1,33 @@
 import React from "react";
 import { Coffee, CupSoda } from "lucide-react";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function CoffeeSection() {
   return (
     <section className="bg-[#96dd99] py-10 px-6 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
-        
+
         {/* Left Content */}
         <div className="flex-1 text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl font-extrabold text-black leading-tight mb-6">
             FUELING YOUR DAY<br />
-            THE <span className="text-white">RIGHT</span> WAY.
+            THE <span className="text-white">GREEN</span> WAY.
           </h1>
           <p className="text-gray-800 text-base mb-8 max-w-lg mx-auto lg:mx-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Sip into serenity with the vibrant energy of matcha. Packed with antioxidants to power your mind and body.
           </p>
-          <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
-            Read More →
+
+          <button
+            onClick={() => document.getElementById("read-more-section")?.scrollIntoView({ behavior: "smooth" })}
+            className="bg-[#4a821d] text-white px-8 py-4 rounded-full font-bold hover:bg-[#3f8605] transition duration-300 shadow-lg flex items-center group relative overflow-hidden"
+          >
+            <span className="transition-transform duration-300 transform group-hover:-translate-x-2">Read More</span> {/* Move text on group hover */}
+            <FaArrowRight
+              size={20}
+              className="transition-transform duration-300 transform group-hover:translate-x-2 ml-2"
+            /> {/* Move icon on group hover */}
           </button>
+
         </div>
 
         {/* Center Image */}
@@ -57,5 +67,5 @@ export default function CoffeeSection() {
         </div>
       </div>
     </section>
-  );
+  );
 }

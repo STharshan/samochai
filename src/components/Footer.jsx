@@ -14,7 +14,7 @@ const Footer = () => {
             Bringing the authentic taste of Dhaka’s street food to your table with love and tradition.
           </p>
           <div className="flex space-x-4 text-white">
-            <a href="https://www.facebook.com/samochai" className="hover:text-blue-600 text-black" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/ChaiGuysUk/" className="hover:text-blue-600 text-black" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
             </a>
             <a href="https://www.instagram.com/samochaihouse/" className="hover:text-pink-500 text-black" target="_blank" rel="noopener noreferrer">
@@ -75,14 +75,14 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-4">
               <FiPhone className="text-green-800" />
-              <a href="tel:+8801234567890" className="text-black hover:underline">
-                +880 1234 567890
+              <a href="tel: 07850 053653" className="text-black hover:underline">
+                07850 053653
               </a>
             </li>
             <li className="flex items-center gap-4">
               <FiMail className="text-green-800" />
-              <a href="mailto:hello@samochai.com" className="text-black hover:underline">
-                hello@samochai.com
+              <a href="mailto:samochaihouse@gmail.com" className="text-black hover:underline">
+                samochaihouse@gmail.com
               </a>
             </li>
           </ul>

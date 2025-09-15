@@ -56,18 +56,25 @@ const MenuModal = ({ isOpen, onClose }) => {
 
   if (!isOpen) return null;
 
+  const closeModal = (e) => {
+    // Close the modal if clicking on the overlay area
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 p-4">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 p-4"
+      onClick={closeModal}
+    >
       {isLoading ? (
         <div className="w-full h-full flex items-center justify-center bg-gray-900">
           <div className="w-12 h-12 border-4 border-green-500 border-t-transparent rounded-full animate-spin"></div>
         </div>
       ) : (
         <div className="relative bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-md shadow-lg">
-          {/* Close */}
-          <button onClick={onClose} className="absolute top-3 right-3 text-black hover:text-red-600">
-            <FiX size={24} />
-          </button>
+          {/* Close Button */}
 
           {/* Top Bar */}
           <div className="relative w-full">
@@ -82,6 +89,13 @@ const MenuModal = ({ isOpen, onClose }) => {
                 <FiMenu className="hover:text-green-800 cursor-pointer" />
                 <FiInfo className="hover:text-green-800 cursor-pointer" />
                 <FiShoppingCart className="hover:text-green-800 cursor-pointer" />
+                <button
+                  onClick={onClose}
+                  className="absolute top-3 right-3 text-white bg-black rounded-full p-1 hover:text-red-600"
+                  aria-label="Close"
+                >
+                  <FiX size={24} />
+                </button>
               </div>
             </div>
           </div>
@@ -95,10 +109,7 @@ const MenuModal = ({ isOpen, onClose }) => {
                 )}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm md:text-base text-gray-800">
                   {section.items.map(([item, price], i) => (
-                    <div
-                      key={i}
-                      className="flex justify-between border-b py-1"
-                    >
+                    <div key={i} className="flex justify-between border-b py-1">
                       <span>{item}</span>
                       <span>{price}</span>
                     </div>

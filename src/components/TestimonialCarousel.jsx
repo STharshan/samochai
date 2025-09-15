@@ -50,7 +50,7 @@ const TestimonialCarousel = () => {
       {/* Testimonial Card */}
       <div className="max-w-3xl mx-auto bg-[#0e1b0e]/70 backdrop-blur border-1 border-[#163002] rounded-lg p-8 relative shadow-md transition-all duration-300">
         {/* Gold stars */}
-        <div className="text-center mb-4 text-black text-xl">
+        <div className="text-center mb-4 text-yellow-500 text-xl">
           {'★'.repeat(5)}
         </div>
 

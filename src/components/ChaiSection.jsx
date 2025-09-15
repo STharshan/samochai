@@ -32,7 +32,6 @@ const ingredients = [
     }
 ];
 
-
 export default function ChaiSection() {
     const scrollRef = React.useRef(null);
 
@@ -74,12 +73,12 @@ export default function ChaiSection() {
                         {ingredients.map((item, idx) => (
                             <div
                                 key={idx}
-                                className="min-w-[200px] sm:min-w-[240px] md:min-w-[260px] flex-shrink-0 relative rounded-xl overflow-hidden shadow-md"
+                                className="min-w-[200px] sm:min-w-[240px] md:min-w-[260px] flex-shrink-0 relative rounded-xl overflow-hidden shadow-md group"
                             >
                                 <img
                                     src={item.img}
                                     alt={item.name}
-                                    className="w-70 h-70 object-cover rounded-xl"
+                                    className="w-70 h-70 object-cover rounded-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110 group-hover:z-10"
                                 />
                                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 text-white text-center py-2">
                                     <h3 className="text-lg sm:text-xl font-bold">{item.name}</h3>
@@ -99,13 +98,13 @@ export default function ChaiSection() {
                         onClick={() => scroll('left')}
                         className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-green-600 p-3 rounded-full z-20 shadow-md"
                     >
-                        <FaChevronLeft className="text-white text-xl" />
+                        <FaChevronLeft className="text-white text-xl hover:-translate-x-2 transition-transform duration-300 transform" />
                     </button>
                     <button
                         onClick={() => scroll('right')}
                         className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-green-600 p-3 rounded-full z-20 shadow-md"
                     >
-                        <FaChevronRight className="text-white text-xl" />
+                        <FaChevronRight className="text-white text-xl hover:translate-x-2 transition-transform duration-300 transform" />
                     </button>
                 </div>
             </div>
@@ -115,7 +114,6 @@ export default function ChaiSection() {
                     LEARN MORE
                 </button>
             </div>
-
         </div>
     );
 }
