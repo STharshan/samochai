@@ -25,3 +25,15 @@ html, body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+@media (max-width: 768px) {
+  /* Adjust the carousel for smaller screens */
+  .carousel {
+    padding: 10px;
+  }
+
+  .carousel-item {
+    width: 100%; /* Full width on mobile */
+    margin: 0;
+  }
+}

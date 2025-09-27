@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import the AOS styles
 
 const testimonials = [
   {
@@ -37,25 +39,30 @@ const TestimonialCarousel = () => {
     return () => clearInterval(timer);
   }, [index]);
 
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <section className="w-full bg-[#96dd99] text-black py-16 px-4">
       {/* Heading */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-12" data-aos="fade-up">
         <h2 className="text-4xl md:text-6xl font-bold mb-5">What Our Customers Say</h2>
-        <p className="text-black text-sm md:text-lg font-semibold">
+        <p className="text-black text-sm md:text-lg font-semibold" data-aos="fade-up" data-aos-delay="200">
           Don’t just take our word for it – hear from our satisfied customers
         </p>
       </div>
 
       {/* Testimonial Card */}
-      <div className="max-w-3xl mx-auto bg-[#0e1b0e]/70 backdrop-blur border-1 border-[#163002] rounded-lg p-8 relative shadow-md transition-all duration-300">
+      <div className="max-w-3xl mx-auto bg-[#0e1b0e]/70 backdrop-blur border-2 border-[#96dd99] rounded-lg p-8 relative shadow-xl transition-all duration-300 hover:shadow-2xl active:shadow-2xl hover:shadow-[#163002] active:shadow-[#163002]" data-aos="zoom-in">
         {/* Gold stars */}
         <div className="text-center mb-4 text-yellow-500 text-xl">
           {'★'.repeat(5)}
         </div>
 
         {/* Testimonial Text */}
-        <div className="text-center italic text-white text-lg leading-relaxed font-semibold max-w-2xl mx-auto">
+        <div className="text-center italic text-white text-lg leading-relaxed font-semibold max-w-2xl mx-auto mb-4 text-shadow-md" data-aos="fade-up">
           “{testimonials[index].text}”
         </div>
 
@@ -80,19 +87,21 @@ const TestimonialCarousel = () => {
           <FiChevronRight className="w-5 h-5" />
         </button>
       </div>
+
+      {/* Dot indicators */}
       <div className="flex justify-center mt-6 space-x-2">
         {testimonials.map((_, i) => (
           <div
             key={i}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${i === index ? 'bg-[#346909]' : 'bg-gray-500'
-              }`}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${i === index ? 'bg-[#346909]' : 'bg-gray-500'}`}
           ></div>
         ))}
       </div>
 
+      {/* Review Button */}
       <div className="mt-12 flex justify-center">
         <button
-          onClick={() => window.open ("https://share.google/743LJO5oOTcFTMPrw", "_blank")}
+          onClick={() => window.open("https://share.google/743LJO5oOTcFTMPrw", "_blank")}
           className="bg-[#346909] hover:bg-green-950 border cursor-pointer mb-10 text-white px-6 py-2 rounded-md font-semibold text-sm md:text-base transform hover:scale-105 transition duration-300 ease-in-out"
         >
           Review
