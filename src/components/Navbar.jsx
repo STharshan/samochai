@@ -24,7 +24,7 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 font-semibold">
-            <a href="#hero" className="hover:text-green-400">Home</a>
+            <a href="/" className="hover:text-green-400">Home</a>
             <a href="#menu" className="hover:text-green-400">Menu</a>
             <a href="#about" className="hover:text-green-400">About</a>
             <a href="#contact" className="hover:text-green-400">Contact</a>
@@ -52,7 +52,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-gradient-to-b from-black to-green-900 text-white px-6 py-4 space-y-4 text-left z-40">
-            <a href="#hero" className="block py-1 hover:text-green-400">Home</a>
+            <a href="/" className="block py-1 hover:text-green-400">Home</a>
             <a href="#menu" className="block py-1 hover:text-green-400">Menu</a>
             <a href="#about" className="block py-1 hover:text-green-400">About</a>
             <a href="#contact" className="block py-1 hover:text-green-400">Contact</a>

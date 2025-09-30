@@ -30,7 +30,7 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-5">Quick Links</h3>
           <ul className="space-y-2 text-md font-semibold">
-            <li><a href="#hero" className="hover:text-gray-500">Home</a></li>
+            <li><a href="/" className="hover:text-gray-500">Home</a></li>
             <li><a href="#menu" className="hover:text-gray-500">Menu</a></li>
             <li><a href="#about" className="hover:text-gray-500">About</a></li>
             <li><a href="#contact" className="hover:text-gray-500">Contact</a></li>
@@ -65,7 +65,7 @@ const Footer = () => {
             <li className="flex items-start gap-4">
               <FiMapPin className="mt-3 text-green-800 text-2xl" />
               <a 
-                href="https://www.google.com/maps?q=9a+Great+Central+Road,+Loughborough,+England,+LE11+1RW" 
+               href="https://maps.app.goo.gl/HLfUrkWjLJRV2sYL9"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-black hover:underline"
@@ -75,7 +75,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-4">
               <FiPhone className="text-green-800" />
-              <a href="tel: 07850 053653" className="text-black hover:underline">
+              <a href="tel: +447850 053653" className="text-black hover:underline">
                 07850 053653
               </a>
             </li>
