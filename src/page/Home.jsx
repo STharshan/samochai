@@ -13,11 +13,11 @@ const Home = () => {
     return (
         <div>
             <NavbarWithHero />
+            <About />
             <ChaiSection />
             <Menu />
             <Mission />
             <CoffeeSection />
-            <About />
             <TestimonialCarousel />
             <Gallery />
             <Contact />
