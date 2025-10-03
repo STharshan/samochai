@@ -303,7 +303,7 @@ export default function CoffeeSection() {
               THE <span className="text-white glow-text">GREEN</span> WAY.
             </h1>
             <p className="text-gray-800 text-base mb-8 max-w-lg mx-auto lg:mx-0" data-aos="fade-up">
-              Sip into serenity with the vibrant energy of matcha. Packed with antioxidants to power your mind and body.
+             Sip into serenity with the vibrant energy of matcha. Packed with antioxidants to power your mind and body.
             </p>
 
             <button
@@ -336,9 +336,9 @@ export default function CoffeeSection() {
                 <Coffee size={20} />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-black">PREMIUM COFFEE</h3>
+                <h3 className="text-lg font-semibold text-black">PREMIUM MATCHA</h3>
                 <p className="text-gray-800 text-sm mt-1 max-w-xs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus.
+                  Handpicked leaves stone-ground to perfection — for a smooth, rich, and earthy experience.
                 </p>
               </div>
             </div>
@@ -348,9 +348,9 @@ export default function CoffeeSection() {
                 <CupSoda size={20} />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-black">ORIGINAL TASTE</h3>
+                <h3 className="text-lg font-semibold text-black">ORIGINAL BLEND</h3>
                 <p className="text-gray-800 text-sm mt-1 max-w-xs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus.
+                  Crafted with care to deliver calm focus and lasting energy - the natural way.
                 </p>
               </div>
             </div>
