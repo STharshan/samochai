@@ -9,7 +9,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-left mt-15">
         {/* Column 1 */}
         <div>
-          <h2 className="text-2xl font-bold text-[#4a821d] mb-5">SAMOCHAI</h2>
+          <h2 className="flex items-center text-2xl font-bold text-[#E8D28A] mb-5 gap-2">
+           <img
+            className="text-5xl font-serif tracking-widest ml-8 sm:ml-5"
+            src="/logo.png"
+            alt="logo"
+          />
+          </h2>
           <p className="text-md font-semibold mb-4">
             Bringing the authentic taste of Dhaka’s street food to your table with love and tradition.
           </p>
@@ -58,9 +64,9 @@ const Footer = () => {
           <ul className="space-y-3 text-md font-semibold">
             <li className="flex items-start gap-4">
               <FiMapPin className="mt-3 text-green-800 text-2xl" />
-              <a 
-               href="https://maps.app.goo.gl/UjXrLfUgafhjnzmQ6"
-                target="_blank" 
+              <a
+                href="https://maps.app.goo.gl/UjXrLfUgafhjnzmQ6"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:underline"
               >
