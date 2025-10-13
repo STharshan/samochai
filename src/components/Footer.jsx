@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-black px-6 py-5">
+    <footer className="bg-[#96dd99] text-black px-6 py-5">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-left mt-15">
         {/* Column 1 */}
         <div>
@@ -14,14 +14,8 @@ const Footer = () => {
             Bringing the authentic taste of Dhaka’s street food to your table with love and tradition.
           </p>
           <div className="flex space-x-4 text-white">
-            <a href="https://www.facebook.com/ChaiGuysUk/" className="hover:text-blue-600 text-black" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF />
-            </a>
             <a href="https://www.instagram.com/samochaihouse/" className="hover:text-pink-500 text-black" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
-            </a>
-            <a href="https://twitter.com/samochai" className="hover:text-blue-400 text-black" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
             </a>
           </div>
         </div>
@@ -65,7 +59,7 @@ const Footer = () => {
             <li className="flex items-start gap-4">
               <FiMapPin className="mt-3 text-green-800 text-2xl" />
               <a 
-               href="https://maps.app.goo.gl/HLfUrkWjLJRV2sYL9"
+               href="https://maps.app.goo.gl/UjXrLfUgafhjnzmQ6"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-black hover:underline"
@@ -93,7 +87,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="text-center text-md font-semibold">
-        © 2025 SAMOCHAI. All rights reserved. Made with <span className="text-red-500">❤️</span> for authentic food lovers.
+        © 2025 SAMOCHAI. All rights reserved.
       </div>
       <div className="text-center text-md font-semibold mt-2">
         Powered By <a href="https://www.ansely.co.uk/" className="hover:text-green-800 hover:underline" target="_blank" rel="noopener noreferrer">Ansely</a>

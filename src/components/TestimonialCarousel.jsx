@@ -1,7 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import AOS from 'aos'; // Import AOS
-import 'aos/dist/aos.css'; // Import the AOS styles
+// File: TestimonialCarousel.jsx
+"use client";
+import React, { useRef, useEffect } from "react";
+import { FaChevronLeft, FaChevronRight, FaCar, FaMagic, FaShieldAlt } from "react-icons/fa";
+import { PiCoffeeBeanBold } from "react-icons/pi";
+import { GiCoffeeMug } from "react-icons/gi";
+import { LuSandwich } from "react-icons/lu";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const testimonials = [
   {
@@ -21,94 +26,150 @@ const testimonials = [
     name: 'David Newcombe',
   },
   {
-    text: `The food was finger licking good, was drooling for seconds. I had the omelette wrap with beef rashers and extra masala. It was out of this world. I also had the sheekh egg roll, I have to admit both were absolutely delicious with the intricacy of spices and oomph to it. But the milkshake, I loved it, sends nostalgic vibes through memory lane. The first sip to the last, it was everlasting, I didn’t want it to end. Taking in to consideration, I’ve tried it for the first time. I will definitely come back again BUT I need to try the rest of the menu too.`,
+    text: `The food was finger licking good, was drooling for seconds. I had the omelette wrap with beef rashers and extra masala. It was out of this world. I also had the sheekh egg roll, I have to admit both were absolutely delicious with the intricacy of spices and oomph to it. But the milkshake, I loved it, sends nostalgic vibes through memory lane. The first sip to the last, it was everlasting. Taking in to consideration, I’ve tried it for the first time. I will definitely come back again BUT I need to try the rest of the menu too.`,
     name: 'Rayyan Al-Muneem',
   },
 ];
 
-const TestimonialCarousel = () => {
-  const [index, setIndex] = useState(0);
-
-  const next = () => setIndex((index + 1) % testimonials.length);
-  const prev = () => setIndex((index - 1 + testimonials.length) % testimonials.length);
+export default function TestimonialCarousel() {
+  const scrollRef = useRef(null);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      next();
-    }, 8000);
-    return () => clearInterval(timer);
-  }, [index]);
-
-  // Initialize AOS
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 800, once: true, offset: 100 });
   }, []);
 
+  const scroll = (direction) => {
+    const { current } = scrollRef;
+    if (current) {
+      const scrollAmount = current.offsetWidth;
+      current.scrollBy({ left: direction === "left" ? -scrollAmount : scrollAmount, behavior: "smooth" });
+    }
+  };
+
   return (
-    <section className="w-full bg-[#96dd99] text-black py-16 px-4">
-      {/* Heading */}
-      <div className="text-center mb-12" data-aos="fade-up">
-        <h2 className="text-4xl md:text-6xl font-bold mb-5">What Our Customers Say</h2>
-        <p className="text-black text-sm md:text-lg font-semibold" data-aos="fade-up" data-aos-delay="200">
-          Don’t just take our word for it – hear from our satisfied customers
-        </p>
+    <section className="py-12 bg-white dark:bg-black relative overflow-hidden">
+
+      {/* ✅ Dotted Background */}
+      <div
+        className="absolute inset-0 bg-[radial-gradient(#CCFF66_2px,transparent_2px)] [background-size:20px_20px] z-0"
+        style={{
+          WebkitMaskImage:
+            "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
+          WebkitMaskRepeat: "no-repeat",
+          WebkitMaskSize: "cover",
+          maskImage:
+            "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
+          maskRepeat: "no-repeat",
+          maskSize: "cover",
+        }}
+      />
+
+      {/* ✅ Keyframe Animation Styles */}
+      <style>
+        {`
+          @keyframes pulseSpin {
+            0%   { transform: rotate(0deg) scale(0.8); opacity: 0.2; }
+            40%  { transform: rotate(180deg) scale(1.6); opacity: 1; }
+            70%  { transform: rotate(270deg) scale(1.2); opacity: 0.7; }
+            100% { transform: rotate(360deg) scale(0.8); opacity: 0.2; }
+          }
+          .bg-icon {
+            position: absolute;
+            color: #96dd99 !important;
+            animation: pulseSpin 25s ease-in-out infinite;
+            filter: drop-shadow(0 0 18px rgba(150,221,153,0.8));
+            z-index: 0;
+            pointer-events: none;
+          }
+          @media (max-width: 768px) {
+            .bg-icon {
+              width: 2rem !important;
+              height: 2rem !important;
+              animation-duration: 18s;
+              opacity: 0.15;
+            }
+          }
+        `}
+      </style>
+
+      {/* ✅ Background Icons */}
+      <div className="absolute inset-0 overflow-hidden z-0">
+        <PiCoffeeBeanBold className="bg-icon top-12 left-10 w-24 h-24" style={{ animationDelay: "0s" }} />
+        <GiCoffeeMug className="bg-icon bottom-1/4 left-12 w-20 h-20" style={{ animationDelay: "7s" }} />
+        <LuSandwich className="bg-icon top-15 right-16 w-24 h-24" style={{ animationDelay: "14s" }} /> 
+        <PiCoffeeBeanBold className="bg-icon bottom-1/3 right-16 w-24 h-24" style={{ animationDelay: "10s" }} />
       </div>
 
-      {/* Testimonial Card */}
-      <div className="max-w-3xl mx-auto bg-[#0e1b0e]/70 backdrop-blur border-2 border-[#96dd99] rounded-lg p-8 relative shadow-xl transition-all duration-300 hover:shadow-2xl active:shadow-2xl hover:shadow-[#163002] active:shadow-[#163002]" data-aos="zoom-in">
-        {/* Gold stars */}
-        <div className="text-center mb-4 text-yellow-500 text-xl">
-          {'★'.repeat(5)}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <p className="text-black dark:text-[#96dd99] font-semibold tracking-widest uppercase text-lg">
+            Our Testimonials
+          </p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mt-2">
+            What people say about <br /> our company
+          </h2>
         </div>
 
-        {/* Testimonial Text */}
-        <div className="text-center italic text-white text-lg leading-relaxed font-semibold max-w-2xl mx-auto mb-4 text-shadow-md" data-aos="fade-up">
-          “{testimonials[index].text}”
+        {/* Scroll Buttons */}
+        <button
+          onClick={() => scroll("left")}
+          className="absolute left-4 top-1/2 mt-20 -translate-y-1/2 bg-[#96dd99] p-3 rounded-full shadow-md hover:bg-[#E8D28A] hover:text-white transition z-20 group"
+        >
+          <FaChevronLeft className="transition-transform duration-300 group-hover:-translate-x-1" size={18} />
+        </button>
+
+        <button
+          onClick={() => scroll("right")}
+          className="absolute right-4 top-1/2 mt-20 -translate-y-1/2 bg-[#96dd99] p-3 rounded-full shadow-md hover:bg-[#E8D28A] hover:text-white transition z-20 group"
+        >
+          <FaChevronRight className="transition-transform duration-300 group-hover:translate-x-1" size={18} />
+        </button>
+
+        {/* Scroll Container */}
+        <div
+          ref={scrollRef}
+          className="flex space-x-6 overflow-x-auto scroll-smooth snap-x snap-mandatory px-2 py-8 hide-scrollbar"
+        >
+          {testimonials.map((t, index) => (
+            <div
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+              className="flex-shrink-0 w-72 sm:w-80 md:w-96 bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:shadow-[#96dd99] dark:hover:shadow-[#E8D28A] relative snap-start"
+            >
+              {/* Red Corner Triangle */}
+              <div className="absolute top-0 left-0 w-0 h-0 border-t-[80px] border-t-[#E8D28A] border-r-[80px] border-r-transparent"></div>
+
+              {/* Profile Section */}
+              <div className="relative pt-6 px-6 pb-6">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="relative">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-dashed border-white p-1 bg-[#E8D28A]"></div>
+                  </div>
+
+                  <div className="flex-1 bg-gray-100 dark:bg-gray-700 py-3 px-4 rounded-lg">
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white">{t.name}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">Client</p>
+                  </div>
+                </div>
+
+                {/* Stars */}
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="text-yellow-400 text-lg">★</span>
+                  ))}
+                </div>
+
+                {/* Text */}
+                <p className="text-gray-700 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
+                  {t.text}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
-
-        {/* Name */}
-        <div className="text-center mt-6 font-bold text-black text-lg">
-          {testimonials[index].name}
-        </div>
-
-        {/* Left arrow button with icon */}
-        <button
-          onClick={prev}
-          className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-[#346909] rounded w-10 h-10 flex items-center justify-center text-white transition duration-300"
-        >
-          <FiChevronLeft className="w-5 h-5" />
-        </button>
-
-        {/* Right arrow button with icon */}
-        <button
-          onClick={next}
-          className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-[#346909] rounded w-10 h-10 flex items-center justify-center text-white transition duration-300"
-        >
-          <FiChevronRight className="w-5 h-5" />
-        </button>
-      </div>
-
-      {/* Dot indicators */}
-      <div className="flex justify-center mt-6 space-x-2">
-        {testimonials.map((_, i) => (
-          <div
-            key={i}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${i === index ? 'bg-[#346909]' : 'bg-gray-500'}`}
-          ></div>
-        ))}
-      </div>
-
-      {/* Review Button */}
-      <div className="mt-12 flex justify-center">
-        <button
-          onClick={() => window.open("https://share.google/743LJO5oOTcFTMPrw", "_blank")}
-          className="bg-[#346909] hover:bg-green-950 border cursor-pointer mb-10 text-white px-6 py-2 rounded-md font-semibold text-sm md:text-base transform hover:scale-105 transition duration-300 ease-in-out"
-        >
-          Review
-        </button>
       </div>
     </section>
   );
-};
-
-export default TestimonialCarousel;
+}

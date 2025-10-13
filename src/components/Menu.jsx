@@ -344,7 +344,7 @@ const Menu = () => {
               </div>
               <div className="p-4">
                 <div className="flex justify-between items-center mb-1">
-                  <h3 className="text-lg font-bold">{item.title}</h3>
+                  <h3 className="text-lg font-bold text-[#C8A950]">{item.title}</h3>
                   <span className="text-green-400 font-semibold">{item.price}</span>
                 </div>
                 <p className="text-sm text-gray-300 mb-4">{item.desc}</p>

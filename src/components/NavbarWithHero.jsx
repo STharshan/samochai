@@ -50,7 +50,7 @@ const NavbarWithHero = () => {
       {/* Content */}
       <div className="relative z-10 py-32 md:py-48">
         <h1
-          className="lg:text-7xl text-5xl font-extrabold text-gray-900 mb-8"
+          className="lg:text-7xl text-5xl font-extrabold text-[#E8D28A] mb-8"
           data-aos="fade-down"
           data-aos-delay="200"
         >

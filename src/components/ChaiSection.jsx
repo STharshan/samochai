@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { LuSandwich } from 'react-icons/lu';
+import { PiCoffeeBeanBold } from 'react-icons/pi';
+import { GiCoffeeMug } from 'react-icons/gi';
 
 const ingredients = [
     {
@@ -90,12 +93,54 @@ export default function ChaiSection() {
 
     return (
         <div className="bg-white px-4 py-10 relative overflow-hidden">
-            {/* Animated Background Elements */}
-            <div className="absolute inset-0 pointer-events-none overflow-hidden">
-                <div className="absolute -top-10 -left-10 w-32 h-32 bg-green-200/20 rounded-full animate-pulse"></div>
-                <div className="absolute top-20 right-20 w-24 h-24 bg-green-300/15 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
-                <div className="absolute bottom-20 left-20 w-16 h-16 bg-green-400/10 rounded-full animate-ping" style={{animationDelay: '2s'}}></div>
-                <div className="absolute -bottom-5 -right-5 w-40 h-40 bg-gradient-to-br from-green-200/10 to-transparent rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+            <style>
+                {`
+                  @keyframes pulseSpin {
+                    0%   { transform: rotate(0deg) scale(0.8); opacity: 0.2; }
+                    40%  { transform: rotate(180deg) scale(1.6); opacity: 1; }
+                    70%  { transform: rotate(270deg) scale(1.2); opacity: 0.7; }
+                    100% { transform: rotate(360deg) scale(0.8); opacity: 0.2; }
+                  }
+                  .bg-icon {
+                    position: absolute;
+                    color: #E8D28A !important;
+                    animation: pulseSpin 25s ease-in-out infinite;
+                    filter: drop-shadow(0 0 18px rgba(232, 210, 138, 0.8));
+                    z-index: 0;
+                    pointer-events: none;
+                  }
+                  @media (max-width: 768px) {
+                    .bg-icon {
+                      width: 2rem !important;
+                      height: 2rem !important;
+                      animation-duration: 18s;
+                      opacity: 0.15;
+                    }
+                  }
+                `}
+            </style>
+
+            {/* 🔹 Dotted background pattern */}
+            <div
+                className="absolute inset-0 bg-[radial-gradient(#E8D28A_2px,transparent_2px)] [background-size:20px_20px]"
+                style={{
+                    WebkitMaskImage:
+                        "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
+                    WebkitMaskRepeat: "no-repeat",
+                    WebkitMaskSize: "cover",
+                    maskImage:
+                        "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
+                    maskRepeat: "no-repeat",
+                    maskSize: "cover",
+                }}
+            />
+
+            {/* 🔹 Enhanced Floating Icons with pulseSpin */}
+            <div className="absolute inset-0 z-0 overflow-hidden">
+                <LuSandwich className="bg-icon w-24 h-24 left-[10%] top-[15%]" style={{ animationDelay: '0s' }} />
+                <PiCoffeeBeanBold className="bg-icon w-20 h-20 right-[10%] top-[20%]" style={{ animationDelay: '5s' }} />
+                <GiCoffeeMug className="bg-icon w-24 h-24 left-[25%] bottom-[10%]" style={{ animationDelay: '10s' }} />
+                <LuSandwich className="bg-icon w-20 h-20 right-[15%] bottom-[15%]" style={{ animationDelay: '15s' }} />
             </div>
 
             <div className="flex flex-col xl:flex-row justify-center items-center gap-10 relative z-10">
