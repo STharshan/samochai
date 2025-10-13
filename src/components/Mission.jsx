@@ -141,28 +141,12 @@ const Mission = () => {
                         <p className="font-medium text-sm mb-2 relative z-10">SOCIAL MEDIA :</p>
                         <div className="flex gap-3 mb-4 relative z-10">
                             <a
-                                href="https://www.facebook.com/ChaiGuysUk/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-white text-black p-2 rounded-full hover:text-blue-600 hover:shadow-md hover:scale-110 transition-all duration-300"
-                            >
-                                <FaFacebookF size={14} />
-                            </a>
-                            <a
                                 href="https://www.instagram.com/samochaihouse/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-white text-black p-2 rounded-full hover:text-pink-600 hover:shadow-md hover:scale-110 transition-all duration-300"
                             >
                                 <FaInstagram size={14} />
-                            </a>
-                            <a
-                                href="https://twitter.com/samochai"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-white text-black p-2 rounded-full hover:text-blue-400 hover:shadow-md hover:scale-110 transition-all duration-300"
-                            >
-                                <FaTwitter size={14} />
                             </a>
                         </div>
                     </div>
