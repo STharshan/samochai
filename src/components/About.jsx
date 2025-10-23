@@ -86,7 +86,7 @@ const About = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Born in the heart of Dhaka's lively streets, SAMOCHAI isn't just a restaurant — it's a true reflection of the city's street food and chai culture.
+            Born in the heart of sylhet lively streets, SAMOCHAI isn't just a restaurant — it's a true reflection of the city's street food and chai culture.
           </p>
         </div>
 
@@ -117,7 +117,7 @@ const About = () => {
               Our Story
             </h3>
             <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-4 font-semibold text-shadow-md">
-              Authenticity lives in the aroma of chai and the flavour of freshly cooked street bites. At SAMOCHAI, we bring the soul of Dhaka's street food scene straight to your table — from sizzling snacks to perfectly brewed chai, each made with passion and tradition.
+              Authenticity lives in the aroma of chai and the flavour of freshly cooked street bites. At SAMOCHAI, we bring the soul of sylhet street food scene straight to your table — from sizzling snacks to perfectly brewed chai, each made with passion and tradition.
             </p>
             <p className="text-sm md:text-base text-gray-700 leading-relaxed font-semibold">
               Our journey began among the bustling tea stalls and food corners of Old Dhaka — where friends gather, stories are shared, and flavours come alive. Today, we continue that legacy, serving the same warmth, spice, and spirit that define our streets — one cup of chai at a time.

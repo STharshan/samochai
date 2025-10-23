@@ -94,10 +94,8 @@ export default function TestimonialCarousel() {
 
       {/* ✅ Background Icons */}
       <div className="absolute inset-0 overflow-hidden z-0">
-        <PiCoffeeBeanBold className="bg-icon top-12 left-10 w-24 h-24" style={{ animationDelay: "0s" }} />
         <GiCoffeeMug className="bg-icon bottom-1/4 left-12 w-20 h-20" style={{ animationDelay: "7s" }} />
         <LuSandwich className="bg-icon top-15 right-16 w-24 h-24" style={{ animationDelay: "14s" }} /> 
-        <PiCoffeeBeanBold className="bg-icon bottom-1/3 right-16 w-24 h-24" style={{ animationDelay: "10s" }} />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

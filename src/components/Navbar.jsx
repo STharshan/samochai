@@ -13,11 +13,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-[#96dd99] text-white px-4 py-3">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-[#96dd99] text-white px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
           <img
-            className="text-2xl font-serif tracking-widest ml-8 sm:ml-5"
+            className="ml-8 sm:ml-5"
             src="/logo.png"
             alt="logo"
           />
