@@ -1,27 +1,27 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FiMapPin, FiPhone, FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#96dd99] text-black px-6 py-5">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-left mt-15">
+    <footer className="bg-[#96dd99] text-black px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 p-3.5 md:grid-cols-4 gap-8 text-left mt-15">
         {/* Column 1 */}
         <div>
           <h2 className="flex items-center text-2xl font-bold text-[#E8D28A] mb-5 gap-2">
-           <img
-            className="text-5xl font-serif tracking-widest ml-8 sm:ml-5"
-            src="/logo.png"
-            alt="logo"
-          />
+            <img
+              className="text-5xl font-serif tracking-widest w-65"
+              src="/logo.png"
+              alt="logo"
+            />
           </h2>
           <p className="text-md font-semibold mb-4">
-            Bringing the authentic taste of Dhaka’s street food to your table with love and tradition.
+            Bringing the authentic taste of sylhet street food to your table with love and tradition.
           </p>
           <div className="flex space-x-4 text-white">
             <a href="https://www.instagram.com/samochaihouse/" className="hover:text-pink-500 text-black" target="_blank" rel="noopener noreferrer">
-              <FaInstagram />
+              <FaInstagram className="text-2xl" />
             </a>
           </div>
         </div>
@@ -45,16 +45,6 @@ const Footer = () => {
             <li><a href="#">Snacks</a></li>
             <li><a href="#">Drinks</a></li>
             <li><a href="#">Desserts</a></li>
-            <li>
-              <Link to="/terms&condition" className="hover:text-gray-500 transition">
-                Term & Conditions
-              </Link>
-            </li>
-            <li>
-              <Link to="/privacy-policy" className="hover:text-gray-500 transition">
-                Privacy Policy
-              </Link>
-            </li>
           </ul>
         </div>
 
@@ -89,16 +79,44 @@ const Footer = () => {
         </div>
       </div>
 
-      <hr className="my-8 border-gray-600" />
+      <hr className="my-3 border-gray-600" />
+      <div className="text-center text-black font-bold">
+        <p>&copy; 2025 SAMOCHAI. All rights reserved.</p>
+      </div>
 
       {/* Bottom Bar */}
-      <div className="text-center text-md font-semibold">
-        © 2025 SAMOCHAI. All rights reserved.
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-3 text-center font-semibold text-black">
+        {/* Left: Terms & Privacy */}
+        <div className="flex gap-4 text-sm">
+          <Link
+            to="/terms&condition"
+            className="text-black hover:text-gray-600 transition duration-300"
+          >
+            Terms & Conditions
+          </Link>
+          <span className="text-black">|</span>
+          <Link
+            to="/privacy-policy"
+            className="text-black hover:text-gray-600 transition duration-300"
+          >
+            Privacy Policy
+          </Link>
+        </div>
+
+        {/* Center: Powered by Ansely (unchanged) */}
+        <p className="text-center font-semibold text-black p-2">
+          Powered by{" "}
+          <a
+            href="https://www.ansely.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black hover:underline"
+          >
+            Ansely
+          </a>
+        </p>
       </div>
-      <div className="text-center text-md font-semibold mt-2">
-        Powered By <a href="https://www.ansely.co.uk/" className="hover:text-green-800 hover:underline" target="_blank" rel="noopener noreferrer">Ansely</a>
-      </div>
-    </footer>
+    </footer >
   );
 };
 

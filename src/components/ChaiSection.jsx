@@ -8,32 +8,32 @@ import { GiCoffeeMug } from 'react-icons/gi';
 
 const ingredients = [
     {
-        name: "CINNAMON",
-        img: "/cinnamon.webp"
+        name: "Sreemangal Tea Estates",
+        img: "/i1.png"
     },
     {
-        name: "CARDAMOM",
-        img: "/cardamom.webp"
+        name: "Malnichhera Tea Estate",
+        img: "/i2.png"
     },
     {
-        name: "BLACK PEPPER",
-        img: "/pepper.webp"
+        name: "Lakkatura Tea Garden",
+        img: "/i3.png"
     },
     {
-        name: "ASSAM BLACK TEA",
-        img: "/assam.jpg"
+        name: "Jaflong Tea Estate",
+        img: "/i4.png"
     },
     {
-        name: "FENNEL SEEDS",
-        img: "/fennel.jpg"
+        name: "Tarapur Tea Estate",
+        img: "/i5.png"
     },
     {
-        name: "CLOVES",
-        img: "/clove.jpg"
+        name: "Finlay Tea Estate",
+        img: "/i6.png"
     },
     {
-        name: "GINGER ROOT",
-        img: "/ginger.jpg"
+        name: "Dhamai Tea Estate",
+        img: "/i7.png"
     }
 ];
 
@@ -93,6 +93,14 @@ export default function ChaiSection() {
 
     return (
         <div className="bg-white px-4 py-10 relative overflow-hidden">
+            <h2
+                className="text-center text-4xl md:text-6xl font-bold mb-6 tracking-wide text-black relative z-10"
+                data-aos="fade-up"
+            >
+                <span className="inline-block mb-3">
+                    Sylhet Tea Gardens
+                </span>
+            </h2>
             <style>
                 {`
                   @keyframes pulseSpin {
@@ -165,12 +173,10 @@ export default function ChaiSection() {
                     </div>
 
                     <div className="absolute -left-2 -top-2 w-full h-full -z-10" />
-                    <p className="text-black font-medium text-base leading-relaxed relative z-10 group-hover:text-gray-800 transition-colors duration-300">
-                        The true charm of Bengali Chai lies in its soulfulness. More than just a cup of tea,
-                        it's a ritual woven into everyday life — mornings that begin with its aroma, conversations that flow around it,
-                        and quiet evenings made warmer by its taste. Recipes differ from one household to another, some with a touch of cardamom
-                        or ginger, others brewed longer for a stronger depth of flavor. Whether enjoyed sweet and creamy or light and spiced,
-                        Bengali Chai is deeply personal, carrying with it the warmth of tradition and the comfort of home.
+                    <p className="text-black font-medium text-base leading-relaxed relative z-10  transition-colors duration-300">
+                        Sylhet  is where Bangladesh’s tea magic comes to life. Wander through endless green hills, watch skilled hands pluck the
+                        freshest leaves, and soak in views that feel like a dream. Whether you love adventure, culture, or simply a great cup of
+                        tea, these vibrant tea estates are packed with charm, discovery, and unforgettable moments.
                     </p>
 
                     {/* Animated borders */}
@@ -246,7 +252,7 @@ export default function ChaiSection() {
 
                                 {/* Enhanced label */}
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-black/20 text-white text-center py-3 transform transition-all duration-300 group-hover/card:from-green-900/90 group-hover/card:to-green-800/30">
-                                    <h3 className="text-lg sm:text-xl font-bold transform transition-all duration-300 group-hover/card:scale-110 group-hover/card:text-green-200">
+                                    <h3 className="text-lg sm:text-xl font-bold transform transition-all duration-300 group-hover/card:scale-110">
                                         {item.name}
                                     </h3>
 

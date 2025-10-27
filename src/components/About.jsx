@@ -116,11 +116,14 @@ const About = () => {
             <h3 className="text-2xl md:text-3xl font-bold text-[#96dd99] mb-4">
               Our Story
             </h3>
-            <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-4 font-semibold text-shadow-md">
-              Authenticity lives in the aroma of chai and the flavour of freshly cooked street bites. At SAMOCHAI, we bring the soul of sylhet street food scene straight to your table — from sizzling snacks to perfectly brewed chai, each made with passion and tradition.
+            <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-2 font-semibold text-shadow-md">
+              Authenticity lives in the aroma of chai and the flavour of freshly cooked street bites. At SAMOCHAI, we bring the soul of Sylhet’s street-food scene straight to your table — from sizzling snacks to perfectly brewed chai, made with passion and tradition.
+            </p>
+            <p className="text-sm md:text-base text-gray-700 leading-relaxed font-semibold mb-2">
+              Born from the bustling tea stalls where friends gather and flavours come alive, we now serve that same warmth and spirit here — one cup at a time.
             </p>
             <p className="text-sm md:text-base text-gray-700 leading-relaxed font-semibold">
-              Our journey began among the bustling tea stalls and food corners of Old Dhaka — where friends gather, stories are shared, and flavours come alive. Today, we continue that legacy, serving the same warmth, spice, and spirit that define our streets — one cup of chai at a time.
+              Sylhet grows most of Bangladesh’s tea, so our chai is rooted in the lands that define its flavour. Every region has its own style of chai, yet Sylhet stands out for its rich body and aromatic depth shaped by its hills and climate. That is the taste we pour into every cup — heritage you can feel with every sip.
             </p>
           </div>
         </div>

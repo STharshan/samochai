@@ -14,10 +14,10 @@ const Navbar = () => {
   return (
     <>
       <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-[#96dd99] text-white px-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <div className="max-w-7xl mx-auto flex items-center py-2 justify-between">
           {/* Logo */}
           <img
-            className="ml-8 sm:ml-5"
+            className="w-60"
             src="/logo.png"
             alt="logo"
           />

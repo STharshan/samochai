@@ -283,7 +283,7 @@ const Menu = () => {
             data-aos-delay="200"
             className="text-gray-700 text-md md:text-xl font-semibold mt-2 mb-15"
           >
-            Discover the authentic taste of Dhaka's street food scene
+            Discover the authentic taste of sylhet street food scene
           </p>
         </div>
 
