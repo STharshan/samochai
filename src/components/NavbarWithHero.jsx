@@ -45,7 +45,7 @@ const NavbarWithHero = () => {
       ></video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-black/60 bg-opacity-50"></div>
 
       {/* Content */}
       <div className="relative z-10 py-32 md:py-48">
