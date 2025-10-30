@@ -112,14 +112,14 @@ export default function TestimonialCarousel() {
         {/* Scroll Buttons */}
         <button
           onClick={() => scroll("left")}
-          className="absolute left-4 top-1/2 mt-20 -translate-y-1/2 bg-[#96dd99] p-3 rounded-full shadow-md hover:bg-[#E8D28A] hover:text-white transition z-20 group"
+          className="absolute left-4 top-1/2 mt-20 -translate-y-1/2 bg-[#12392c] p-3 rounded-full shadow-md hover:bg-[#E8D28A] hover:text-white transition z-20 group"
         >
           <FaChevronLeft className="transition-transform duration-300 group-hover:-translate-x-1" size={18} />
         </button>
 
         <button
           onClick={() => scroll("right")}
-          className="absolute right-4 top-1/2 mt-20 -translate-y-1/2 bg-[#96dd99] p-3 rounded-full shadow-md hover:bg-[#E8D28A] hover:text-white transition z-20 group"
+          className="absolute right-4 top-1/2 mt-20 -translate-y-1/2 bg-[#12392c] p-3 rounded-full shadow-md hover:bg-[#E8D28A] hover:text-white transition z-20 group"
         >
           <FaChevronRight className="transition-transform duration-300 group-hover:translate-x-1" size={18} />
         </button>
@@ -134,7 +134,7 @@ export default function TestimonialCarousel() {
               key={index}
               data-aos="fade-up"
               data-aos-delay={index * 100}
-              className="flex-shrink-0 w-72 sm:w-80 md:w-96 bg-white  rounded-2xl shadow-lg overflow-hidden hover:shadow-[#96dd99] relative snap-start"
+              className="flex-shrink-0 w-72 sm:w-80 md:w-96 bg-white  rounded-2xl shadow-lg overflow-hidden hover:shadow-[#12392c] relative snap-start"
             >
               {/* Red Corner Triangle */}
               <div className="absolute top-0 left-0 w-0 h-0 border-t-[80px] border-t-[#E8D28A] border-r-[80px] border-r-transparent"></div>

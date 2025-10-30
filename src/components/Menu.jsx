@@ -260,7 +260,7 @@ const Menu = () => {
 
       `}</style>
 
-      <section id='menu' className="relative w-full bg-[#96dd99] text-black py-16 px-6 scroll-m-15">
+      <section id='menu' className="relative w-full bg-[#12392c] text-black py-16 px-6 scroll-m-15">
         {/* Background Bubble Effects */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute -top-10 -left-10 w-32 h-32 bg-green-200/20 rounded-full animate-pulse"></div>
@@ -281,7 +281,7 @@ const Menu = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="200"
-            className="text-gray-700 text-md md:text-xl font-semibold mt-2 mb-15"
+            className="text-white text-md md:text-xl font-semibold mt-2 mb-15"
           >
             Discover the authentic taste of sylhet street food scene
           </p>
@@ -300,8 +300,8 @@ const Menu = () => {
               data-aos-delay={400 + index * 50}
               onClick={() => setSelected(cat)}
               className={`category-button px-4 py-2 rounded-md font-medium text-sm transition duration-300 ease-in-out ${selected === cat
-                ? "bg-[#346909] text-white pulse-effect"
-                : "bg-white text-[#346909] hover:bg-[#346909] hover:shadow- hover:text-white glow-effect"
+                ? "bg-[#E8D28A] text-black pulse-effect"
+                : "bg-white text-[#12392c] hover:bg-[#E8D28A] hover:shadow- hover:text-white glow-effect"
                 }`}
             >
               {cat}

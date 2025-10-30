@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-[#96dd99] text-white px-4">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-[#12392c] text-white px-4">
         <div className="max-w-7xl mx-auto flex items-center py-2 justify-between">
           {/* Logo */}
           <img
@@ -24,17 +24,17 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 font-semibold">
-            <a href="/" className="hover:text-green-400">Home</a>
-            <a href="#menu" className="hover:text-green-400">Menu</a>
-            <a href="#about" className="hover:text-green-400">About</a>
-            <a href="#contact" className="hover:text-green-400">Contact</a>
+            <a href="/" className="hover:text-[#E8D28A]">Home</a>
+            <a href="#menu" className="hover:text-[#E8D28A]">Menu</a>
+            <a href="#about" className="hover:text-[#E8D28A]">About</a>
+            <a href="#contact" className="hover:text-[#E8D28A]">Contact</a>
           </div>
 
           {/* Order Button (Desktop) */}
           <div className="hidden md:flex mr-18 sm:mr-10">
             <button
               onClick={openModal}
-              className="flex items-center space-x-2 bg-white text-green-900 font-semibold px-4 py-2 rounded-md shadow hover:bg-[#4a821d] hover:text-white"
+              className="flex items-center space-x-2 bg-white text-green-900 font-semibold px-4 py-2 rounded-md shadow hover:bg-[#E8D28A] hover:text-black"
             >
               <FiShoppingCart />
               <span>Order Now</span>
@@ -52,10 +52,10 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-gradient-to-b from-black to-green-900 text-white px-6 py-4 space-y-4 text-left z-40">
-            <a href="/" className="block py-1 hover:text-green-400">Home</a>
-            <a href="#menu" className="block py-1 hover:text-green-400">Menu</a>
-            <a href="#about" className="block py-1 hover:text-green-400">About</a>
-            <a href="#contact" className="block py-1 hover:text-green-400">Contact</a>
+            <a href="/" className="block py-1 hover:text-[#E8D28A]">Home</a>
+            <a href="#menu" className="block py-1 hover:text-[#E8D28A]">Menu</a>
+            <a href="#about" className="block py-1 hover:text-[#E8D28A]">About</a>
+            <a href="#contact" className="block py-1 hover:text-[#E8D28A]">Contact</a>
             <button
               onClick={openModal}
               className="flex items-center gap-2 bg-white text-green-800 px-4 py-2 rounded-md shadow hover:bg-green-50"

@@ -79,7 +79,7 @@ const Mission = () => {
                 {/* Left Section - Tabs */}
                 <div className="flex-1 max-w-2xl" data-aos="fade-right">
                     <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-8">
-                        SAVOR THE <span className="text-[#96dd99]">FLAVOR</span>,<br /> ONE SIP AT A TIME.
+                        SAVOR THE <span className="text-[#12392c]">FLAVOR</span>,<br /> ONE SIP AT A TIME.
                     </h2>
 
                     <div className="space-y-4">
@@ -88,7 +88,7 @@ const Mission = () => {
                                 <button
                                     className={`w-full flex items-center justify-between px-4 py-3 rounded-md font-bold text-lg transition-all duration-300
                     ${activeTab === tab.id
-                                            ? "bg-[#96dd99] text-white shadow-lg hover:shadow-xl hover:scale-[1.02]"
+                                            ? "bg-[#12392c] text-white shadow-lg hover:shadow-xl hover:scale-[1.02]"
                                             : "bg-transparent text-gray-800 border-b hover:bg-gray-100 hover:shadow-md hover:scale-[1.01]"
                                         }`}
                                     onClick={() => setActiveTab(tab.id)}
@@ -118,7 +118,7 @@ const Mission = () => {
 
                 {/* Right Section - Green Box with Image */}
                 <div className="relative z-10" data-aos="fade-left">
-                    <div className="bg-[#96dd99] rounded-2xl p-8 sm:p-18 text-white relative overflow-hidden min-h-[340px] pr-28 md:pr-32 shadow-lg hover:shadow-[0_12px_32px_rgba(150,221,153,0.4)] transition-all duration-500 hover:scale-[1.02] group">
+                    <div className="bg-[#12392c] rounded-2xl p-8 sm:p-18 text-white relative overflow-hidden min-h-[340px] pr-28 md:pr-32 shadow-lg hover:shadow-[0_12px_32px_rgba(150,221,153,0.4)] transition-all duration-500 hover:scale-[1.02] group">
                         {/* Animated gradient overlay */}
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
 
@@ -129,11 +129,11 @@ const Mission = () => {
 
                         <div className="space-y-3 mb-6 relative z-10">
                             <div className="flex items-center gap-2 bg-black px-4 py-2 rounded-full text-sm w-fit shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
-                                <FaCheck className="text-[#96dd99]" />
+                                <FaCheck className="text-[#12392c]" />
                                 Organic & fresh Coffee
                             </div>
                             <div className="flex items-center gap-2 bg-black px-4 py-2 rounded-full text-sm w-fit shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
-                                <FaCheck className="text-[#96dd99]" />
+                                <FaCheck className="text-[#12392c]" />
                                 Premium Coffee
                             </div>
                         </div>

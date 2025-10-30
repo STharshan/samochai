@@ -61,7 +61,7 @@ const NavbarWithHero = () => {
           data-aos="fade-up"
           data-aos-delay="400"
         >
-          <span className="text-[#96dd99]">Dhaka?</span>
+          <span className="text-[#12392c]">Dhaka?</span>
         </h1>
         <p
           className="text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10"
@@ -80,7 +80,7 @@ const NavbarWithHero = () => {
             onClick={() => 
               document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" }) 
             } 
-            className="bg-[#3f8605] hover:bg-[#96dd99] hover:shadow-[#346909] text-white font-semibold text-lg px-8 py-3 rounded w-auto min-w-[160px] flex items-center justify-center gap-2 transition transform hover:-translate-y-1 hover:shadow-xl"
+            className="bg-[#3f8605] hover:bg-[#12392c] hover:shadow-[#346909] text-white font-semibold text-lg px-8 py-3 rounded w-auto min-w-[160px] flex items-center justify-center gap-2 transition transform hover:-translate-y-1 hover:shadow-xl"
           > 
             <LuChefHat className="w-5 h-5" /> 
             See Menu 

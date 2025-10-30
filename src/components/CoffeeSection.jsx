@@ -138,7 +138,7 @@ export default function CoffeeSection() {
           position: relative;
           animation: button-glow 3s ease-in-out infinite;
           border: 2px solid transparent;
-          background: linear-gradient(135deg, #4a821d, #3f8605);
+          background: linear-gradient(135deg, #E8D28A);
           overflow: hidden;
         }
 
@@ -293,7 +293,7 @@ export default function CoffeeSection() {
         }
       `}</style>
 
-      <section className="bg-[#96dd99] py-10 px-6 md:px-12 lg:px-24 section-bg">
+      <section className="bg-[#12392c] py-10 px-6 md:px-12 lg:px-24 section-bg">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center relative z-10">
 
           {/* Left Content */}
@@ -312,10 +312,10 @@ export default function CoffeeSection() {
               data-aos="zoom-in"
               data-aos-delay="200"
             >
-              <span className="transition-transform duration-300 transform group-hover:-translate-x-2 relative z-10">Read More</span>
+              <span className="transition-transform duration-300 transform group-hover:-translate-x-2 relative z-10 text-black">Read More</span>
               <FaArrowRight
                 size={20}
-                className="transition-transform duration-300 transform group-hover:translate-x-2 ml-2 relative z-10"
+                className="transition-transform duration-300 transform group-hover:translate-x-2 ml-2 relative z-10 text-black"
               />
             </button>
           </div>

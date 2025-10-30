@@ -113,7 +113,7 @@ const About = () => {
             data-aos="fade-left"
             data-aos-delay="400"
           >
-            <h3 className="text-2xl md:text-3xl font-bold text-[#96dd99] mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#12392c] mb-4">
               Our Story
             </h3>
             <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-2 font-semibold text-shadow-md">

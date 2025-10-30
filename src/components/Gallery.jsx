@@ -22,11 +22,11 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section className="w-full bg-[#96dd99] text-black py-16 -mt-15">
+    <section className="w-full bg-[#12392c] text-black py-16 -mt-15">
       {/* Heading */}
       <div className="text-center mb-10" data-aos="fade-up">
         <h2 className="text-4xl md:text-6xl font-bold mb-7">Our Gallery</h2>
-        <p className="text-sm md:text-lg text-gray-700 font-semibold" data-aos="fade-up" data-aos-delay="200">
+        <p className="text-sm md:text-lg text-white font-semibold" data-aos="fade-up" data-aos-delay="200">
           Take a visual journey through our delicious offerings and vibrant atmosphere
         </p>
       </div>

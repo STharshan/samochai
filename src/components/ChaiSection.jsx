@@ -167,8 +167,8 @@ export default function ChaiSection() {
 
                     {/* Floating particles effect */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                        <div className="absolute top-2 left-2 w-1 h-1 bg-[#96dd99] rounded-full animate-ping"></div>
-                        <div className="absolute top-4 right-4 w-1 h-1 bg-[#96dd99] rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                        <div className="absolute top-2 left-2 w-1 h-1 bg-[#12392c] rounded-full animate-ping"></div>
+                        <div className="absolute top-4 right-4 w-1 h-1 bg-[#12392c] rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
                         <div className="absolute bottom-4 left-6 w-1 h-1 bg-green-300 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
                     </div>
 
@@ -180,8 +180,8 @@ export default function ChaiSection() {
                     </p>
 
                     {/* Animated borders */}
-                    <div className="absolute top-1 -left-4 h-full w-[15px] bg-gradient-to-b from-[#96dd99] to-[#96dd99] group-hover:w-[20px] transition-all duration-500 animate-pulse"></div>
-                    <div className="absolute -bottom-4 -left-4 w-full h-[15px] bg-gradient-to-r from-[#96dd99] to-[#96dd99] group-hover:h-[20px] transition-all duration-500"></div>
+                    <div className="absolute top-1 -left-4 h-full w-[15px] bg-gradient-to-b from-[#12392c] to-[#12392c] group-hover:w-[20px] transition-all duration-500 animate-pulse"></div>
+                    <div className="absolute -bottom-4 -left-4 w-full h-[15px] bg-gradient-to-r from-[#12392c] to-[#12392c] group-hover:h-[20px] transition-all duration-500"></div>
 
                     {/* Shimmer effect */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
@@ -224,7 +224,7 @@ export default function ChaiSection() {
                                 }}
                             >
                                 {/* Glowing border effect */}
-                                <div className="absolute -inset-0.5 bg-gradient-to-r from-[#96dd99] via-[#96dd99] to-green-600 rounded-xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-500 blur-sm"></div>
+                                <div className="absolute -inset-0.5 bg-gradient-to-r from-[#12392c] via-[#12392c] to-green-600 rounded-xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-500 blur-sm"></div>
 
                                 {/* Image with enhanced effects */}
                                 <div className="relative rounded-xl overflow-hidden">
@@ -239,7 +239,7 @@ export default function ChaiSection() {
 
                                     {/* Multiple overlay effects */}
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-100 group-hover/card:opacity-80 transition-opacity duration-300"></div>
-                                    <div className="absolute inset-0 bg-gradient-to-br from-[#96dd99]/20 via-transparent to-green-600/20 opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-br from-[#12392c]/20 via-transparent to-green-600/20 opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
 
                                     {/* Sparkle effects */}
                                     <div className="absolute inset-0 opacity-0 group-hover/card:opacity-100 transition-opacity duration-500 pointer-events-none">
@@ -257,35 +257,35 @@ export default function ChaiSection() {
                                     </h3>
 
                                     {/* Animated underline */}
-                                    <div className="w-0 h-0.5 bg-[#96dd99] mx-auto mt-1 group-hover/card:w-16 transition-all duration-500"></div>
+                                    <div className="w-0 h-0.5 bg-[#12392c] mx-auto mt-1 group-hover/card:w-16 transition-all duration-500"></div>
                                 </div>
 
                                 {/* Ripple effect on hover */}
                                 <div className="absolute inset-0 rounded-xl opacity-0 group-hover/card:opacity-100 pointer-events-none">
-                                    <div className="absolute inset-0 rounded-xl bg-[#96dd99]/20 animate-ping"></div>
+                                    <div className="absolute inset-0 rounded-xl bg-[#12392c]/20 animate-ping"></div>
                                 </div>
                             </div>
                         ))}
 
                         {/* Enhanced borders with animation */}
-                        <div className="absolute top-0 -left-3.5 h-full w-[15px] bg-gradient-to-b from-[#96dd99] via-[#96dd99] to-[#96dd99] animate-pulse"></div>
-                        <div className="absolute -bottom-3.5 right-3.5 w-full h-[15px] bg-gradient-to-r from-[#96dd99] via-[#96dd99] to-[#96dd99] group-hover:animate-pulse transition-all duration-500"></div>
+                        <div className="absolute top-0 -left-3.5 h-full w-[15px] bg-gradient-to-b from-[#12392c] via-[#12392c] to-[#12392c] animate-pulse"></div>
+                        <div className="absolute -bottom-3.5 right-3.5 w-full h-[15px] bg-gradient-to-r from-[#12392c] via-[#12392c] to-[#12392c] group-hover:animate-pulse transition-all duration-500"></div>
                     </div>
 
                     {/* Enhanced Scroll buttons with more effects */}
                     <button
                         onClick={() => scroll('left')}
-                        className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-green-600 to-green-700 p-3 rounded-full z-20 shadow-lg hover:shadow-2xl hover:shadow-[#96dd99]/50 transition-all duration-300 hover:scale-110 group animate-pulse hover:animate-none"
+                        className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-green-600 to-green-700 p-3 rounded-full z-20 shadow-lg hover:shadow-2xl hover:shadow-[#12392c]/50 transition-all duration-300 hover:scale-110 group animate-pulse hover:animate-none"
                     >
-                        <div className="absolute inset-0 bg-gradient-to-r from-[#96dd99]/50 to-[#96dd99]/50 rounded-full opacity-0 group-hover:opacity-100 animate-spin transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-[#12392c]/50 to-[#12392c]/50 rounded-full opacity-0 group-hover:opacity-100 animate-spin transition-opacity duration-300"></div>
                         <FaChevronLeft className="text-white text-xl hover:-translate-x-2 transition-transform duration-300 transform relative z-10" />
                     </button>
 
                     <button
                         onClick={() => scroll('right')}
-                        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-green-600 to-green-700 p-3 rounded-full z-20 shadow-lg hover:shadow-2xl hover:shadow-[#96dd99]/50 transition-all duration-300 hover:scale-110 group animate-pulse hover:animate-none"
+                        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-green-600 to-green-700 p-3 rounded-full z-20 shadow-lg hover:shadow-2xl hover:shadow-[#12392c]/50 transition-all duration-300 hover:scale-110 group animate-pulse hover:animate-none"
                     >
-                        <div className="absolute inset-0 bg-gradient-to-r from-[#96dd99]/50 to-[#96dd99]/50 rounded-full opacity-0 group-hover:opacity-100 animate-spin transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-[#12392c]/50 to-[#12392c]/50 rounded-full opacity-0 group-hover:opacity-100 animate-spin transition-opacity duration-300"></div>
                         <FaChevronRight className="text-white text-xl hover:translate-x-2 transition-transform duration-300 transform relative z-10" />
                     </button>
 
@@ -294,7 +294,7 @@ export default function ChaiSection() {
                         {ingredients.map((_, idx) => (
                             <div
                                 key={idx}
-                                className={`w-2 h-2 rounded-full transition-all duration-300 ${hoveredCard === idx ? 'bg-[#96dd99] scale-125' : 'bg-green-200'
+                                className={`w-2 h-2 rounded-full transition-all duration-300 ${hoveredCard === idx ? 'bg-[#12392c] scale-125' : 'bg-green-200'
                                     }`}
                             ></div>
                         ))}
@@ -314,7 +314,7 @@ export default function ChaiSection() {
                     <div className="absolute inset-0 bg-gradient-to-r from-black via-gray-800 to-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></div>
 
                     {/* Glowing border effect */}
-                    <div className="absolute -inset-1 bg-gradient-to-r from-[#96dd99] via-green-500 to-[#96dd99] opacity-0 group-hover:opacity-50 blur-sm transition-opacity duration-500"></div>
+                    <div className="absolute -inset-1 bg-gradient-to-r from-[#12392c] via-green-500 to-[#12392c] opacity-0 group-hover:opacity-50 blur-sm transition-opacity duration-500"></div>
 
                     {/* Button text */}
                     <span className="relative z-10 text-black group-hover:text-white transition-colors duration-500 font-black tracking-wider">
@@ -323,21 +323,21 @@ export default function ChaiSection() {
 
                     {/* Sparkle effects */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                        <div className="absolute top-2 left-4 w-1 h-1 bg-[#96dd99] rounded-full animate-ping"></div>
+                        <div className="absolute top-2 left-4 w-1 h-1 bg-[#12392c] rounded-full animate-ping"></div>
                         <div className="absolute top-3 right-6 w-1 h-1 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
                         <div className="absolute bottom-2 left-1/2 w-1 h-1 bg-green-300 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
                     </div>
 
                     {/* Ripple effect */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300">
-                        <div className="absolute inset-0 border-2 border-[#96dd99] rounded animate-ping"></div>
+                        <div className="absolute inset-0 border-2 border-[#12392c] rounded animate-ping"></div>
                     </div>
                 </button>
             </div>
 
             {/* Floating action indicator */}
             <div className="fixed bottom-8 right-8 z-50 opacity-0 animate-fade-in" style={{ animationDelay: '2s' }}>
-                <div className="bg-[#96dd99] text-white p-3 rounded-full shadow-lg animate-bounce">
+                <div className="bg-[#12392c] text-white p-3 rounded-full shadow-lg animate-bounce">
                     <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
                 </div>
             </div>
