@@ -31,7 +31,7 @@ const About = () => {
           }
           .bg-icon {
             position: absolute;
-            color: #E8D28A !important;
+            color: #12392c !important;
             animation: pulseSpin 25s ease-in-out infinite;
             filter: drop-shadow(0 0 18px rgba(232, 210, 138, 0.8));
             z-index: 0;
@@ -65,10 +65,10 @@ const About = () => {
 
       {/* 🔹 Floating Icons with Enhanced Animation */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <LuSandwich className="bg-icon w-24 h-24 left-[10%] top-[27%]" style={{ animationDelay: '0s' }} />
-        <PiCoffeeBeanBold className="bg-icon w-20 h-20 right-[10%] top-[30%]" style={{ animationDelay: '5s' }} />
-        <GiCoffeeMug className="bg-icon w-24 h-24 left-[25%] bottom-[10%]" style={{ animationDelay: '10s' }} />
-        <LuSandwich className="bg-icon w-20 h-20 right-[15%] bottom-[15%]" style={{ animationDelay: '15s' }} />
+        <LuSandwich className="bg-icon w-24 h-24 left-[10%] top-[27%] text-[#12392c]" style={{ animationDelay: '0s' }} />
+        <PiCoffeeBeanBold className="bg-icon w-20 h-20 right-[10%] top-[30%] text-[#12392c]" style={{ animationDelay: '5s' }} />
+        <GiCoffeeMug className="bg-icon w-24 h-24 left-[25%] bottom-[10%] text-[#12392c]" style={{ animationDelay: '10s' }} />
+        <LuSandwich className="bg-icon w-20 h-20 right-[15%] bottom-[15%] text-[#12392c]" style={{ animationDelay: '15s' }} />
       </div>
 
       {/* 🔹 Main Content */}
