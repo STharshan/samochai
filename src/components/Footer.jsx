@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#12392c] text-black px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 p-3.5 md:grid-cols-4 gap-8 text-left mt-15">
+    <footer className="bg-[#12392c] text-black px-6 py-0.5">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-left mt-5">
         {/* Column 1 */}
         <div>
           <h2 className="flex items-center text-2xl font-bold text-[#E8D28A] mb-5 gap-2">
