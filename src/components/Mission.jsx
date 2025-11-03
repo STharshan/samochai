@@ -54,14 +54,14 @@ const Mission = () => {
 
             {/* 🔹 Dotted background pattern */}
             <div
-                className="absolute inset-0 bg-[radial-gradient(#E8D28A_2px,transparent_2px)] [background-size:20px_20px]"
+                className="absolute inset-0 bg-[radial-linear(#E8D28A_2px,transparent_2px)] [background-size:20px_20px]"
                 style={{
                     WebkitMaskImage:
-                        "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
+                        "linear-linear(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
                     WebkitMaskRepeat: "no-repeat",
                     WebkitMaskSize: "cover",
                     maskImage:
-                        "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
+                        "linear-linear(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
                     maskRepeat: "no-repeat",
                     maskSize: "cover",
                 }}
@@ -119,8 +119,8 @@ const Mission = () => {
                 {/* Right Section - Green Box with Image */}
                 <div className="relative z-10" data-aos="fade-left">
                     <div className="bg-[#12392c] rounded-2xl p-8 sm:p-18 text-white relative overflow-hidden min-h-[340px] pr-28 md:pr-32 shadow-lg hover:shadow-[0_12px_32px_rgba(150,221,153,0.4)] transition-all duration-500 hover:scale-[1.02] group">
-                        {/* Animated gradient overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
+                        {/* Animated linear overlay */}
+                        <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
 
                         <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 leading-snug relative z-10">
                             BREWED WITH LOVE, <br />

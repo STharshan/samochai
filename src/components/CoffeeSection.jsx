@@ -138,7 +138,7 @@ export default function CoffeeSection() {
           position: relative;
           animation: button-glow 3s ease-in-out infinite;
           border: 2px solid transparent;
-          background: linear-gradient(135deg, #E8D28A);
+          background: linear-linear(135deg, #E8D28A);
           overflow: hidden;
         }
 
@@ -146,7 +146,7 @@ export default function CoffeeSection() {
           content: '';
           position: absolute;
           inset: -3px;
-          background: linear-gradient(45deg, #96dd99, #4ade80, #22c55e, #16a34a, #96dd99);
+          background: linear-linear(45deg, #96dd99, #4ade80, #22c55e, #16a34a, #96dd99);
           border-radius: inherit;
           z-index: -1;
           animation: border-rotate 4s linear infinite;
@@ -186,7 +186,7 @@ export default function CoffeeSection() {
         /* Feature Icons Enhanced */
         .feature-icon {
           position: relative;
-          background: linear-gradient(135deg, #000000, #1a1a1a);
+          background: linear-linear(135deg, #000000, #1a1a1a);
           animation: icon-glow 3s ease-in-out infinite;
           border: 2px solid transparent;
         }
@@ -195,7 +195,7 @@ export default function CoffeeSection() {
           content: '';
           position: absolute;
           inset: -2px;
-          background: linear-gradient(45deg, #96dd99, #4ade80, #22c55e, #96dd99);
+          background: linear-linear(45deg, #96dd99, #4ade80, #22c55e, #96dd99);
           border-radius: inherit;
           z-index: -1;
           animation: border-rotate 3s linear infinite;
@@ -249,7 +249,7 @@ export default function CoffeeSection() {
           left: -50%;
           width: 200%;
           height: 200%;
-          background: radial-gradient(circle, rgba(150, 221, 153, 0.1) 0%, transparent 70%);
+          background: radial-linear(circle, rgba(150, 221, 153, 0.1) 0%, transparent 70%);
           animation: border-rotate 20s linear infinite;
           pointer-events: none;
         }

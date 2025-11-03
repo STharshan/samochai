@@ -88,10 +88,10 @@ const NavbarWithHero = () => {
           <a href="#menu">
             <button className="relative border-3 border-black px-5 rounded-lg py-2 text-xl font-bold group overflow-hidden transform transition-all duration-500 hover:scale-105 hover:-rotate-1">
               {/* Animated background */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black via-gray-800 to-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-black via-gray-800 to-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></div>
 
               {/* Glowing border effect */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-green-500 to-green-400 opacity-0 group-hover:opacity-50 blur-sm transition-opacity duration-500"></div>
+              <div className="absolute -inset-1 bg-linear-to-r from-green-400 via-green-500 to-green-400 opacity-0 group-hover:opacity-50 blur-sm transition-opacity duration-500"></div>
 
               {/* Button text */}
               <span className="relative z-10 text-black group-hover:text-white transition-colors duration-500 font-black tracking-wider">
@@ -114,10 +114,10 @@ const NavbarWithHero = () => {
 
           <button onClick={openModal} className="relative border-3 bg-white text-[#4a821d] text-lg hover:shadow-[#346909] px-5 rounded-lg py-2 font-bold group overflow-hidden transform transition-all duration-500 hover:scale-105 hover:-rotate-1">
             {/* Animated background */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-gray-800 to-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-black via-gray-800 to-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></div>
 
             {/* Glowing border effect */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-green-500 to-green-400 opacity-0 group-hover:opacity-50 blur-sm transition-opacity duration-500"></div>
+            <div className="absolute -inset-1 bg-linear-to-r from-green-400 via-green-500 to-green-400 opacity-0 group-hover:opacity-50 blur-sm transition-opacity duration-500"></div>
 
             {/* Button text */}
             <span className="relative z-10 text-black group-hover:text-white transition-colors duration-500 font-black tracking-wider">

@@ -130,14 +130,14 @@ export default function ChaiSection() {
 
             {/* 🔹 Dotted background pattern */}
             <div
-                className="absolute inset-0 bg-[radial-gradient(#E8D28A_2px,transparent_2px)] [background-size:20px_20px]"
+                className="absolute inset-0 bg-[radial-linear(#E8D28A_2px,transparent_2px)] [background-size:20px_20px]"
                 style={{
                     WebkitMaskImage:
-                        "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
+                        "linear-linear(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
                     WebkitMaskRepeat: "no-repeat",
                     WebkitMaskSize: "cover",
                     maskImage:
-                        "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
+                        "linear-linear(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
                     maskRepeat: "no-repeat",
                     maskSize: "cover",
                 }}
@@ -180,12 +180,12 @@ export default function ChaiSection() {
                     </p>
 
                     {/* Animated borders */}
-                    <div className="absolute top-1 -left-4 h-full w-[15px] bg-gradient-to-b from-[#12392c] to-[#12392c] group-hover:w-[20px] transition-all duration-500 animate-pulse"></div>
-                    <div className="absolute -bottom-4 -left-4 w-full h-[15px] bg-gradient-to-r from-[#12392c] to-[#12392c] group-hover:h-[20px] transition-all duration-500"></div>
+                    <div className="absolute top-1 -left-4 h-full w-[15px] bg-linear-to-b from-[#12392c] to-[#12392c] group-hover:w-[20px] transition-all duration-500 animate-pulse"></div>
+                    <div className="absolute -bottom-4 -left-4 w-full h-[15px] bg-linear-to-r from-[#12392c] to-[#12392c] group-hover:h-[20px] transition-all duration-500"></div>
 
                     {/* Shimmer effect */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse transform -skew-x-12"></div>
+                        <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent animate-pulse transform -skew-x-12"></div>
                     </div>
                 </div>
 
@@ -204,7 +204,7 @@ export default function ChaiSection() {
                         }}
                     >
                         {/* Animated background wave */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-green-50/50 via-green-100/30 to-green-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
+                        <div className="absolute inset-0 bg-linear-to-r from-green-50/50 via-green-100/30 to-green-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
 
                         {ingredients.map((item, idx) => (
                             <div
@@ -224,7 +224,7 @@ export default function ChaiSection() {
                                 }}
                             >
                                 {/* Glowing border effect */}
-                                <div className="absolute -inset-0.5 bg-gradient-to-r from-[#12392c] via-[#12392c] to-green-600 rounded-xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-500 blur-sm"></div>
+                                <div className="absolute -inset-0.5 bg-linear-to-r from-[#12392c] via-[#12392c] to-green-600 rounded-xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-500 blur-sm"></div>
 
                                 {/* Image with enhanced effects */}
                                 <div className="relative rounded-xl overflow-hidden">
@@ -238,8 +238,8 @@ export default function ChaiSection() {
                                     />
 
                                     {/* Multiple overlay effects */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-100 group-hover/card:opacity-80 transition-opacity duration-300"></div>
-                                    <div className="absolute inset-0 bg-gradient-to-br from-[#12392c]/20 via-transparent to-green-600/20 opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
+                                    <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-100 group-hover/card:opacity-80 transition-opacity duration-300"></div>
+                                    <div className="absolute inset-0 bg-linear-to-br from-[#12392c]/20 via-transparent to-green-600/20 opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
 
                                     {/* Sparkle effects */}
                                     <div className="absolute inset-0 opacity-0 group-hover/card:opacity-100 transition-opacity duration-500 pointer-events-none">
@@ -251,7 +251,7 @@ export default function ChaiSection() {
                                 </div>
 
                                 {/* Enhanced label */}
-                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-black/20 text-white text-center py-3 transform transition-all duration-300 group-hover/card:from-green-900/90 group-hover/card:to-green-800/30">
+                                <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/80 to-black/20 text-white text-center py-3 transform transition-all duration-300 group-hover/card:from-green-900/90 group-hover/card:to-green-800/30">
                                     <h3 className="text-lg sm:text-xl font-bold transform transition-all duration-300 group-hover/card:scale-110">
                                         {item.name}
                                     </h3>
@@ -268,24 +268,24 @@ export default function ChaiSection() {
                         ))}
 
                         {/* Enhanced borders with animation */}
-                        <div className="absolute top-0 -left-3.5 h-full w-[15px] bg-gradient-to-b from-[#12392c] via-[#12392c] to-[#12392c] animate-pulse"></div>
-                        <div className="absolute -bottom-3.5 right-3.5 w-full h-[15px] bg-gradient-to-r from-[#12392c] via-[#12392c] to-[#12392c] group-hover:animate-pulse transition-all duration-500"></div>
+                        <div className="absolute top-0 -left-3.5 h-full w-[15px] bg-linear-to-b from-[#12392c] via-[#12392c] to-[#12392c] animate-pulse"></div>
+                        <div className="absolute -bottom-3.5 right-3.5 w-full h-[15px] bg-linear-to-r from-[#12392c] via-[#12392c] to-[#12392c] group-hover:animate-pulse transition-all duration-500"></div>
                     </div>
 
                     {/* Enhanced Scroll buttons with more effects */}
                     <button
                         onClick={() => scroll('left')}
-                        className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-green-600 to-green-700 p-3 rounded-full z-20 shadow-lg hover:shadow-2xl hover:shadow-[#12392c]/50 transition-all duration-300 hover:scale-110 group animate-pulse hover:animate-none"
+                        className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-linear-to-r from-green-600 to-green-700 p-3 rounded-full z-20 shadow-lg hover:shadow-2xl hover:shadow-[#12392c]/50 transition-all duration-300 hover:scale-110 group animate-pulse hover:animate-none"
                     >
-                        <div className="absolute inset-0 bg-gradient-to-r from-[#12392c]/50 to-[#12392c]/50 rounded-full opacity-0 group-hover:opacity-100 animate-spin transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-linear-to-r from-[#12392c]/50 to-[#12392c]/50 rounded-full opacity-0 group-hover:opacity-100 animate-spin transition-opacity duration-300"></div>
                         <FaChevronLeft className="text-white text-xl hover:-translate-x-2 transition-transform duration-300 transform relative z-10" />
                     </button>
 
                     <button
                         onClick={() => scroll('right')}
-                        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-green-600 to-green-700 p-3 rounded-full z-20 shadow-lg hover:shadow-2xl hover:shadow-[#12392c]/50 transition-all duration-300 hover:scale-110 group animate-pulse hover:animate-none"
+                        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-linear-to-r from-green-600 to-green-700 p-3 rounded-full z-20 shadow-lg hover:shadow-2xl hover:shadow-[#12392c]/50 transition-all duration-300 hover:scale-110 group animate-pulse hover:animate-none"
                     >
-                        <div className="absolute inset-0 bg-gradient-to-r from-[#12392c]/50 to-[#12392c]/50 rounded-full opacity-0 group-hover:opacity-100 animate-spin transition-opacity duration-300"></div>
+                        <div className="absolute inset-0 bg-linear-to-r from-[#12392c]/50 to-[#12392c]/50 rounded-full opacity-0 group-hover:opacity-100 animate-spin transition-opacity duration-300"></div>
                         <FaChevronRight className="text-white text-xl hover:translate-x-2 transition-transform duration-300 transform relative z-10" />
                     </button>
 
@@ -311,10 +311,10 @@ export default function ChaiSection() {
             >
                 <button className="relative border-3 border-black px-8 py-4 text-xl font-bold group overflow-hidden transform transition-all duration-500 hover:scale-105 hover:-rotate-1">
                     {/* Animated background */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-black via-gray-800 to-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></div>
+                    <div className="absolute inset-0 bg-linear-to-r from-black via-gray-800 to-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></div>
 
                     {/* Glowing border effect */}
-                    <div className="absolute -inset-1 bg-gradient-to-r from-[#12392c] via-green-500 to-[#12392c] opacity-0 group-hover:opacity-50 blur-sm transition-opacity duration-500"></div>
+                    <div className="absolute -inset-1 bg-linear-to-r from-[#12392c] via-green-500 to-[#12392c] opacity-0 group-hover:opacity-50 blur-sm transition-opacity duration-500"></div>
 
                     {/* Button text */}
                     <span className="relative z-10 text-black group-hover:text-white transition-colors duration-500 font-black tracking-wider">

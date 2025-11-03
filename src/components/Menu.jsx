@@ -161,7 +161,7 @@ const Menu = () => {
         }
 
         .shimmer-effect {
-          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+          background: linear-linear(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
           background-size: 200% 100%;
           animation: shimmer 2s infinite;
         }
@@ -178,7 +178,7 @@ const Menu = () => {
           left: -100%;
           width: 100%;
           height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+          background: linear-linear(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
           transition: left 0.5s;
         }
 
@@ -266,7 +266,7 @@ const Menu = () => {
           <div className="absolute -top-10 -left-10 w-32 h-32 bg-green-200/20 rounded-full animate-pulse"></div>
           <div className="absolute top-20 right-20 w-24 h-24 bg-green-300/15 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
           <div className="absolute bottom-20 left-20 w-16 h-16 bg-green-400/10 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute -bottom-5 -right-5 w-40 h-40 bg-gradient-to-br from-green-200/10 to-transparent rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute -bottom-5 -right-5 w-40 h-40 bg-linear-to-br from-green-200/10 to-transparent rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
         </div>
 
         {/* Title */}

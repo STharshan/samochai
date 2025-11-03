@@ -58,12 +58,12 @@ const Contact = () => {
 
       {/* Dotted Background */}
       <div
-        className="absolute inset-0 bg-[radial-gradient(#CCFF66_2px,transparent_2px)] [background-size:20px_20px]"
+        className="absolute inset-0 bg-[radial-linear(#CCFF66_2px,transparent_2px)] [background-size:20px_20px]"
         style={{
-          WebkitMaskImage: "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
+          WebkitMaskImage: "linear-linear(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
           WebkitMaskRepeat: "no-repeat",
           WebkitMaskSize: "cover",
-          maskImage: "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
+          maskImage: "linear-linear(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
           maskRepeat: "no-repeat",
           maskSize: "cover",
         }}
