@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#12392c] text-black px-6 py-0.5">
+    <footer className="bg-[#12392c] text-white px-6 py-0.5">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-left mt-5">
         {/* Column 1 */}
         <div>
@@ -16,12 +16,12 @@ const Footer = () => {
               alt="logo"
             />
           </h2>
-          <p className="text-md font-semibold mb-4">
+          <p className="text-md font-semibold mb-4 text-white">
             Bringing the authentic taste of sylhet street food to your table with love and tradition.
           </p>
           <div className="flex space-x-4 text-white">
             <a href="https://www.instagram.com/samochaihouse/" className="hover:text-pink-500 text-black" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-2xl" />
+              <FaInstagram className="text-2xl text-white" />
             </a>
           </div>
         </div>
@@ -53,25 +53,25 @@ const Footer = () => {
           <h3 className="text-xl font-bold mb-5">Contact Info</h3>
           <ul className="space-y-3 text-md font-semibold">
             <li className="flex items-start gap-4">
-              <FiMapPin className="mt-3 text-green-800 text-2xl" />
+              <FiMapPin className="mt-3 text-white text-2xl" />
               <a
                 href="https://maps.app.goo.gl/UjXrLfUgafhjnzmQ6"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-black hover:underline"
+                className="text-white hover:underline"
               >
                 9a Great Central Road, Loughborough, England, LE11 1RW
               </a>
             </li>
             <li className="flex items-center gap-4">
-              <FiPhone className="text-green-800" />
-              <a href="tel: +447850 053653" className="text-black hover:underline">
+              <FiPhone className="text-white" />
+              <a href="tel: +447850 053653" className="text-white hover:underline">
                 07850 053653
               </a>
             </li>
             <li className="flex items-center gap-4">
-              <FiMail className="text-green-800 text-xl" />
-              <a href="mailto:samochaihouse@gmail.com" className="text-black hover:underline text-lg md:text-xs lg:text-lg">
+              <FiMail className="text-white text-xl" />
+              <a href="mailto:samochaihouse@gmail.com" className="text-white hover:underline text-lg md:text-xs lg:text-lg">
                 samochaihouse@gmail.com
               </a>
             </li>
@@ -80,7 +80,7 @@ const Footer = () => {
       </div>
 
       <hr className="my-3 border-gray-600" />
-      <div className="text-center text-black font-bold">
+      <div className="text-center text-white font-bold">
         <p>&copy; 2025 SAMOCHAI. All rights reserved.</p>
       </div>
 
@@ -90,27 +90,27 @@ const Footer = () => {
         <div className="flex gap-4 text-sm">
           <Link
             to="/terms&condition"
-            className="text-black hover:text-gray-600 transition duration-300"
+            className="text-white hover:text-gray-600 transition duration-300"
           >
             Terms & Conditions
           </Link>
-          <span className="text-black">|</span>
+          <span className="text-white">|</span>
           <Link
             to="/privacy-policy"
-            className="text-black hover:text-gray-600 transition duration-300"
+            className="text-white hover:text-gray-600 transition duration-300"
           >
             Privacy Policy
           </Link>
         </div>
 
         {/* Center: Powered by Ansely (unchanged) */}
-        <p className="text-center font-semibold text-black p-2">
+        <p className="text-center font-semibold text-white p-2">
           Powered by{" "}
           <a
             href="https://www.ansely.co.uk/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-black hover:underline"
+            className="text-white hover:underline"
           >
             Ansely
           </a>

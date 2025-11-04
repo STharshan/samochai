@@ -302,7 +302,7 @@ export default function CoffeeSection() {
               FUELING YOUR DAY<br />
               THE <span className="text-white glow-text">GREEN</span> WAY.
             </h1>
-            <p className="text-gray-800 text-base mb-8 max-w-lg mx-auto lg:mx-0" data-aos="fade-up">
+            <p className="text-white text-base mb-8 max-w-lg mx-auto lg:mx-0" data-aos="fade-up">
              Sip into serenity with the vibrant energy of matcha. Packed with antioxidants to power your mind and body.
             </p>
 
