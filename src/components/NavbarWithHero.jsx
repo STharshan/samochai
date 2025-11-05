@@ -61,7 +61,7 @@ const NavbarWithHero = () => {
           data-aos="fade-up"
           data-aos-delay="400"
         >
-          <span className="text-[#12392c]">Dhaka?</span>
+          <span className="text-[#E8D28A]">Sylhet?</span>
         </h1>
         <p
           className="text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10"

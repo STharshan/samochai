@@ -4,9 +4,9 @@ const categories = [
   "All",
   "Hot & Cold Sandwiches",
   "Street Food",
-  "Mishti Milkshakes",
+  // "Mishti Milkshakes",
   "Cold Drinks",
-  "Ice Coffee",
+  // "Ice Coffee",
   "100% FRESH JUICE",
   "Tea & Coffee",
 ];
@@ -17,56 +17,56 @@ const allItems = [
     price: "£3.50",
     desc: "Fresh chicken baguette with crisp lettuce and tomatoes",
     category: "Hot & Cold Sandwiches",
-    image: "/cake.jpeg",
+    image: "/g6.jpg",
   },
   {
     title: "Cheese Salad Baguette",
     price: "£3.50",
     desc: "Fresh cheese and salad baguette with mixed greens",
     category: "Hot & Cold Sandwiches",
-    image: "/barger.jpeg",
+    image: "/g12.webp",
   },
   {
     title: "Tuna Baguette",
     price: "£3.50",
     desc: "Classic tuna baguette with fresh vegetables",
     category: "Hot & Cold Sandwiches",
-    image: "/fishfry.jpeg",
+    image: "/g12.jpg",
   },
   {
     title: "Masala Chai",
     price: "£2.00",
     desc: "Authentic Bangladeshi spiced tea",
     category: "Tea & Coffee",
-    image: "/tea.jpeg",
+    image: "/g11.png",
   },
   {
     title: "Samosa Plate",
     price: "£4.00",
     desc: "Crispy golden samosas with dipping sauce",
     category: "Street Food",
-    image: "/samocha.jpeg",
+    image: "/g7.jpg",
   },
   {
     title: "Chocolate Milkshake",
     price: "£4.00",
     desc: "Iced coffee with caramel flavor",
-    category: "Ice Coffee",
-    image: "/chocolate.jpeg",
+    category: "Cold Drinks",
+    image: "/g2.jpg",
   },
   {
     title: "Cold Drinks",
     price: "£4.00",
     desc: "Creamy mango yogurt drink",
-    category: "Cold Drinks",
-    image: "/lemon.jpeg",
+    category: "100% FRESH JUICE",
+    image: "/g10.png",
   },
   {
     title: "Cold Drinks",
     price: "£4.00",
     desc: "Fresh pomegranate juice",
     category: "100% FRESH JUICE",
-    image: "/juice.jpeg",
+    image: "/g8.jpg",
   },
 ];
 
@@ -334,11 +334,11 @@ const Menu = () => {
   active:glow-effect
   hover:glow-effect"
             >
-              <div className="relative overflow-hidden">
+              <div className="relative overflow-hidden h-50">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-44 object-cover transition-transform duration-500 hover:scale-110"
+                  className="w-40 mx-auto mt-5 rounded-md h-45 object-cover transition-transform duration-500 hover:scale-110"
                 />
                 <div className="absolute inset-0 shimmer-effect opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
               </div>
