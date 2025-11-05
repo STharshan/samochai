@@ -1,9 +1,8 @@
 // File: TestimonialCarousel.jsx
 "use client";
 import React, { useRef, useEffect } from "react";
-import { FaChevronLeft, FaChevronRight, FaCar, FaMagic, FaShieldAlt } from "react-icons/fa";
-import { PiCoffeeBeanBold } from "react-icons/pi";
-import { GiCoffeeMug } from "react-icons/gi";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { GiCoffeeCup } from "react-icons/gi";
 import { LuSandwich } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -94,8 +93,8 @@ export default function TestimonialCarousel() {
 
       {/* ✅ Background Icons */}
       <div className="absolute inset-0 overflow-hidden z-0">
-        <GiCoffeeMug className="bg-icon bottom-1/4 left-12 w-20 h-20" style={{ animationDelay: "7s" }} />
-        <LuSandwich className="bg-icon top-15 right-16 w-24 h-24" style={{ animationDelay: "14s" }} /> 
+        <LuSandwich className="bg-icon bottom-1/4 left-12 w-20 h-20" style={{ animationDelay: "7s" }} />
+        <GiCoffeeCup className="bg-icon top-15 right-16 w-24 h-24" style={{ animationDelay: "14s" }} /> 
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

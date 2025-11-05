@@ -3,8 +3,7 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { LuSandwich } from 'react-icons/lu';
-import { PiCoffeeBeanBold } from 'react-icons/pi';
-import { GiCoffeeMug } from 'react-icons/gi';
+import { GiCoffeeCup} from 'react-icons/gi';
 
 const ingredients = [
     {
@@ -145,7 +144,7 @@ export default function ChaiSection() {
 
             {/* 🔹 Enhanced Floating Icons with pulseSpin */}
             <div className="absolute inset-0 z-0 overflow-hidden">
-                <LuSandwich className="bg-icon w-24 h-24 left-[10%] top-[15%]" style={{ animationDelay: '0s' }} />
+                <GiCoffeeCup className="bg-icon w-20 h-20 left-[10%] top-[10%]" style={{ animationDelay: '0s' }} />
                 <LuSandwich className="bg-icon w-20 h-20 right-[15%] bottom-[8%]" style={{ animationDelay: '15s' }} />
             </div>
 

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FiMapPin, FiPhone, FiMail, FiClock } from 'react-icons/fi';
-import { PiCoffeeBeanBold } from 'react-icons/pi';
-import { GiCoffeeMug } from 'react-icons/gi';
-import { LuSandwich } from 'react-icons/lu';
+import { GiCoffeeCup} from 'react-icons/gi';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -98,7 +96,7 @@ const Contact = () => {
           `,
         }}
       />
-      <PiCoffeeBeanBold className="bg-icon top-10 left-10 w-24 h-24" style={{ animationDelay: "0s" }} />
+      <GiCoffeeCup className="bg-icon top-10 left-10 w-24 h-24" style={{ animationDelay: "0s" }} />
       
 
       {/* Heading */}

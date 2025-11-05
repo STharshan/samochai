@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { PiCoffeeBeanBold } from 'react-icons/pi';
-import { GiCoffeeMug } from 'react-icons/gi';
-import { LuSandwich } from 'react-icons/lu';
+import { GiCoffeeCup } from 'react-icons/gi';
 
 const About = () => {
   useEffect(() => {
@@ -65,8 +63,7 @@ const About = () => {
 
       {/* 🔹 Floating Icons with Enhanced Animation */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <LuSandwich className="bg-icon w-24 h-24 left-[10%] top-[27%] text-[#12392c]" style={{ animationDelay: '0s' }} />
-        <PiCoffeeBeanBold className="bg-icon w-20 h-20 right-[10%] top-[30%] text-[#12392c]" style={{ animationDelay: '5s' }} />
+        <GiCoffeeCup className="bg-icon w-20 h-20 right-[10%] top-[30%] text-[#12392c]" style={{ animationDelay: '5s' }} />
       </div>
 
       {/* 🔹 Main Content */}

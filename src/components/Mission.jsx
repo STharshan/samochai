@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaCheck, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { PiCoffeeBeanBold } from 'react-icons/pi';
-import { GiCoffeeMug } from 'react-icons/gi';
+import { GiCoffeeCup, GiCoffeeMug } from 'react-icons/gi';
 import { LuSandwich } from 'react-icons/lu';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -69,10 +69,7 @@ const Mission = () => {
 
             {/* 🔹 Enhanced Floating Icons with pulseSpin */}
             <div className="absolute inset-0 z-0 overflow-hidden">
-                <LuSandwich className="bg-icon w-24 h-24 left-[8%] top-[10%]" style={{ animationDelay: '0s' }} />
-                <PiCoffeeBeanBold className="bg-icon w-20 h-20 right-[12%] top-[15%]" style={{ animationDelay: '5s' }} />
-                <GiCoffeeMug className="bg-icon w-24 h-24 left-[15%] bottom-[12%]" style={{ animationDelay: '10s' }} />
-                <LuSandwich className="bg-icon w-20 h-20 right-[10%] bottom-[18%]" style={{ animationDelay: '15s' }} />
+                <GiCoffeeCup className="bg-icon w-24 h-24 left-[8%] top-[7%]" style={{ animationDelay: '0s' }} />
             </div>
 
             <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-center z-10">
