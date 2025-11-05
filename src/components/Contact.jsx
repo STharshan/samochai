@@ -99,8 +99,7 @@ const Contact = () => {
         }}
       />
       <PiCoffeeBeanBold className="bg-icon top-10 left-10 w-24 h-24" style={{ animationDelay: "0s" }} />
-      <GiCoffeeMug className="bg-icon bottom-1/4 left-12 w-20 h-20" style={{ animationDelay: "7s" }} />
-      <LuSandwich className="bg-icon top-1/3 right-16 w-24 h-24" style={{ animationDelay: "14s" }} />
+      
 
       {/* Heading */}
       <div className="text-center mb-10 relative z-10" data-aos="fade-up">
