@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 const categories = [
-  "All",
   "Hot & Cold Sandwiches",
   "Street Food",
   // "Mishti Milkshakes",
@@ -13,37 +12,192 @@ const categories = [
 
 const allItems = [
   {
-    title: "Chicken Baguette",
+    title: "Cheese & Tomato Baguette",
     price: "£3.50",
-    desc: "Fresh chicken baguette with crisp lettuce and tomatoes",
+   // desc: "Fresh cheese and salad baguette with mixed greens",
     category: "Hot & Cold Sandwiches",
     image: "/g6.jpg",
   },
   {
-    title: "Cheese Salad Baguette",
-    price: "£3.50",
-    desc: "Fresh cheese and salad baguette with mixed greens",
+    title: "Tuna mayo cob",
+    price: "£2.00",
+   // desc: "Fresh cheese and salad baguette with mixed greens",
     category: "Hot & Cold Sandwiches",
-    image: "/g12.webp",
+    image: "/g112.webp",
+  },
+  {
+    title: "Chicken Baguette",
+    price: "£3.50",
+   // desc: "Fresh chicken baguette with crisp lettuce and tomatoes",
+    category: "Hot & Cold Sandwiches",
+    image: "/g16.jpg",
   },
   {
     title: "Tuna Baguette",
     price: "£3.50",
-    desc: "Classic tuna baguette with fresh vegetables",
+   // desc: "Classic tuna baguette with fresh vegetables",
     category: "Hot & Cold Sandwiches",
-    image: "/g12.jpg",
+    image: "/g112.jpg",
   },
   {
-    title: "Masala Chai",
+    title: "Chilli Cheese Toastie",
+    price: "£2.50",
+   // desc: "Fresh cheese and salad baguette with mixed greens",
+    category: "Hot & Cold Sandwiches",
+    image: "/g112.webp",
+  },
+  {
+    title: "Mushroom & Cheese toastie",
+    price: "£3.35",
+    //desc: "Fresh cheese and salad baguette with mixed greens",
+    category: "Hot & Cold Sandwiches",
+    image: "/g112.webp",
+  },
+  {
+    title: "Double Cheese Baget",
     price: "£2.00",
-    desc: "Authentic Bangladeshi spiced tea",
-    category: "Tea & Coffee",
-    image: "/g11.png",
+    //desc: "Fresh cheese and salad baguette with mixed greens",
+    category: "Hot & Cold Sandwiches",
+    image: "/g112.webp",
   },
   {
-    title: "Samosa Plate",
-    price: "£4.00",
-    desc: "Crispy golden samosas with dipping sauce",
+    title: "Cheese & Tomato Baget",
+    price: "£2.25",
+   // desc: "Fresh cheese and salad baguette with mixed greens",
+    category: "Hot & Cold Sandwiches",
+    image: "/g12.webp",
+  },
+  {
+    title: "Samosas (veg/pot)",
+    price: "£1.00",
+    //desc: "Fresh cheese and salad baguette with mixed greens",
+    category: "Street Food",
+    image: "/g18.jpg",
+  },
+  {
+    title: "Samosas (chicken/meat)",
+    price: "£1.50",
+    //desc: "Authentic Bangladeshi spiced tea",
+    category: "Street Food",
+    image: "/g18.jpg",
+  },
+  {
+    title: "Jaal muri",
+    price: "£2.50",
+   // desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  },
+  {
+    title: "Mishti Phan",
+    price: "£1.00",
+   // desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  },
+  {
+    title: "Jaal muri",
+    price: "£2.50",
+   // desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  },
+  {
+    title: "Pani Puri Fruit bombs (6pcs)",
+    price: "£5.00",
+    //desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  },
+  {
+    title: "Spicy chana chatt",
+    price: "£3.50",
+    //desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  }, 
+  {
+    title: "Samosa Chatt",
+    price: "£5.00",
+    //desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  },
+  {
+    title: "Masala Omelette Parata",
+    price: "£3.00",
+   // desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  },
+  {
+    title: "Hash brown cob",
+    price: "£1.50",
+    //desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  },
+
+  {
+    title: "Masala Omlette",
+    price: "£2.00",
+    //desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  }, 
+  {
+    title: "Muglai Parata**",
+    price: "£3.95 / £7",
+    //desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  },
+  {
+    title: "Chicken & Spinach pasty**",
+    price: "£3.50",
+    //desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  },
+  {
+    title: "Chicken kebab bap**",
+    price: "£3.50",
+    //desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  },
+  {
+    title: "Croissant butter",
+    price: "£1.50",
+    //desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  },
+  {
+    title: "Almond Croissant",
+    price: "£2.00",
+    //desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  },
+  {
+    title: "Choc’n’nut Granola Bowl",
+    price: "£3.49",
+    //desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  },
+  {
+    title: "Fruit ’n’nut Granola Bowl",
+    price: "£3.49",
+    //desc: "Crispy golden samosas with dipping sauce",
+    category: "Street Food",
+    image: "/g7.jpg",
+  },
+  {
+    title: "Home baked",
+    price: "£2.50",
+    //desc: "Crispy golden samosas with dipping sauce",
     category: "Street Food",
     image: "/g7.jpg",
   },
@@ -72,9 +226,9 @@ const allItems = [
 
 
 const Menu = () => {
-  const [selected, setSelected] = useState("All");
+  const [selected, setSelected] = useState("Hot & Cold Sandwiches");
 
-  const filtered = selected === "All"
+  const filtered = selected === ""
     ? allItems
     : allItems.filter((item) => item.category === selected);
 
