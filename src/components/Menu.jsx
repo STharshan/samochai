@@ -44,7 +44,7 @@ const allItems = [
     price: "£2.50",
    // desc: "Fresh cheese and salad baguette with mixed greens",
     category: "Hot & Cold Sandwiches",
-    image: "/g112.webp",
+    image: "/g18.jpg",
   },
   {
     title: "Mushroom & Cheese toastie",
@@ -121,7 +121,7 @@ const allItems = [
     price: "£5.00",
     //desc: "Crispy golden samosas with dipping sauce",
     category: "Street Food",
-    image: "/g7.jpg",
+    image: "/g3.jpg",
   },
   {
     title: "Masala Omelette Parata",
@@ -185,21 +185,21 @@ const allItems = [
     price: "£3.49",
     //desc: "Crispy golden samosas with dipping sauce",
     category: "Street Food",
-    image: "/g7.jpg",
+    image: "/g14.png",
   },
   {
     title: "Fruit ’n’nut Granola Bowl",
     price: "£3.49",
     //desc: "Crispy golden samosas with dipping sauce",
     category: "Street Food",
-    image: "/g7.jpg",
+    image: "/g10.png",
   },
   {
     title: "Home baked",
     price: "£2.50",
     //desc: "Crispy golden samosas with dipping sauce",
     category: "Street Food",
-    image: "/g7.jpg",
+    image: "/g18.jpg",
   },
   {
     title: "Chocolate Milkshake",
@@ -213,7 +213,7 @@ const allItems = [
     price: "£4.00",
     desc: "Creamy mango yogurt drink",
     category: "100% FRESH JUICE",
-    image: "/g10.png",
+    image: "/g13.png",
   },
   {
     title: "Cold Drinks",
@@ -221,6 +221,13 @@ const allItems = [
     desc: "Fresh pomegranate juice",
     category: "100% FRESH JUICE",
     image: "/g8.jpg",
+  },
+   {
+    title: "Tea & Coffee",
+    price: "£4.00",
+    //desc: "Fresh pomegranate juice",
+    category: "Tea & Coffee",
+    image: "/g0.png",
   },
 ];
 
