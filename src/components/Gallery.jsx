@@ -9,7 +9,7 @@ const images = [
   '/g4.jpg',
   '/g5.jpg',
   '/g6.jpg',
-  '/g7.jpg',
+  '/g18.jpg',
   '/g8.jpg',
   '/g9.jpg',
   '/samocha.jpeg',
