@@ -254,41 +254,67 @@ export default function CoffeeSection() {
           pointer-events: none;
         }
 
-        /* Mobile Responsive */
+        /* Mobile Responsive - Make all animations work on touch */
         @media (max-width: 768px) {
-          .glow-button:hover {
-            transform: scale(1.02);
-            box-shadow: 
-              0 0 25px rgba(150, 221, 153, 0.8),
-              0 0 50px rgba(150, 221, 153, 0.4);
-          }
-          
-          .glow-image:hover {
-            transform: scale(1.03) rotate(2deg);
-            filter: drop-shadow(0 0 30px rgba(150, 221, 153, 0.8));
-          }
-          
-          .feature-icon:hover {
-            transform: scale(1.05) rotate(5deg);
-            box-shadow: 0 0 20px rgba(150, 221, 153, 0.8);
+          /* Enable animations on mobile by default */
+          .glow-button,
+          .glow-image,
+          .feature-icon,
+          .feature-card {
+            animation-play-state: running !important;
           }
 
-          .feature-card:hover {
-            transform: translateY(-3px) scale(1.01);
-            box-shadow: 0 0 15px rgba(150, 221, 153, 0.3);
-          }
-        }
-
-        /* Touch device optimizations */
-        @media (hover: none) and (pointer: coarse) {
+          /* Touch/Active states for mobile */
           .glow-button:active {
             transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(150, 221, 153, 1);
+            box-shadow: 
+              0 0 40px rgba(150, 221, 153, 1),
+              0 0 80px rgba(150, 221, 153, 0.8),
+              0 8px 25px rgba(0, 0, 0, 0.4);
+          }
+          
+          .glow-image:active {
+            transform: scale(1.05) rotate(3deg);
+            filter: drop-shadow(0 0 40px rgba(150, 221, 153, 1))
+                    drop-shadow(0 0 80px rgba(150, 221, 153, 0.6));
           }
           
           .feature-icon:active {
             transform: scale(1.1) rotate(8deg);
-            box-shadow: 0 0 25px rgba(150, 221, 153, 1);
+            box-shadow: 
+              0 0 30px rgba(150, 221, 153, 1),
+              0 0 60px rgba(150, 221, 153, 0.6);
+          }
+
+          .feature-card:active {
+            transform: translateY(-3px) scale(1.02);
+            background: rgba(150, 221, 153, 0.1);
+            border-color: rgba(150, 221, 153, 0.3);
+            box-shadow: 0 0 20px rgba(150, 221, 153, 0.4);
+          }
+        }
+
+        /* Touch device - ensure animations run */
+        @media (hover: none) and (pointer: coarse) {
+          .glow-button,
+          .glow-image,
+          .feature-icon {
+            animation-play-state: running !important;
+          }
+
+          .glow-button:active {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(150, 221, 153, 1);
+          }
+          
+          .feature-icon:active {
+            transform: scale(1.1) rotate(8deg);
+            box-shadow: 0 0 30px rgba(150, 221, 153, 1);
+          }
+
+          .glow-image:active {
+            transform: scale(1.05) rotate(3deg);
+            filter: drop-shadow(0 0 40px rgba(150, 221, 153, 1));
           }
         }
       `}</style>
@@ -303,7 +329,7 @@ export default function CoffeeSection() {
               THE <span className="text-white glow-text">GREEN</span> WAY.
             </h1>
             <p className="text-white text-base mb-8 max-w-lg mx-auto lg:mx-0" data-aos="fade-up">
-             Sip into serenity with the vibrant energy of matcha. Packed with antioxidants to power your mind and body.
+              Sip into serenity with the vibrant energy of matcha. Packed with antioxidants to power your mind and body.
             </p>
 
             <button
