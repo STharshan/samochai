@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 const categories = [
   "Hot & Cold Sandwiches",
   "Street Food",
-  // "Mishti Milkshakes",
+  "Mishti Milkshakes",
   "Cold Drinks",
-  // "Ice Coffee",
-  "100% FRESH JUICE",
+  "Ice Coffee",
   "Tea & Coffee",
+  "Weekly Specials"
 ];
 
 const allItems = [
@@ -201,34 +201,168 @@ const allItems = [
     category: "Street Food",
     image: "/g18.jpg",
   },
-  {
-    title: "Chocolate Milkshake",
-    price: "£4.00",
-    desc: "Iced coffee with caramel flavor",
-    category: "Cold Drinks",
-    image: "/g2.jpg",
-  },
-  {
-    title: "Cold Drinks",
-    price: "£4.00",
-    desc: "Creamy mango yogurt drink",
-    category: "100% FRESH JUICE",
-    image: "/g13.png",
-  },
-  {
-    title: "Cold Drinks",
-    price: "£4.00",
-    desc: "Fresh pomegranate juice",
-    category: "100% FRESH JUICE",
-    image: "/g8.jpg",
-  },
-  {
-    title: "Tea & Coffee",
-    price: "£4.00",
-    //desc: "Fresh pomegranate juice",
-    category: "Tea & Coffee",
-    image: "/g0.png",
-  },
+
+  // 🍨 Dessert Menu
+{
+  title: "Gulap Jam Milkshake",
+  price: "£3.50",
+  category: "Mishti Milkshakes",
+  image: "/g0.png",
+},
+{
+  title: "Kala Jam Milkshake",
+  price: "£3.50",
+  category: "Mishti Milkshakes",
+  image: "/g0.png",
+},
+{
+  title: "House Special Milkshake",
+  price: "£4.00",
+  desc: "Pistachio & salted caramel",
+  category: "Mishti Milkshakes",
+  image: "/g0.png",
+},
+
+// 🥤 Cold Drinks (House Specials)
+{
+  title: "Mango Lassi",
+  price: "£3.50",
+  category: "Cold Drinks",
+  image: "/g13.png",
+},
+{
+  title: "Brazilian Lemonade",
+  price: "£3.95",
+  category: "Cold Drinks",
+  image: "/g4.jpg",
+},
+{
+  title: "Strawberry Lemonade",
+  price: "£3.95",
+  category: "Cold Drinks",
+  image: "/g8.jpg",
+},
+
+// ☕ Ice Coffee
+{
+  title: "House Ice Coffee",
+  price: "£3 (small) / £3.95 (large)",
+  category: "Ice Coffee",
+  image: "/g2.jpg",
+},
+{
+  title: "Caramel Ice Coffee",
+  price: "£3 / £3.95",
+  category: "Ice Coffee",
+  image: "/g0.png",
+},
+
+// ⭐ Weekly Specials
+{
+  title: "Rice Pudding",
+  price: "£4.95",
+  category: "Weekly Specials",
+  image: "/g0.png",
+},
+{
+  title: "Fruit Salad",
+  price: "£4.95",
+  category: "Weekly Specials",
+  image: "/s1.png",
+},
+{
+  title: "Coconut Crepes",
+  price: "£3.50",
+  category: "Weekly Specials",
+  image: "/g0.png",
+},
+
+// 🍵 Tea & Coffee
+{
+  title: "Chai (House Special)",
+  price: "£2.00",
+  category: "Tea & Coffee",
+  image: "/g20.png",
+},
+{
+  title: "Double Choc House Mocha",
+  price: "£2.40",
+  category: "Tea & Coffee",
+  image: "/g0.png",
+},
+{
+  title: "Pink Chai",
+  price: "£2.20",
+  category: "Tea & Coffee",
+  image: "/g1.jpg",
+},
+{
+  title: "Caramel Chai",
+  price: "£2.20",
+  category: "Tea & Coffee",
+  image: "/g0.png",
+},
+{
+  title: "Moroccan Tea",
+  price: "£2.75",
+  category: "Tea & Coffee",
+  image: "/g0.png",
+},
+{
+  title: "English Tea",
+  price: "£1.75",
+  category: "Tea & Coffee",
+  image: "/g0.png",
+},
+{
+  title: "Herbal Blue Tea",
+  price: "£4.19",
+  category: "Tea & Coffee",
+  image: "/g0.png",
+},
+{
+  title: "Mango Flower Tea",
+  price: "£4.19",
+  category: "Tea & Coffee",
+  image: "/g0.png",
+},
+{
+  title: "Karak Coffee (House Special)",
+  price: "£2.00",
+  category: "Tea & Coffee",
+  image: "/g0.png",
+},
+{
+  title: "Chai Latte",
+  price: "£2.20",
+  category: "Tea & Coffee",
+  image: "/g0.png",
+},
+{
+  title: "Espresso",
+  price: "£1.50",
+  category: "Tea & Coffee",
+  image: "/g0.png",
+},
+{
+  title: "Black Coffee / Flat White",
+  price: "£2.85",
+  category: "Tea & Coffee",
+  image: "/g0.png",
+},
+{
+  title: "Cappuccino",
+  price: "£2.85",
+  category: "Tea & Coffee",
+  image: "/g0.png",
+},
+{
+  title: "Hot Chocolate",
+  price: "£2.00",
+  category: "Tea & Coffee",
+  image: "/g0.png",
+},
+
 ];
 
 
