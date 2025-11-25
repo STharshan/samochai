@@ -91,22 +91,12 @@ export default function TestimonialCarousel() {
         `}
       </style>
 
-      {/* ✅ Background Icons */}
-      <div className="absolute inset-0 overflow-hidden z-0">
-         <GiCoffeeCup className="bg-icon top-15 left-16 w-24 h-24" style={{ animationDelay: "14s" }} /> 
-        <LuSandwich className="bg-icon bottom-1/4 left-12 w-20 h-20" style={{ animationDelay: "7s" }} />
-        <GiCoffeeCup className="bg-icon top-15 right-16 w-24 h-24" style={{ animationDelay: "14s" }} /> 
-      </div>
-
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
           <p className="text-black font-semibold tracking-widest uppercase text-lg">
             Our Testimonials
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900  mt-2">
-            What people say about <br /> our company
-          </h2>
         </div>
 
         {/* Scroll Buttons */}

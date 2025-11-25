@@ -67,10 +67,6 @@ const Mission = () => {
                 }}
             />
 
-            {/* 🔹 Enhanced Floating Icons with pulseSpin */}
-            <div className="absolute inset-0 z-0 overflow-hidden">
-                <GiCoffeeCup className="bg-icon w-24 h-24 left-[8%] top-[7%]" style={{ animationDelay: '0s' }} />
-            </div>
 
             <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-center z-10">
                 {/* Left Section - Tabs */}

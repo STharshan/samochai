@@ -16,14 +16,16 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 w-full z-50 bg-linear-to-b from-black to-[#12392c] text-white px-4">
         <div className="max-w-7xl mx-auto flex items-center py-2 justify-between">
           {/* Logo */}
-          <img
-            className="w-60"
-            src="/logo.png"
-            alt="logo"
-          />
-
+          <div className="flex items-center space-x-2">
+            <img
+              className="w-60"
+              src="/logo.png"
+              alt="logo"
+            />
+            <span className="text-xl font-bold mt-3">Chai House</span>
+          </div>
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 font-semibold">
+          <div className="hidden lg:flex space-x-8 font-semibold">
             <a href="/" className="hover:text-[#E8D28A]">Home</a>
             <a href="#menu" className="hover:text-[#E8D28A]">Menu</a>
             <a href="#about" className="hover:text-[#E8D28A]">About</a>
@@ -31,7 +33,7 @@ const Navbar = () => {
           </div>
 
           {/* Order Button (Desktop) */}
-          <div className="hidden md:flex mr-18 sm:mr-10">
+          <div className="hidden lg:flex mr-18 sm:mr-10">
             <button
               onClick={openModal}
               className="flex items-center space-x-2 bg-white text-green-900 font-semibold px-4 py-2 rounded-md shadow hover:bg-[#E8D28A] hover:text-black"
@@ -42,7 +44,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Icon */}
-          <div className="md:hidden sm:mr-15 mr-5">
+          <div className="lg:hidden sm:mr-15 mr-5">
             <button onClick={() => setMenuOpen(!menuOpen)} className="text-white">
               {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
             </button>
@@ -51,7 +53,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-linear-to-b from-black to-green-900 text-white px-6 py-4 space-y-4 text-left z-40">
+          <div className="lg:hidden absolute top-full left-0 w-full bg-linear-to-b from-black to-green-900 text-white px-6 py-4 space-y-4 text-left z-40">
             <a href="/" className="block py-1 hover:text-[#E8D28A]">Home</a>
             <a href="#menu" className="block py-1 hover:text-[#E8D28A]">Menu</a>
             <a href="#about" className="block py-1 hover:text-[#E8D28A]">About</a>

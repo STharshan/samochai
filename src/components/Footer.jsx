@@ -5,23 +5,29 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#12392c] text-white px-6 py-0.5">
+    <footer className="bg-[#12392c] text-white px-6 py-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-left mt-5">
         {/* Column 1 */}
         <div>
-          <h2 className="flex items-center text-2xl font-bold text-[#E8D28A] mb-5 gap-2">
+          <div className="flex items-center gap-3 mb-5">
             <img
-              className="text-5xl font-serif tracking-widest w-65"
+              className="w-35 md:w-27 lg:w-35 h-10"
               src="/logo.png"
               alt="logo"
             />
-          </h2>
+            <span className="text-xl md:text-lg lg:text-xl mt-3 md:mt-0 lg:mt-3 font-bold md:font-semibold lg:font-bold">Chai House</span>
+          </div>
           <p className="text-md font-semibold mb-4 text-white">
-            Bringing the authentic taste of sylhet street food to your table with love and tradition.
+            Samosa and Chai for every occasion
           </p>
-          <div className="flex space-x-4 text-white">
-            <a href="https://www.instagram.com/samochaihouse/" className="hover:text-pink-500 text-black" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-2xl text-white" />
+          <div className="flex space-x-4">
+            <a
+              href="https://www.instagram.com/samochaihouse/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-pink-500"
+            >
+              <FaInstagram className="text-2xl" />
             </a>
           </div>
         </div>
@@ -65,13 +71,16 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-4">
               <FiPhone className="text-white" />
-              <a href="tel: +447850 053653" className="text-white hover:underline">
+              <a href="tel:+447850053653" className="text-white hover:underline">
                 07850 053653
               </a>
             </li>
             <li className="flex items-center gap-4">
               <FiMail className="text-white text-xl" />
-              <a href="mailto:samochaihouse@gmail.com" className="text-white hover:underline text-lg md:text-xs lg:text-lg">
+              <a
+                href="mailto:samochaihouse@gmail.com"
+                className="text-white hover:underline text-lg md:text-base lg:text-lg"
+              >
                 samochaihouse@gmail.com
               </a>
             </li>
@@ -80,12 +89,13 @@ const Footer = () => {
       </div>
 
       <hr className="my-3 border-gray-600" />
+
       <div className="text-center text-white font-bold">
         <p>&copy; 2025 SAMOCHAI. All rights reserved.</p>
       </div>
 
       {/* Bottom Bar */}
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-3 text-center font-semibold text-black">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-3 text-center font-semibold mt-3">
         {/* Left: Terms & Privacy */}
         <div className="flex gap-4 text-sm">
           <Link
@@ -103,7 +113,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        {/* Center: Powered by Ansely (unchanged) */}
+        {/* Center: Powered by Ansely */}
         <p className="text-center font-semibold text-white p-2">
           Powered by{" "}
           <a
@@ -116,7 +126,7 @@ const Footer = () => {
           </a>
         </p>
       </div>
-    </footer >
+    </footer>
   );
 };
 

@@ -8,12 +8,14 @@ import Menu from "../components/Menu"
 import Mission from "../components/Mission"
 import NavbarWithHero from "../components/NavbarWithHero"
 import TestimonialCarousel from "../components/TestimonialCarousel"
+import WhatWeOffer from '../components/WhatWe'
 
 const Home = () => {
     return (
         <div>
             <NavbarWithHero />
-            <About />
+            {/* <About /> */}
+            <WhatWeOffer />
             <ChaiSection />
             <Menu />
             <Mission />

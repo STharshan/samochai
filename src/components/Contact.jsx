@@ -357,9 +357,10 @@ const Contact = () => {
             <div>
               <h3 className="font-semibold text-[#C8A950] mb-2">Hours</h3>
               <p className="text-sm text-gray-300 leading-relaxed">
-                Monday – Thursday: 9 AM – 5:30 PM <br />
+                Monday – Thursday: 9 AM – 5 PM <br />
                 Friday: 9 AM – 4:30 PM <br />
-                Saturday – Sunday: Closed
+                Saturday : 11 AM – 3 PM <br />
+                Sunday: Closed
               </p>
             </div>
           </div>

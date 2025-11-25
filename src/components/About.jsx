@@ -61,11 +61,6 @@ const About = () => {
         }}
       />
 
-      {/* 🔹 Floating Icons with Enhanced Animation */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <GiCoffeeCup className="bg-icon w-20 h-20 right-[10%] top-[30%] text-[#12392c]" style={{ animationDelay: '5s' }} />
-      </div>
-
       {/* 🔹 Main Content */}
       <div className="relative z-10">
         {/* Heading */}

@@ -142,12 +142,6 @@ export default function ChaiSection() {
                 }}
             />
 
-            {/* 🔹 Enhanced Floating Icons with pulseSpin */}
-            <div className="absolute inset-0 z-0 overflow-hidden">
-                <GiCoffeeCup className="bg-icon w-20 h-20 left-[10%] top-[10%]" style={{ animationDelay: '0s' }} />
-                <LuSandwich className="bg-icon w-20 h-20 right-[15%] bottom-[8%]" style={{ animationDelay: '15s' }} />
-            </div>
-
             <div className="flex flex-col xl:flex-row justify-center items-center gap-10 relative z-10">
                 {/* Left Text with Enhanced Effects */}
                 <div
