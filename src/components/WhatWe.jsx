@@ -120,14 +120,14 @@ export default function WhatWeOffer() {
                             )
                         }
                         aria-label="Previous slide"
-                        className="absolute left-2 sm:left-4 md:left-6 top-1/3 w-8 h-8 sm:w-10 sm:h-10 rounded-full shadow-md text-base sm:text-lg font-bold transition-all duration-300 hover:scale-110 active:scale-95 bg-white text-black bg-opacity-80 hover:bg-opacity-100 flex items-center justify-center"
+                        className="absolute left-2 sm:left-4 md:left-6 mt-100 w-8 h-8 sm:w-10 sm:h-10 rounded-full shadow-md text-base sm:text-lg font-bold transition-all duration-300 hover:scale-110 active:scale-95 bg-white text-black bg-opacity-80 hover:bg-opacity-100 flex items-center justify-center"
                     >
                         ‹
                     </button>
                     <button
                         onClick={() => setActiveIndex((prev) => (prev + 1) % services.length)}
                         aria-label="Next slide"
-                        className="absolute right-2 sm:right-4 md:right-6 top-1/3 w-8 h-8 sm:w-10 sm:h-10 rounded-full shadow-md text-base sm:text-lg font-bold transition-all duration-300 hover:scale-110 active:scale-95 bg-white text-black bg-opacity-80 hover:bg-opacity-100 flex items-center justify-center"
+                        className="absolute right-2 sm:right-4 md:right-6 mt-100 w-8 h-8 sm:w-10 sm:h-10 rounded-full shadow-md text-base sm:text-lg font-bold transition-all duration-300 hover:scale-110 active:scale-95 bg-white text-black bg-opacity-80 hover:bg-opacity-100 flex items-center justify-center"
                     >
                         ›
                     </button>
