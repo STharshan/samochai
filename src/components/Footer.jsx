@@ -36,10 +36,10 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-5">Quick Links</h3>
           <ul className="space-y-2 text-md font-semibold">
-            <li><a href="/" className="hover:text-gray-500">Home</a></li>
-            <li><a href="#menu" className="hover:text-gray-500">Menu</a></li>
-            <li><a href="#about" className="hover:text-gray-500">About</a></li>
-            <li><a href="#contact" className="hover:text-gray-500">Contact</a></li>
+            <li><a href="#" className="hover:text-[#E8D28A]">Home</a></li>
+            <li><a href="#about" className="hover:text-[#E8D28A]">About</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">Menu</a></li>
+            <li><a href="#contact" className="hover:text-[#E8D28A]">Contact</a></li>
           </ul>
         </div>
 
@@ -47,10 +47,10 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-5">Our Menu</h3>
           <ul className="space-y-2 text-md font-semibold">
-            <li><a href="#">Entrees</a></li>
-            <li><a href="#">Snacks</a></li>
-            <li><a href="#">Drinks</a></li>
-            <li><a href="#">Desserts</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">Entrees</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">Snacks</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">Drinks</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">Desserts</a></li>
           </ul>
         </div>
 
@@ -64,14 +64,14 @@ const Footer = () => {
                 href="https://maps.app.goo.gl/UjXrLfUgafhjnzmQ6"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:underline"
+                className="text-white hover:text-[#E8D28A]"
               >
                 9a Great Central Road, Loughborough, England, LE11 1RW
               </a>
             </li>
             <li className="flex items-center gap-4">
               <FiPhone className="text-white" />
-              <a href="tel:+447850053653" className="text-white hover:underline">
+              <a href="tel:+447850053653" className="text-white hover:text-[#E8D28A]">
                 07850 053653
               </a>
             </li>
@@ -79,7 +79,7 @@ const Footer = () => {
               <FiMail className="text-white text-xl" />
               <a
                 href="mailto:samochaihouse@gmail.com"
-                className="text-white hover:underline text-lg md:text-base lg:text-lg"
+                className="text-white hover:text-[#E8D28A] text-lg md:text-base lg:text-lg"
               >
                 samochaihouse@gmail.com
               </a>
@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <hr className="my-3 border-gray-600" />
+      <hr className="my-3 border-[#E8D28A]" />
 
       <div className="text-center text-white font-bold">
         <p>&copy; 2025 SAMOCHAI. All rights reserved.</p>
@@ -100,14 +100,14 @@ const Footer = () => {
         <div className="flex gap-4 text-sm">
           <Link
             to="/terms&condition"
-            className="text-white hover:text-gray-600 transition duration-300"
+            className="text-white hover:text-[#E8D28A] transition duration-300"
           >
             Terms & Conditions
           </Link>
           <span className="text-white">|</span>
           <Link
             to="/privacy-policy"
-            className="text-white hover:text-gray-600 transition duration-300"
+            className="text-white hover:text-[#E8D28A] transition duration-300"
           >
             Privacy Policy
           </Link>
@@ -120,7 +120,7 @@ const Footer = () => {
             href="https://www.ansely.co.uk/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:underline"
+            className="text-white hover:underline hover:text-[#E8D28A]"
           >
             Ansely
           </a>

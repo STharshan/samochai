@@ -33,7 +33,7 @@ const NavbarWithHero = () => {
   };
 
   return (
-    <section id="hero" className="relative text-white text-center px-4">
+    <section id="#" className="relative text-white text-center px-4 h-[100vh]">
       {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover"

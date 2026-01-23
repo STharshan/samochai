@@ -477,7 +477,7 @@ const Contact = () => {
                       onChange={(e) => handleMenuChange(menuItem.id, 'category', e.target.value)}
                       className="bg-[#12392c] border border-green-700/50 text-white rounded-lg p-2.5 w-full focus:ring-2 focus:ring-green-500 transition-all cursor-pointer outline-none"
                     >
-                      <option value="">🍴 Select Category</option>
+                      <option value="">Select Category</option>
                       {categories.map(cat => (
                         <option key={cat} value={cat}>{cat}</option>
                       ))}
@@ -489,7 +489,7 @@ const Contact = () => {
                       disabled={!menuItem.category}
                       className="bg-[#12392c] border border-green-700/50 text-white rounded-lg p-2.5 w-full focus:ring-2 focus:ring-green-500 transition-all cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed outline-none"
                     >
-                      <option value="">🥘 Select Item</option>
+                      <option value="">Select Item</option>
                       {menuItem.category && getFilteredItems(menuItem.category).map(item => (
                         <option key={item.title} value={item.title}>
                           {item.title} - {item.price}

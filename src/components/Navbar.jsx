@@ -26,9 +26,9 @@ const Navbar = () => {
           </div>
           {/* Desktop Menu */}
           <div className="hidden lg:flex space-x-8 font-semibold">
-            <a href="/" className="hover:text-[#E8D28A]">Home</a>
-            <a href="#menu" className="hover:text-[#E8D28A]">Menu</a>
+            <a href="#" className="hover:text-[#E8D28A]">Home</a>
             <a href="#about" className="hover:text-[#E8D28A]">About</a>
+            <a href="#menu" className="hover:text-[#E8D28A]">Menu</a>
             <a href="#contact" className="hover:text-[#E8D28A]">Contact</a>
           </div>
 
@@ -54,9 +54,9 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="lg:hidden absolute top-full left-0 w-full bg-linear-to-b from-black to-green-900 text-white px-6 py-4 space-y-4 text-left z-40">
-            <a href="/" className="block py-1 hover:text-[#E8D28A]">Home</a>
-            <a href="#menu" className="block py-1 hover:text-[#E8D28A]">Menu</a>
+            <a href="#" className="block py-1 hover:text-[#E8D28A]">Home</a>
             <a href="#about" className="block py-1 hover:text-[#E8D28A]">About</a>
+            <a href="#menu" className="block py-1 hover:text-[#E8D28A]">Menu</a>
             <a href="#contact" className="block py-1 hover:text-[#E8D28A]">Contact</a>
             <button
               onClick={openModal}

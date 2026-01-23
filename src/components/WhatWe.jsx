@@ -56,7 +56,7 @@ export default function WhatWeOffer() {
     };
 
     return (
-        <section className="relative py-12 px-4 sm:px-6 md:px-12 overflow-visible bg-white">
+        <section id="about" className="relative scroll-m-10 py-12 px-4 sm:px-6 md:px-12 overflow-visible bg-white">
             <div className="max-w-7xl mx-auto text-center font-serif relative z-10">
                 {/* Heading */}
                 <span className="inline-block text-xs sm:text-sm font-medium px-3 sm:px-4 py-1 rounded-full mb-3 sm:mb-4 bg-[#E8D28A]/20 text-[#E8D28A]">
