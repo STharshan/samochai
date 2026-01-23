@@ -1,17 +1,6 @@
 import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { GiCoffeeCup } from 'react-icons/gi';
 
 const About = () => {
-  useEffect(() => {
-    AOS.init({ 
-      duration: 1000,
-      easing: "ease-in-out",
-      once: false,
-      mirror: true,
-    });
-  }, []);
 
   return (
     <section
@@ -90,6 +79,7 @@ const About = () => {
           >
             <img
               src="/resturant.png"
+              loading="lazy"
               alt="Dhaka food culture"
               className="w-full h-auto object-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
               data-aos="zoom-in-up"

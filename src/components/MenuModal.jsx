@@ -81,6 +81,7 @@ const MenuModal = ({ isOpen, onClose }) => {
             <img
               src="/sandwich.jpg"
               alt="Food Background"
+              loading="lazy"
               className="w-full h-48 md:h-60 object-cover"
             />
             <div className="absolute top-0 left-0 w-full bg-white/70 backdrop-blur-sm flex justify-between items-center px-4 py-3">

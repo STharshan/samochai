@@ -19,6 +19,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-2">
             <img
               className="w-60"
+              loading="lazy"
               src="/logo.png"
               alt="logo"
             />

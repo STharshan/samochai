@@ -1,26 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { LuChefHat } from "react-icons/lu";
-import MenuModal from "./MenuModal"; // Ensure this import path is correct 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { Link } from "react-router-dom";
+import MenuModal from "./MenuModal"; // Ensure this import path is correct
 
 const NavbarWithHero = () => {
   const [modalOpen, setModalOpen] = useState(false); // Modal state 
-
-  // Initialize AOS
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      easing: 'ease-in-out', // Animation easing
-      once: false, // Whether animation should happen only once - while scrolling down
-      mirror: true, // Whether elements should animate out while scrolling past them
-      offset: 100, // Offset (in px) from the original trigger point
-    });
-
-    // Refresh AOS on component mount
-    AOS.refresh();
-  }, []);
 
   // Function to open the modal 
   const openModal = () => {
@@ -37,12 +19,15 @@ const NavbarWithHero = () => {
       {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="/back.mp4" // Place your video file in the public folder 
+        src="/back.mp4"
         autoPlay
         loop
         muted
         playsInline
-      ></video>
+        poster="/fall.png"
+        onError={(e) => (e.currentTarget.style.display = "none")}
+      >
+      </video>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/60 bg-opacity-50"></div>
@@ -56,7 +41,7 @@ const NavbarWithHero = () => {
         >
           Samosa and Chai for every occasion
         </h1>
-     
+
         <p
           className="text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10"
           data-aos="fade-in"
@@ -70,16 +55,7 @@ const NavbarWithHero = () => {
           data-aos="zoom-in"
           data-aos-delay="800"
         >
-          {/* <button 
-            onClick={() => 
-              document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" }) 
-            } 
-            className="bg-[#3f8605] hover:bg-[#12392c] hover:shadow-[#346909] text-white font-semibold text-lg px-8 py-3 rounded w-auto min-w-[160px] flex items-center justify-center gap-2 transition transform hover:-translate-y-1 hover:shadow-xl"
-          > 
-            <LuChefHat className="w-5 h-5" /> 
-            See Menu 
-          </button>  */}
-          <a href="#menu">
+           <a href="#menu">
             <button className="relative border-3 border-black px-5 rounded-lg py-2 text-xl font-bold group overflow-hidden transform transition-all duration-500 hover:scale-105 hover:-rotate-1">
               {/* Animated background */}
               <div className="absolute inset-0 bg-linear-to-r from-black via-gray-800 to-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></div>

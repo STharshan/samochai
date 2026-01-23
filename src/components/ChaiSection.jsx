@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { LuSandwich } from 'react-icons/lu';
-import { GiCoffeeCup} from 'react-icons/gi';
 
 const ingredients = [
     {
@@ -44,17 +40,7 @@ export default function ChaiSection() {
 
     // Initialize AOS
     useEffect(() => {
-        AOS.init({
-            duration: 1200,
-            easing: 'ease-out-cubic',
-            once: false,
-            mirror: true,
-            offset: 120,
-            delay: 50,
-        });
-        AOS.refresh();
-
-        // Intersection Observer for visibility
+         // Intersection Observer for visibility
         const observer = new IntersectionObserver(
             ([entry]) => setIsVisible(entry.isIntersecting),
             { threshold: 0.3 }
@@ -222,6 +208,7 @@ export default function ChaiSection() {
                                     <img
                                         src={item.img}
                                         alt={item.name}
+                                        loading="lazy"
                                         className="w-70 h-70 object-cover rounded-xl transition-all duration-500 ease-out transform group-hover/card:scale-110"
                                         style={{
                                             filter: hoveredCard === idx ? 'brightness(1.2) contrast(1.1) saturate(1.3)' : 'brightness(1) contrast(1) saturate(1)'

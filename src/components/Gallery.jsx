@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos'; // Import AOS
-import 'aos/dist/aos.css'; // Import the AOS styles
+import React from 'react';
 
 const images = [
   '/g1.jpg',
@@ -17,9 +15,6 @@ const images = [
 ];
 
 const Gallery = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS
-  }, []);
 
   return (
     <section className="w-full bg-[#12392c] text-black py-16 -mt-15">
@@ -51,6 +46,7 @@ const Gallery = () => {
             >
               <img
                 src={src}
+                loading="lazy"
                 alt={`Gallery ${i}`}
                 className="w-full h-full object-cover transform rounded-xl hover:rounded-xl transition-all duration-300 ease-in-out hover:brightness-90"
               />

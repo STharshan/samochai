@@ -1,22 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { FaCheck, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
-import { PiCoffeeBeanBold } from 'react-icons/pi';
-import { GiCoffeeCup, GiCoffeeMug } from 'react-icons/gi';
-import { LuSandwich } from 'react-icons/lu';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { FaCheck, FaInstagram } from "react-icons/fa";
 
 const Mission = () => {
     const [activeTab, setActiveTab] = useState("");
-
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            easing: "ease-in-out",
-            once: false,
-            mirror: true,
-        });
-    }, []);
 
     const tabs = [
         { id: "mission", label: "OUR MISSION" },
@@ -147,6 +133,7 @@ const Mission = () => {
                     {/* COFFEE CUP IMAGE OUTSIDE CARD */}
                     <img
                         src="/cup3.png"
+                        loading="lazy"
                         alt="Coffee Cup"
                         className="absolute left-[200px] bottom-[-18px] w-[180px] md:w-[220px] lg:w-[260px] xl:w-[280px] z-20 hover:rotate-12 hover:scale-110 transition-all duration-500 drop-shadow-xl"
                         data-aos="zoom-in"

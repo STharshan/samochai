@@ -1,11 +1,5 @@
-// File: TestimonialCarousel.jsx
-"use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { GiCoffeeCup } from "react-icons/gi";
-import { LuSandwich } from "react-icons/lu";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const testimonials = [
   {
@@ -13,11 +7,11 @@ const testimonials = [
     name: 'Patrycja Flontowicz',
   },
   {
-    text: `Lovely home brewed karak chai, nothing from a sachet. Samosa's handmade, full of flavour, not too spicy. Good quality, clean and great prices. What more can you ask for? Our experience was 10 out of 10, plus 10, minus nothing ! 😁`,
+    text: `Lovely home brewed karak chai, nothing from a sachet. Samosa's handmade, full of flavour, not too spicy. Good quality, clean and great prices. What more can you ask for? Our experience was 10 out of 10, plus 10, minus nothing !`,
     name: 'Karam Kaur',
   },
   {
-    text: `Perfect 👌 A very warm welcome when we arrived today. Very chatty and friendly. Food quality is outstanding and we passed on our compliments from our last order. Can recommend the mango and passionfruit twist, chicken burger, samosas, sheesh pita and white choc cookie. Will be back for more!!!!`,
+    text: `Perfect A very warm welcome when we arrived today. Very chatty and friendly. Food quality is outstanding and we passed on our compliments from our last order. Can recommend the mango and passionfruit twist, chicken burger, samosas, sheesh pita and white choc cookie. Will be back for more!!!!`,
     name: 'Claire Moseley',
   },
   {
@@ -32,10 +26,6 @@ const testimonials = [
 
 export default function TestimonialCarousel() {
   const scrollRef = useRef(null);
-
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true, offset: 100 });
-  }, []);
 
   const scroll = (direction) => {
     const { current } = scrollRef;

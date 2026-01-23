@@ -1,5 +1,4 @@
 import React from 'react'
-import About from "../components/About"
 import ChaiSection from "../components/ChaiSection"
 import CoffeeSection from "../components/CoffeeSection"
 import Contact from "../components/Contact"
@@ -14,7 +13,6 @@ const Home = () => {
     return (
         <div>
             <NavbarWithHero />
-            {/* <About /> */}
             <WhatWeOffer />
             <ChaiSection />
             <Menu />

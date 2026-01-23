@@ -1,8 +1,4 @@
-"use client";
-
 import React, { useEffect, useState } from "react";
-import { FaUtensils, FaMusic } from "react-icons/fa";
-import { MdFreeBreakfast } from "react-icons/md";
 
 export default function WhatWeOffer() {
     const [activeIndex, setActiveIndex] = useState(0);

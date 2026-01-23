@@ -3,7 +3,6 @@ import { Coffee, CupSoda } from "lucide-react";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function CoffeeSection() {
-  // Initialize AOS-like animations
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -352,12 +351,14 @@ export default function CoffeeSection() {
             <img
               src="/cup2.png"
               alt="Coffee Cup"
+              loading="lazy"
               className="block lg:hidden w-[300px] md:w-[360px] object-contain glow-image"
             />
             {/* Desktop Image */}
             <img
               src="/cup2.png"
               alt="Coffee Cup"
+              loading="lazy"
               className="hidden lg:block w-[400px] xl:w-[450px] object-contain glow-image"
             />
           </div>
