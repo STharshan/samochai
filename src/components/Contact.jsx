@@ -76,7 +76,7 @@ const Contact = () => {
 
       const whatsappMessage = `*New Order Request*\n\nName: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\n\n*Order Details:*\n${orderDetails}\n\n*Additional Message:*\n${form.message || 'None'}`;
 
-      const phoneNumber = '+447850053653';
+      const phoneNumber = '+447955363123';
       const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
       window.open(url, '_blank');
 

@@ -67,12 +67,12 @@ const Menu = () => {
             data-aos="fade-up"
             className="menu-card bg-[#0e1b0e]/90 rounded-lg shadow-lg overflow-hidden"
           >
-            <div className="relative overflow-hidden h-50">
+            <div className="relative overflow-hidden ">
               <img
                 src={item.image}
                 alt={item.title}
                 loading="lazy"
-                className="w-40 mx-auto mt-5 rounded-md h-45 object-cover transition-transform duration-500 hover:scale-110"
+                className="w-60 mx-auto mt-5 rounded-md h-60 object-cover transition-transform duration-500 hover:scale-110"
               />
               <div className="absolute inset-0 shimmer-effect opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
             </div>

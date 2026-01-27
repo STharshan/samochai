@@ -92,7 +92,7 @@ const Footer = () => {
       <hr className="my-3 border-[#E8D28A]" />
 
       <div className="text-center text-white font-bold">
-        <p>&copy; 2025 SAMOCHAI. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} SAMOCHAI. All rights reserved.</p>
       </div>
 
       {/* Bottom Bar */}
