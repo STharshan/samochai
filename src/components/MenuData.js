@@ -136,19 +136,19 @@ export const allItems = [
         title: "Butter Parata",
         price: "£1.20",
         category: "Street Food",
-        image: "/masala.png",
+        image: "/masala .png",
     },
     {
         title: "Masala Omelette",
         price: "£2.00",
         category: "Street Food",
-        image: "/g7.jpg",
+        image: "/masala.png",
     },
     {
         title: "Double Omelette Parata",
         price: "£4.00",
         category: "Street Food",
-        image: "/masala.png",
+        image: "/masala .png",
     },
     {
         title: "Desi Breakfast",
@@ -160,25 +160,25 @@ export const allItems = [
         title: "FullyLoaded Breakfast Wrap",
         price: "£4.50",
         category: "Street Food",
-        image: "/masala.png",
+        image: "/masala .png",
     },
     {
         title: "Sheesh Kebab Parata Roll",
         price: "£3.00",
         category: "Street Food",
-        image: "/masala.png",
+        image: "/masala .png",
     },
     {
         title: "Sheesh Kebab Egg Roll",
         price: "£4.50",
         category: "Street Food",
-        image: "/masala.png",
+        image: "/masala .png",
     },
     {
         title: "Double Sheesh Kebab Pita",
         price: "£6.00",
         category: "Street Food",
-        image: "/masala.png",
+        image: "/masala .png",
     },
     {
         title: "Fruit ’n’nut Granola Bowl",
@@ -190,13 +190,13 @@ export const allItems = [
         title: "Choc’n’nut Granola Bowl",
         price: "£2.00",
         category: "Street Food",
-        image: "/Chocolate.png",
+        image: "/choc.png",
     },
     {
         title: "Masala Wedges",
         price: "£2.50",
         category: "Street Food",
-        image: "/Chocolate.png",
+        image: "/Chocolate .png",
     },
     {
         title: "Butter Croissant",
@@ -208,13 +208,13 @@ export const allItems = [
         title: "Almond/Choc Croissant",
         price: "£2.50",
         category: "Street Food",
-        image: "/Chocolate.png",
+        image: "/Chocolate .png",
     },
     {
         title: "Chocolate Croissant",
         price: "£2.00",
         category: "Street Food",
-        image: "/chocolate.png",
+        image: "/Chocolate.png",
     },
     {
         title: "White Chocolate Cookie",
@@ -283,7 +283,7 @@ export const allItems = [
         price: "£3.95",
         desc: "House Special",
         category: "Cold Drinks",
-        image: "/g8.jpg",
+        image: "/g8 .jpg",
     },
 
     //Ice Coffee
@@ -329,7 +329,7 @@ export const allItems = [
         title: "Pomegranate Juice",
         price: "£3.50",
         category: "100% Fresh Juice",
-        image: "/Chocolat2.png",
+        image: "/g8.jpg",
     },
     {
         title: "Orange Juice + Ginger Shot",
