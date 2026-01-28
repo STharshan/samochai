@@ -26,7 +26,7 @@ export const allItems = [
         title: "Tuna Baguette",
         price: "£3.50",
         category: "Hot & Cold Sandwiches",
-        image: "/Tuna.png",
+        image: "/tuna.png",
     },
     {
         title: "Tuna Cob",
