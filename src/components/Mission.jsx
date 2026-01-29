@@ -117,7 +117,7 @@ const Mission = () => {
                             </div>
                         </div>
 
-                        <p className="font-medium text-sm mb-2 relative z-10">SOCIAL MEDIA :</p>
+                        <p className="font-medium text-sm mb-2 relative z-10">SOCIAL MEDIA</p>
                         <div className="flex gap-3 mb-4 relative z-10">
                             <a
                                 href="https://www.instagram.com/samochaihouse/"
@@ -132,10 +132,10 @@ const Mission = () => {
 
                     {/* COFFEE CUP IMAGE OUTSIDE CARD */}
                     <img
-                        src="/cup3.png"
+                        src="/cupx.png"
                         loading="lazy"
                         alt="Coffee Cup"
-                        className="absolute left-[200px] bottom-[-18px] w-[180px] md:w-[220px] lg:w-[260px] xl:w-[280px] z-20 hover:rotate-12 hover:scale-110 transition-all duration-500 drop-shadow-xl"
+                        className="absolute left-[200px] md:left-[270px] bottom-[-48px] w-[180px] md:w-[220px] lg:w-[260px] xl:w-[280px] z-20 hover:rotate-12 hover:scale-110 active:rotate-12 active:scale-110 transition-all duration-500 drop-shadow-xl"
                         data-aos="zoom-in"
                         data-aos-delay="200"
                     />

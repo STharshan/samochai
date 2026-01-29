@@ -35,7 +35,7 @@ const NavbarWithHero = () => {
           data-aos="fade-in"
           data-aos-delay="600"
         >
-          SAMOCHAI brings the vibrant, authentic flavors of Bangladeshi street
+          Samochai brings the vibrant, authentic flavors of Bangladeshi street
           food straight to you! Get ready for a delicious adventure.
         </p>
 

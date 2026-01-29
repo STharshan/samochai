@@ -26,19 +26,19 @@ export const allItems = [
         title: "Tuna Baguette",
         price: "£3.50",
         category: "Hot & Cold Sandwiches",
-        image: "/tuna.png",
+        image: "/Tuna Baguette.png",
     },
     {
         title: "Tuna Cob",
         price: "£2.00",
         category: "Hot & Cold Sandwiches",
-        image: "/g112.webp",
+        image: "/Tuna cob.png",
     },
     {
         title: "Chicken Cob",
         price: "£2.00",
         category: "Hot & Cold Sandwiches",
-        image: "/g112.webp",
+        image: "/Chicken cob.png",
     },
     {
         title: "Chilli Cheese Toastie",
@@ -62,7 +62,7 @@ export const allItems = [
         title: "Double Cheese Bagel",
         price: "£2.00",
         category: "Hot & Cold Sandwiches",
-        image: "/g112.webp",
+        image: "/Double Cheese Bagel.png",
     },
     {
         title: "Cheese & Tomato Baget",
@@ -106,19 +106,19 @@ export const allItems = [
         title: "Spicy chana chatt",
         price: "£3.50",
         category: "Street Food",
-        image: "/g7.jpg",
+        image: "/spicy channa chaat.png",
     },
     {
         title: "Chicken Kebab Bap",
         price: "£4.00",
         category: "Street Food",
-        image: "/g7.jpg",
+        image: "/Chicken Kebab Bap.png",
     },
     {
         title: "Chicken & Spinach Pasty",
         price: "£3.50",
         category: "Street Food",
-        image: "/g7.jpg",
+        image: "/Chicken & Spinach Pasty.png",
     },
     {
         title: "Hashbrown Cob",
@@ -136,7 +136,7 @@ export const allItems = [
         title: "Butter Parata",
         price: "£1.20",
         category: "Street Food",
-        image: "/masala .png",
+        image: "/Butter Parata.png",
     },
     {
         title: "Masala Omelette",
@@ -148,7 +148,7 @@ export const allItems = [
         title: "Double Omelette Parata",
         price: "£4.00",
         category: "Street Food",
-        image: "/masala .png",
+        image: "/Double Omelette Parata.png",
     },
     {
         title: "Desi Breakfast",
@@ -160,13 +160,13 @@ export const allItems = [
         title: "FullyLoaded Breakfast Wrap",
         price: "£4.50",
         category: "Street Food",
-        image: "/masala .png",
+        image: "/FullyLoaded Breakfast Wrap.png",
     },
     {
         title: "Sheesh Kebab Parata Roll",
         price: "£3.00",
         category: "Street Food",
-        image: "/masala .png",
+        image: "/Sheesh Kebab Parata Roll.png",
     },
     {
         title: "Sheesh Kebab Egg Roll",
@@ -178,7 +178,7 @@ export const allItems = [
         title: "Double Sheesh Kebab Pita",
         price: "£6.00",
         category: "Street Food",
-        image: "/masala .png",
+        image: "/Double Sheesh Kebab Pita.png",
     },
     {
         title: "Fruit ’n’nut Granola Bowl",
@@ -196,7 +196,7 @@ export const allItems = [
         title: "Masala Wedges",
         price: "£2.50",
         category: "Street Food",
-        image: "/Chocolate .png",
+        image: "/Masala Wedges.png",
     },
     {
         title: "Butter Croissant",
@@ -208,7 +208,7 @@ export const allItems = [
         title: "Almond/Choc Croissant",
         price: "£2.50",
         category: "Street Food",
-        image: "/Chocolate .png",
+        image: "/AlmondChoc Croissant.png",
     },
     {
         title: "Chocolate Croissant",
@@ -240,20 +240,20 @@ export const allItems = [
         title: "Gulap Jam Milkshake",
         price: "£3.50",
         category: "Mishti Milkshakes",
-        image: "/g0.png",
+        image: "/Gulap Jam Milkshake.png",
     },
     {
         title: "Kala Jam Milkshake",
         price: "£3.50",
         category: "Mishti Milkshakes",
-        image: "/g0.png",
+        image: "/Kala Jam Milkshake.png",
     },
     {
         title: "House Special",
         price: "£4.00",
         desc: "Pistachio & Salted caramel",
         category: "Mishti Milkshakes",
-        image: "/g0.png",
+        image: "/House Special1.png",
     },
 
     //Cold Drink
