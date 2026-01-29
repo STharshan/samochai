@@ -11,12 +11,12 @@ const Footer = () => {
         <div>
           <div className="flex items-center gap-3 mb-5">
             <img
-              className="w-35 md:w-27 lg:w-35 h-10"
+              className="w-35 h-7"
               src="/logo.png"
               loading="lazy"
               alt="logo"
             />
-            <span className="text-xl md:text-lg lg:text-xl mt-3 md:mt-0 lg:mt-3 font-bold md:font-semibold lg:font-bold">Chai House</span>
+            <span className="text-xl md:text-lg lg:text-xl mt-2">Chai House</span>
           </div>
           <p className="text-md font-semibold mb-4 text-white">
             Samosa and Chai for every occasion
@@ -48,10 +48,13 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-5">Our Menu</h3>
           <ul className="space-y-2 text-md font-semibold">
-            <li><a href="#menu" className="hover:text-[#E8D28A]">Entrees</a></li>
-            <li><a href="#menu" className="hover:text-[#E8D28A]">Snacks</a></li>
-            <li><a href="#menu" className="hover:text-[#E8D28A]">Drinks</a></li>
-            <li><a href="#menu" className="hover:text-[#E8D28A]">Desserts</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">Hot & Clod Sandwiches</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">Street Food</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">Mishti Milkshakes</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">Cold Drinks</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">Ice Coffee</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">100% Fresh Juice</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">Tea & Coffee</a></li>
           </ul>
         </div>
 

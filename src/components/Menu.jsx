@@ -31,12 +31,12 @@ const Menu = () => {
   return (
     <section
       id="menu"
-      className="relative w-full bg-[#12392c] py-16 px-6"
+      className="relative w-full scroll-m-10 bg-[#12392c] py-16 px-6"
     >
       {/* Title */}
       <div className="text-center mb-8">
         <h2 data-aos="fade-up" className="text-4xl md:text-6xl font-bold glow-effect">
-          Our Best & Delicious Menu
+          Menu
         </h2>
         <p data-aos="fade-up" className="text-white mt-2">
           Discover the authentic taste of Sylhet street food

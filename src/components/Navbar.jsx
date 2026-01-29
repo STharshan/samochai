@@ -1,78 +1,95 @@
-import React, { useState } from 'react';
-import { FiMenu, FiX, FiShoppingCart } from 'react-icons/fi';
-import MenuModal from './MenuModal'; // Make sure this path matches your structure
+import React, { useState } from "react";
+import { FiMenu, FiX, FiShoppingCart } from "react-icons/fi";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
 
-  const openModal = () => {
-    setModalOpen(true);
-    setMenuOpen(false); // close mobile menu when modal opens
-  };
+  const navLinks = [
+    { name: "Home", href: "#" },
+    { name: "About", href: "#about" },
+    { name: "Menu", href: "#menu" },
+    { name: "Contact", href: "#contact" },
+  ];
 
   return (
-    <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-linear-to-b from-black to-[#12392c] text-white px-4">
-        <div className="max-w-7xl mx-auto flex items-center py-3.5 justify-between">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <img
-              className="w-60"
-              loading="lazy"
-              src="/logo.png"
-              alt="logo"
-            />
-            <span className="text-xl font-bold mt-3">Chai House</span>
-          </div>
-          {/* Desktop Menu */}
-          <div className="hidden lg:flex space-x-8 font-semibold">
-            <a href="#" className="hover:text-[#E8D28A]">Home</a>
-            <a href="#about" className="hover:text-[#E8D28A]">About</a>
-            <a href="#menu" className="hover:text-[#E8D28A]">Menu</a>
-            <a href="#contact" className="hover:text-[#E8D28A]">Contact</a>
-          </div>
-
-          {/* Order Button (Desktop) */}
-          <div className="hidden lg:flex mr-18 sm:mr-10">
-            <button
-              onClick={openModal}
-              className="flex items-center space-x-2 bg-white text-green-900 font-semibold px-4 py-2 rounded-md shadow hover:bg-[#E8D28A] hover:text-black"
-            >
-              <FiShoppingCart />
-              <span>Order Now</span>
-            </button>
-          </div>
-
-          {/* Mobile Menu Icon */}
-          <div className="lg:hidden sm:mr-15 mr-5">
-            <button onClick={() => setMenuOpen(!menuOpen)} className="text-white">
-              {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-            </button>
-          </div>
+    <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-[#12392c] text-white">
+      <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-4 md:px-6 lg:px-0">
+        
+        {/* Logo */}
+        <div className="flex items-center gap-3">
+          <img
+            src="/logo.png"
+            alt="Chai House Logo"
+            className="w-35 h-7"
+            loading="lazy"
+          />
+          <span className="text-lg sm:text-xl mt-1 tracking-wide">
+            Chai House
+          </span>
         </div>
 
-        {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full bg-linear-to-b from-black to-green-900 text-white px-6 py-4 space-y-4 text-left z-40">
-            <a href="#" className="block py-1 hover:text-[#E8D28A]">Home</a>
-            <a href="#about" className="block py-1 hover:text-[#E8D28A]">About</a>
-            <a href="#menu" className="block py-1 hover:text-[#E8D28A]">Menu</a>
-            <a href="#contact" className="block py-1 hover:text-[#E8D28A]">Contact</a>
-            <button
-              onClick={openModal}
-              className="flex items-center gap-2 bg-white text-green-800 px-4 py-2 rounded-md shadow hover:bg-green-50"
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex items-center gap-10 font-semibold">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="relative hover:text-[#E8D28A] transition-colors"
             >
-              <FiShoppingCart />
-              <span>Order Now</span>
-            </button>
-          </div>
-        )}
-      </nav>
+              {link.name}
+            </a>
+          ))}
+        </div>
 
-      {/* Modal */}
-      <MenuModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
-    </>
+        {/* Desktop Order Button */}
+        <div className="hidden lg:block">
+          <a
+            href="/#contact"
+            className="flex items-center gap-2 bg-white text-green-900 px-5 py-2 rounded-md font-semibold shadow hover:bg-[#E8D28A] hover:text-black transition"
+          >
+            <FiShoppingCart />
+            Order Now
+          </a>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="lg:hidden text-white focus:outline-none"
+        >
+          {menuOpen ? <FiX size={26} /> : <FiMenu size={26} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`lg:hidden overflow-hidden transition-all duration-300 ${
+          menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="bg-gradient-to-b from-black to-green-900 px-6 py-5 space-y-4">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={() => setMenuOpen(false)}
+              className="block text-lg font-medium hover:text-[#E8D28A]"
+            >
+              {link.name}
+            </a>
+          ))}
+
+          <a
+            href="/#contact"
+            onClick={() => setMenuOpen(false)}
+            className="flex items-center gap-2 bg-white text-green-800 px-4 py-2 rounded-md font-semibold shadow hover:bg-green-50 transition"
+          >
+            <FiShoppingCart />
+            Order Now
+          </a>
+        </div>
+      </div>
+    </nav>
   );
 };
 

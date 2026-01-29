@@ -77,7 +77,7 @@ export default function ChaiSection() {
     };
 
     return (
-        <div className="bg-white px-4 py-10 relative overflow-hidden">
+        <div className="bg-white px-4 py-20 relative overflow-hidden">
             <h2
                 className="text-center text-4xl md:text-6xl font-bold mb-6 tracking-wide text-black relative z-10"
                 data-aos="fade-up"
@@ -279,40 +279,6 @@ export default function ChaiSection() {
                     </div>
                 </div>
             </div>
-
-            {/* Enhanced Learn More Button */}
-            <div
-                className="mt-12 px-8 text-center"
-                data-aos="fade-up"
-                data-aos-delay="1000"
-                data-aos-duration="1200"
-            >
-                <button className="relative border-3 border-black px-8 py-4 text-xl font-bold group overflow-hidden transform transition-all duration-500 hover:scale-105 hover:-rotate-1">
-                    {/* Animated background */}
-                    <div className="absolute inset-0 bg-linear-to-r from-black via-gray-800 to-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></div>
-
-                    {/* Glowing border effect */}
-                    <div className="absolute -inset-1 bg-linear-to-r from-[#12392c] via-green-500 to-[#12392c] opacity-0 group-hover:opacity-50 blur-sm transition-opacity duration-500"></div>
-
-                    {/* Button text */}
-                    <span className="relative z-10 text-black group-hover:text-white transition-colors duration-500 font-black tracking-wider">
-                        LEARN MORE
-                    </span>
-
-                    {/* Sparkle effects */}
-                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                        <div className="absolute top-2 left-4 w-1 h-1 bg-[#12392c] rounded-full animate-ping"></div>
-                        <div className="absolute top-3 right-6 w-1 h-1 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                        <div className="absolute bottom-2 left-1/2 w-1 h-1 bg-green-300 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
-                    </div>
-
-                    {/* Ripple effect */}
-                    <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300">
-                        <div className="absolute inset-0 border-2 border-[#12392c] rounded animate-ping"></div>
-                    </div>
-                </button>
-            </div>
-
             {/* Floating action indicator */}
             <div className="fixed bottom-8 right-8 z-50 opacity-0 animate-fade-in" style={{ animationDelay: '2s' }}>
                 <div className="bg-[#12392c] text-white p-3 rounded-full shadow-lg animate-bounce">

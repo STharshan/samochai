@@ -95,7 +95,7 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className="scroll-m-5 min-h-screen w-full bg-white text-white font-sans p-4 md:p-12 relative overflow-hidden">
+    <div id='contact' className="scroll-m-10 min-h-screen w-full bg-white text-white font-sans p-4 md:p-12 relative overflow-hidden">
       {/* Dotted Background */}
       <div
         className="absolute inset-0 opacity-30"
