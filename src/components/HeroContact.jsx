@@ -108,7 +108,7 @@ ${form.message || "None"}`;
     >
 
       {/* FORM */}
-      <div className="relative z-10 max-w-3xl mx-auto">
+      <div className="relative z-10 max-w-3xl mx-auto pt-10">
         <div className="bg-gradient-to-br from-[#12392c] to-[#0e2a20] rounded-xl p-6 md:p-8 shadow-2xl">
           <h3 className="text-2xl font-bold text-[#C8A950] mb-6">
             Place Your Order
