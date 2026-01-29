@@ -337,10 +337,10 @@ export default function CoffeeSection() {
               data-aos="zoom-in"
               data-aos-delay="200"
             >
-              <span className="transition-transform duration-300 transform group-hover:-translate-x-2 relative z-10 text-black">Read More</span>
+              <span className="transition-transform duration-300 transform group-hover:-translate-x-2 relative z-10 text-white">Read More</span>
               <FaArrowRight
                 size={20}
-                className="transition-transform duration-300 transform group-hover:translate-x-2 ml-2 relative z-10 text-black"
+                className="transition-transform duration-300 transform group-hover:translate-x-2 ml-2 relative z-10 text-white"
               />
             </button>
           </div>
