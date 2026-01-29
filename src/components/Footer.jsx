@@ -52,9 +52,6 @@ const Footer = () => {
             <li><a href="#menu" className="hover:text-[#E8D28A]">Street Food</a></li>
             <li><a href="#menu" className="hover:text-[#E8D28A]">Mishti Milkshakes</a></li>
             <li><a href="#menu" className="hover:text-[#E8D28A]">Cold Drinks</a></li>
-            <li><a href="#menu" className="hover:text-[#E8D28A]">Ice Coffee</a></li>
-            <li><a href="#menu" className="hover:text-[#E8D28A]">100% Fresh Juice</a></li>
-            <li><a href="#menu" className="hover:text-[#E8D28A]">Tea & Coffee</a></li>
           </ul>
         </div>
 
@@ -92,7 +89,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <hr className="my-3 border-[#E8D28A]" />
+      <hr className="my-3 mt-8 border-[#E8D28A]" />
 
       <div className="text-center text-white font-bold">
         <p>&copy; {new Date().getFullYear()} SAMOCHAI. All rights reserved.</p>

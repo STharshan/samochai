@@ -335,7 +335,7 @@ export default function CoffeeSection() {
               onClick={() => document.getElementById("read-more-section")?.scrollIntoView({ behavior: "smooth" })}
               className="glow-button text-white px-8 py-4 rounded-full font-bold transition duration-300 flex items-center group mx-auto lg:mx-0"
               data-aos="zoom-in"
-              data-aos-delay="200"
+              data-aos-delay="100"
             >
               <span className="transition-transform duration-300 transform group-hover:-translate-x-2 relative z-10 text-white">Read More</span>
               <FaArrowRight
@@ -352,14 +352,14 @@ export default function CoffeeSection() {
               src="/cup4.png"
               alt="Coffee Cup"
               loading="lazy"
-              className="block lg:hidden w-[300px] md:w-[360px] object-contain glow-image"
+              className="block lg:hidden w-[200px] md:w-[260px] object-contain glow-image"
             />
             {/* Desktop Image */}
             <img
               src="/cup4.png"
               alt="Coffee Cup"
               loading="lazy"
-              className="hidden lg:block w-[400px] xl:w-[450px] object-contain glow-image"
+              className="hidden lg:block w-[300px] xl:w-[250px] object-contain glow-image"
             />
           </div>
 

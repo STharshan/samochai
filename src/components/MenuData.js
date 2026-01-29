@@ -172,7 +172,7 @@ export const allItems = [
         title: "Sheesh Kebab Egg Roll",
         price: "£4.50",
         category: "Street Food",
-        image: "/masala .png",
+        image: "/Sheesh Kebab Egg Roll.jpeg",
     },
     {
         title: "Double Sheesh Kebab Pita",
@@ -368,7 +368,7 @@ export const allItems = [
         title: "Pink Chai",
         price: "£2.20",
         category: "Tea & Coffee",
-        image: "/g1.jpg",
+        image: "/Pink Chai.jpeg",
     },
     {
         title: "Caramel Chai",
@@ -406,7 +406,7 @@ export const allItems = [
         price: "£2.20",
         desc: "House Special",
         category: "Tea & Coffee",
-        image: "/g20.png",
+        image: "/Chai Latte.jpeg",
     },
     {
         title: "Espresso",
