@@ -72,7 +72,7 @@ const Menu = () => {
                 src={item.image}
                 alt={item.title}
                 loading="lazy"
-                className="w-60 mx-auto mt-5 rounded-md h-60 object-cover transition-transform duration-500 hover:scale-110"
+                className="w-60 mx-auto mt-5 rounded-md h-70 object-center transition-transform duration-500 hover:scale-110"
               />
               <div className="absolute inset-0 shimmer-effect opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
             </div>
