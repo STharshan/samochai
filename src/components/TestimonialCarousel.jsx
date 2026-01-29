@@ -53,7 +53,7 @@ export default function TestimonialCarousel() {
         }}
       />
 
-      {/* ✅ Keyframe Animation Styles */}
+      {/* Keyframe Animation Styles */}
       <style>
         {`
           @keyframes pulseSpin {
@@ -92,14 +92,14 @@ export default function TestimonialCarousel() {
         {/* Scroll Buttons */}
         <button
           onClick={() => scroll("left")}
-          className="absolute left-4 top-1/2 mt-20 -translate-y-1/2 bg-[#12392c] p-3 rounded-full shadow-md hover:bg-[#E8D28A] hover:text-white transition z-20 group"
+          className="absolute left-4 top-1/2 mt-20 -translate-y-1/2 bg-[#12392c] p-3 rounded-full shadow-md hover:bg-[#E8D28A] hover:text-black text-white transition z-20 group"
         >
           <FaChevronLeft className="transition-transform duration-300 group-hover:-translate-x-1" size={18} />
         </button>
 
         <button
           onClick={() => scroll("right")}
-          className="absolute right-4 top-1/2 mt-20 -translate-y-1/2 bg-[#12392c] p-3 rounded-full shadow-md hover:bg-[#E8D28A] hover:text-white transition z-20 group"
+          className="absolute right-4 top-1/2 mt-20 -translate-y-1/2 bg-[#12392c] p-3 rounded-full shadow-md hover:bg-[#E8D28A] hover:text-black text-white transition z-20 group"
         >
           <FaChevronRight className="transition-transform duration-300 group-hover:translate-x-1" size={18} />
         </button>

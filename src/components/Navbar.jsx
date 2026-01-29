@@ -1,20 +1,21 @@
 import React, { useState } from "react";
 import { FiMenu, FiX, FiShoppingCart } from "react-icons/fi";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "About", href: "#about" },
-    { name: "Menu", href: "#menu" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", to: "/#" },
+    { name: "About", to: "/#about" },
+    { name: "Menu", to: "/#menu" },
+    { name: "Contact", to: "/#contact" },
   ];
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-[#12392c] text-white">
       <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-4 md:px-6 lg:px-0">
-        
+
         {/* Logo */}
         <div className="flex items-center gap-3">
           <img
@@ -31,25 +32,27 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-10 font-semibold">
           {navLinks.map((link) => (
-            <a
+            <HashLink
               key={link.name}
-              href={link.href}
+              smooth
+              to={link.to}
               className="relative hover:text-[#E8D28A] transition-colors"
             >
               {link.name}
-            </a>
+            </HashLink>
           ))}
         </div>
 
         {/* Desktop Order Button */}
         <div className="hidden lg:block">
-          <a
-            href="/#contact"
+          <HashLink
+            smooth
+            to="/#contact"
             className="flex items-center gap-2 bg-white text-green-900 px-5 py-2 rounded-md font-semibold shadow hover:bg-[#E8D28A] hover:text-black transition"
           >
             <FiShoppingCart />
             Order Now
-          </a>
+          </HashLink>
         </div>
 
         {/* Mobile Menu Button */}
@@ -69,24 +72,26 @@ const Navbar = () => {
       >
         <div className="bg-gradient-to-b from-black to-green-900 px-6 py-5 space-y-4">
           {navLinks.map((link) => (
-            <a
+            <HashLink
               key={link.name}
-              href={link.href}
+              smooth
+              to={link.to}
               onClick={() => setMenuOpen(false)}
               className="block text-lg font-medium hover:text-[#E8D28A]"
             >
               {link.name}
-            </a>
+            </HashLink>
           ))}
 
-          <a
-            href="/#contact"
+          <HashLink
+            smooth
+            to="/#contact"
             onClick={() => setMenuOpen(false)}
             className="flex items-center gap-2 bg-white text-green-800 px-4 py-2 rounded-md font-semibold shadow hover:bg-green-50 transition"
           >
             <FiShoppingCart />
             Order Now
-          </a>
+          </HashLink>
         </div>
       </div>
     </nav>

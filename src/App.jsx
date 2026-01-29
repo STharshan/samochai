@@ -10,6 +10,7 @@ import GDPRConsent from "./components/GDPRBanner";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ScrollToHash from "./components/ScrollToHash";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <ScrollToHash />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

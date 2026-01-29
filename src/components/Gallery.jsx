@@ -1,7 +1,6 @@
 import React from 'react';
 
 const images = [
-  '/g1.jpg',
   '/g2.jpg',
   '/g3.jpg',
   '/g4.jpg',
@@ -10,7 +9,7 @@ const images = [
   '/g18.jpg',
   '/g8.jpg',
   '/g9.jpg',
-  '/samocha.jpeg',
+  '/Samosas.png',
   '/tea.jpeg',
 ];
 
