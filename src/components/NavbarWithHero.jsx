@@ -5,7 +5,7 @@ import HeroContact from "./HeroContact";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-to-br  from-[#0e1b0e] via-[#12392c] to-[#0e1b0e] text-white py-20 px-6">
+    <section className="relative bg-gradient-to-br  from-[#0e1b0e] via-[#12392c] to-[#0e1b0e] text-white py-20 px-2">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-1 items-center">
         {/* LEFT CONTENT */}
         <div className="text-center lg:text-left">
