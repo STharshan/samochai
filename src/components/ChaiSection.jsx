@@ -40,7 +40,7 @@ export default function ChaiSection() {
 
     // Initialize AOS
     useEffect(() => {
-         // Intersection Observer for visibility
+        // Intersection Observer for visibility
         const observer = new IntersectionObserver(
             ([entry]) => setIsVisible(entry.isIntersecting),
             { threshold: 0.3 }
@@ -175,7 +175,7 @@ export default function ChaiSection() {
                 >
                     <div
                         ref={scrollRef}
-                        className="flex gap-4 overflow-x-scroll scroll-smooth no-scrollbar px-2 border-3 p-5 pl-5 relative transform transition-all duration-700 group-hover:scale-102 hover:shadow-2xl"
+                        className="flex gap-4 overflow-x-scroll scroll-smooth no-scrollbar px-2 border-3 p-5 pl-5 relative transform transition-all duration-700 hover:shadow-2xl"
                         style={{
                             boxShadow: isVisible ? '0 25px 50px -12px rgba(34, 197, 94, 0.25)' : 'none'
                         }}
@@ -204,27 +204,39 @@ export default function ChaiSection() {
                                 <div className="absolute -inset-0.5 bg-linear-to-r from-[#12392c] via-[#12392c] to-green-600 rounded-xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-500 blur-sm"></div>
 
                                 {/* Image with enhanced effects */}
-                                <div className="relative rounded-xl overflow-hidden">
-                                    <img
-                                        src={item.img}
-                                        alt={item.name}
-                                        loading="lazy"
-                                        className="w-70 h-70 object-cover rounded-xl transition-all duration-500 ease-out transform group-hover/card:scale-110"
-                                        style={{
-                                            filter: hoveredCard === idx ? 'brightness(1.2) contrast(1.1) saturate(1.3)' : 'brightness(1) contrast(1) saturate(1)'
-                                        }}
-                                    />
+                                <div
+                                    className="relative rounded-xl overflow-hidden w-70 h-70 group/card
+             transition-all duration-500 ease-out
+             bg-center bg-cover"
+                                    style={{
+                                        backgroundImage: `url(${item.img})`,
+                                        filter:
+                                            hoveredCard === idx
+                                                ? "brightness(1.2) contrast(1.1) saturate(1.3)"
+                                                : "brightness(1) contrast(1) saturate(1)",
+                                    }}
+                                >
+                                    {/* Dark gradient overlay */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-100 group-hover/card:opacity-80 transition-opacity duration-300"></div>
 
-                                    {/* Multiple overlay effects */}
-                                    <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-100 group-hover/card:opacity-80 transition-opacity duration-300"></div>
-                                    <div className="absolute inset-0 bg-linear-to-br from-[#12392c]/20 via-transparent to-green-600/20 opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
+                                    {/* Color glow overlay */}
+                                    <div className="absolute inset-0 bg-gradient-to-br from-[#12392c]/20 via-transparent to-green-600/20 opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
 
-                                    {/* Sparkle effects */}
+                                    {/* Sparkles */}
                                     <div className="absolute inset-0 opacity-0 group-hover/card:opacity-100 transition-opacity duration-500 pointer-events-none">
                                         <div className="absolute top-4 left-4 w-2 h-2 bg-white rounded-full animate-ping"></div>
-                                        <div className="absolute top-8 right-6 w-1 h-1 bg-green-300 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                                        <div className="absolute bottom-12 left-6 w-1.5 h-1.5 bg-yellow-300 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
-                                        <div className="absolute top-1/2 right-4 w-1 h-1 bg-white rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+                                        <div
+                                            className="absolute top-8 right-6 w-1 h-1 bg-green-300 rounded-full animate-pulse"
+                                            style={{ animationDelay: "0.5s" }}
+                                        ></div>
+                                        <div
+                                            className="absolute bottom-12 left-6 w-1.5 h-1.5 bg-yellow-300 rounded-full animate-bounce"
+                                            style={{ animationDelay: "1s" }}
+                                        ></div>
+                                        <div
+                                            className="absolute top-1/2 right-4 w-1 h-1 bg-white rounded-full animate-pulse"
+                                            style={{ animationDelay: "1.5s" }}
+                                        ></div>
                                     </div>
                                 </div>
 

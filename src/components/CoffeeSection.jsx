@@ -330,19 +330,6 @@ export default function CoffeeSection() {
             <p className="text-white text-base mb-8 max-w-lg mx-auto lg:mx-0" data-aos="fade-up">
               Sip into serenity with the vibrant energy of matcha. Packed with antioxidants to power your mind and body.
             </p>
-
-            <button
-              onClick={() => document.getElementById("read-more-section")?.scrollIntoView({ behavior: "smooth" })}
-              className="glow-button text-white px-8 py-4 rounded-full font-bold transition duration-300 flex items-center group mx-auto lg:mx-0"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <span className="transition-transform duration-300 transform group-hover:-translate-x-2 relative z-10 text-white">Read More</span>
-              <FaArrowRight
-                size={20}
-                className="transition-transform duration-300 transform group-hover:translate-x-2 ml-2 relative z-10 text-white"
-              />
-            </button>
           </div>
 
           {/* Center Image */}
