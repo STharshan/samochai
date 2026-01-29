@@ -52,6 +52,9 @@ const Footer = () => {
             <li><a href="#menu" className="hover:text-[#E8D28A]">Street Food</a></li>
             <li><a href="#menu" className="hover:text-[#E8D28A]">Mishti Milkshakes</a></li>
             <li><a href="#menu" className="hover:text-[#E8D28A]">Cold Drinks</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">Ice Coffee</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">100% Fresh Juice</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">Tea & Coffee</a></li>
           </ul>
         </div>
 
