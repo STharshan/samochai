@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-1 items-center">
         {/* LEFT CONTENT */}
         <div className="text-center lg:text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#E8D28A] mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#C8A950] mb-6 leading-tight">
             Samosa and Chai <br className="hidden sm:block" />
             for every occasion
           </h1>

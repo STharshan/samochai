@@ -77,7 +77,7 @@ export default function ChaiSection() {
     };
 
     return (
-        <div className="bg-white px-4 py-20 relative overflow-hidden">
+        <div className="bg-[#12392c] px-4 py-20 relative overflow-hidden">
             <h2
                 className="text-center text-4xl md:text-6xl font-bold mb-6 tracking-wide text-black relative z-10"
                 data-aos="fade-up"
@@ -157,8 +157,8 @@ export default function ChaiSection() {
                     </p>
 
                     {/* Animated borders */}
-                    <div className="absolute top-1 -left-4 h-full w-[15px] bg-linear-to-b from-[#12392c] to-[#12392c] group-hover:w-[20px] transition-all duration-500 animate-pulse"></div>
-                    <div className="absolute -bottom-4 -left-4 w-full h-[15px] bg-linear-to-r from-[#12392c] to-[#12392c] group-hover:h-[20px] transition-all duration-500"></div>
+                    <div className="absolute top-1 -left-4 h-full w-[15px] bg-[#C8A950] group-hover:w-[20px] transition-all duration-500 animate-pulse"></div>
+                    <div className="absolute -bottom-4 -left-4 w-full h-[15px] bg-[#C8A950] group-hover:h-[20px] transition-all duration-500"></div>
 
                     {/* Shimmer effect */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">

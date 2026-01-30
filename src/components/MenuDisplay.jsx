@@ -1,0 +1,153 @@
+// MenuDisplay.jsx
+"use client";
+
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronUp, ChevronDown } from "lucide-react";
+import { categories, allItems } from "./MenuData"; // Path to your MenuData
+
+const MenuDisplay = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleNext = () => {
+    setActiveIndex((prev) => (prev + 1) % categories.length);
+  };
+
+  const handlePrev = () => {
+    setActiveIndex((prev) => (prev - 1 + categories.length) % categories.length);
+  };
+
+  const currentCategory = categories[activeIndex];
+  const currentItems = allItems.filter((item) => item.category === currentCategory);
+
+  return (
+    <div
+      className="w-full h-[150vh] flex flex-col items-center justify-center bg-zinc-900 bg-cover bg-center bg-no-repeat p-4 md:p-10"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070')`,
+      }}
+    >
+      <h1 className="text-white text-3xl md:text-5xl font-light mb-8 md:mb-12 uppercase tracking-widest text-center">
+        Our Menu
+      </h1>
+
+      <div className="relative w-full max-w-7xl flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+        {/* LEFT CONTROLS */}
+        <div className="hidden md:flex flex-col gap-6">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={handlePrev}
+            className="p-4 rounded-full bg-white/20 hover:bg-white/30 text-white transition-all border border-white/20"
+          >
+            <ChevronUp size={32} />
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={handleNext}
+            className="p-4 rounded-full bg-white text-black hover:bg-zinc-200 transition-all shadow-lg"
+          >
+            <ChevronDown size={32} />
+          </motion.button>
+        </div>
+
+        {/* MENU CARD */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="relative w-full max-w-lg bg-white shadow-2xl rounded-2xl flex flex-col overflow-hidden"
+        >
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeIndex}
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -30 }}
+              transition={{ duration: 0.4 }}
+              className="flex flex-col p-6 md:p-10 flex-grow"
+            >
+              <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-10 text-zinc-800 border-b pb-3">
+                {currentCategory}
+              </h2>
+
+              <div className="space-y-6 overflow-y-auto max-h-[500px] pr-2 custom-scrollbar">
+                {currentItems.map((item, idx) => (
+                  <div key={idx} className="group border-b border-zinc-100 pb-4 last:border-0">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h3 className="font-bold text-zinc-900 text-lg group-hover:text-[#C8A950] transition-colors">
+                          {item.title}
+                        </h3>
+                        {item.desc && (
+                          <p className="text-xs text-zinc-500 italic mt-1">{item.desc}</p>
+                        )}
+                      </div>
+                      <span className="font-bold text-zinc-900 ml-4">{item.price}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </AnimatePresence>
+
+        </motion.div>
+
+        {/* RIGHT SIDEBAR */}
+        <div className="hidden lg:flex flex-col gap-4 items-start w-52">
+          {categories.map((cat, idx) => (
+            <motion.button
+              key={cat}
+              onClick={() => setActiveIndex(idx)}
+              whileHover={{ scale: 1.05 }}
+              className={`text-sm uppercase tracking-wider transition-all duration-300 ${
+                activeIndex === idx
+                  ? "text-white font-bold translate-x-2"
+                  : "text-white/40 hover:text-white/80"
+              }`}
+            >
+              {cat}
+            </motion.button>
+          ))}
+        </div>
+
+        {/* MOBILE CONTROLS */}
+        <div className="flex md:hidden gap-6 mt-4">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={handlePrev}
+            className="p-3 rounded-full bg-white/20 text-white border border-white/20"
+          >
+            <ChevronUp size={24} />
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={handleNext}
+            className="p-3 rounded-full bg-white text-black shadow-lg"
+          >
+            <ChevronDown size={24} />
+          </motion.button>
+        </div>
+      </div>
+
+      {/* Scrollbar CSS */}
+      <style jsx>{`
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 5px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: #12392c;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: #ccc;
+          border-radius: 10px;
+        }
+      `}</style>
+    </div>
+  );
+};
+
+export default MenuDisplay;
