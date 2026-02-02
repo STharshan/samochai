@@ -24,9 +24,6 @@ const Navbar = () => {
             className="w-35 h-7"
             loading="lazy"
           />
-          <span className="text-lg sm:text-xl mt-1 tracking-wide">
-            Chai House
-          </span>
         </div>
 
         {/* Desktop Navigation */}

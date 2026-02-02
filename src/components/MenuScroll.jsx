@@ -1,23 +1,25 @@
 import React from "react";
 
 const topImages = [
-  "/g2.jpg",
-  "/g3.jpg",
-  "/g4.jpg",
-  "/g5.jpg",
-  "/g6.jpg",
-  "/g8.jpg",
+  "/Tuna Baguette.png",
+  "/Samosas.png",
+  "/croissant.png",
+  "/masala.png",
+  "/hashbrown.png",
+  "/choc.png",
+  "/Pepperoni and Cheese.png",
+  "/Pepperoni.png"
 ];
 
 const bottomImages = [
-  "/g9.jpg",
-  "/g10.png",
-  "/g11.png",
-  "/g12.webp",
-  "/g13.png",
-  "/g14.png",
-  "/g18.jpg",
-  "/g20.png",
+  "/Chocolate.png",
+  "/White.png",
+  "/Chocolate2.png",
+  "/Double Chocolate.png",
+  "/Fruit n nut.png",
+  "/Sausage.png",
+  "/Salmon.png",
+  "/Chicken.png",
 ];
 
 const SmoothCarousel = () => {
@@ -38,7 +40,7 @@ const SmoothCarousel = () => {
               key={index}
               src={src}
               alt={`top-${index}`}
-              className="w-80 h-56 md:w-96 md:h-64 lg:w-[400px] lg:h-[280px] object-cover rounded-xl"
+              className="w-80 h-56 md:w-96 md:h-64 lg:w-[400px] lg:h-[280px] object-top rounded-xl"
             />
           ))}
         </div>
@@ -52,7 +54,7 @@ const SmoothCarousel = () => {
               key={index}
               src={src}
               alt={`bottom-${index}`}
-              className="w-80 h-56 md:w-96 md:h-64 lg:w-[400px] lg:h-[280px] object-cover rounded-xl"
+              className="w-80 h-56 md:w-96 md:h-64 lg:w-[400px] lg:h-[280px] object-top rounded-xl"
             />
           ))}
         </div>

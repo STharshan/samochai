@@ -16,7 +16,6 @@ const Footer = () => {
               loading="lazy"
               alt="logo"
             />
-            <span className="text-xl md:text-lg lg:text-xl mt-2">Chai House</span>
           </div>
           <p className="text-md font-semibold mb-4 text-white">
             Samosa and Chai for every occasion
