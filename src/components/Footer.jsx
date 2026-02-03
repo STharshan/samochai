@@ -9,14 +9,14 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-left mt-5">
         {/* Column 1 */}
         <div>
-          <div className="flex items-center gap-1 mb-5">
+          <div className="flex items-center gap-1.5 mb-5">
             <img
               className="w-35 h-7"
               src="/logo.png"
               loading="lazy"
               alt="logo"
             />
-             <div className="italic">Chai House</div>
+             <div className="italic text-sm">Chai House</div>
           </div>
           <p className="text-md font-semibold mb-4 text-white">
             Samosa and Chai for every occasion

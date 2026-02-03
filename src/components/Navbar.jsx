@@ -24,7 +24,7 @@ const Navbar = () => {
             className="w-55 h-8 object-contain"
             loading="lazy"
           />
-          <div className="-ml-1 italic">Chai House</div>
+          <div className="text-sm italic">Chai House</div>
         </div>
 
         {/* Desktop Navigation */}
