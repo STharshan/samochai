@@ -325,7 +325,7 @@ export default function CoffeeSection() {
           <div className="flex-1 text-center lg:text-left" data-aos="fade-right">
             <h1 className="text-4xl md:text-5xl font-extrabold text-black leading-tight mb-6">
               FUELING YOUR DAY<br />
-              THE <span className="text-white glow-text">GREEN</span> WAY.
+              THE <span className="text-[#C8A950]">GREEN</span> WAY.
             </h1>
             <p className="text-white text-base mb-8 max-w-lg mx-auto lg:mx-0" data-aos="fade-up">
               Sip into serenity with the vibrant energy of matcha. Packed with antioxidants to power your mind and body.

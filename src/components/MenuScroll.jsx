@@ -24,7 +24,7 @@ const SmoothCarousel = () => {
       {/* Center button */}
       <div className="absolute inset-0 flex mt-10 items-center justify-center z-20">
         <HashLink to="/#menu" smooth>
-        <button className="bg-yellow-500 text-xl text-black font-semibold px-7 py-4 rounded-md hover:bg-yellow-400 transition">
+        <button className="bg-[#C8A950] text-xl text-black font-semibold px-7 py-4 rounded-md hover:bg-[#ebc14e] transition">
           Explore Menu
         </button>
         </HashLink>

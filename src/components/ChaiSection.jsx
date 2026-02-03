@@ -82,7 +82,7 @@ export default function ChaiSection() {
                 className="text-center text-4xl md:text-6xl font-bold mb-6 tracking-wide text-black relative z-10"
                 data-aos="fade-up"
             >
-                <span className="inline-block mb-3">
+                <span className="inline-block mb-3 text-[#C8A950]">
                     Sylhet Tea Gardens
                 </span>
             </h2>
