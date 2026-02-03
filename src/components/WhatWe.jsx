@@ -94,12 +94,12 @@ export default function WhatWeOffer() {
                                 </div>
 
                                 {/* Card Content */}
-                                <div className="p-4 sm:p-5 md:p-6 text-left flex flex-col justify-between flex-grow">
+                                <div className="p-4 sm:p-5 md:p-6 text-left flex flex-col justify-between flex-grow bg-[#C8A950]">
                                     <div>
                                         <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-2 text-[#111111]">
                                             {s.title}
                                         </h3>
-                                        <p className="text-xs sm:text-sm leading-relaxed text-[#333333]">
+                                        <p className="text-xs sm:text-sm leading-relaxed text-gray-900">
                                             {s.description}
                                         </p>
                                     </div>

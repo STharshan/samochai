@@ -371,8 +371,8 @@ export const allItems = [
         image: "/Orange Juice.png",
     },
     {
-        title: "Pomegranate Juice",
-        price: "£3.50",
+        title: "Fresh Juice",
+        price: "£5.00",
         desc: "",
         category: "100% Fresh Juice",
         image: "/g8.jpg",

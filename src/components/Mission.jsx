@@ -135,7 +135,7 @@ const Mission = () => {
                         src="/new2.png"
                         loading="lazy"
                         alt="Coffee Cup"
-                        className="absolute left-[180px] md:left-[240px] bottom-[-20px] md:bottom-[-40px] w-[130px] md:w-[200px] z-20 hover:rotate-12 hover:scale-110 active:rotate-12 active:scale-110 transition-all duration-500 drop-shadow-xl"
+                        className="absolute left-[180px] md:left-[260px] bottom-[-0px] md:bottom-[-10px] w-[130px] md:w-[200px] z-20 hover:rotate-12 hover:scale-110 active:rotate-12 active:scale-110 transition-all duration-500 drop-shadow-xl"
                         data-aos="zoom-in"
                         data-aos-delay="200"
                     />

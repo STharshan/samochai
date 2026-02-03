@@ -1,22 +1,18 @@
 import React from 'react';
 
 const images = [
-  "/Chocolate.png",
-  "/White.png",
-  "/Chocolate2.png",
-  "/Double Chocolate.png",
-  "/Fruit n nut.png",
-  "/Sausage.png",
-  "/Salmon.png",
-  "/Chicken.png",
-  "/Samosas.png",
-  "/croissant.png",
-  "/masala.png",
-  "/hashbrown.png",
-  "/choc.png",
-  "/Pepperoni and Cheese.png",
-  "/Pepperoni.png"
+  '/g2.jpg',
+  '/g3.jpg',
+  '/g4.jpg',
+  '/g5.jpg',
+  '/g6.jpg',
+  '/g18.jpg',
+  '/g8.jpg',
+  '/g9.jpg',
+  '/Samosas.png',
+  '/tea.jpeg',
 ];
+
 
 const Gallery = () => {
 

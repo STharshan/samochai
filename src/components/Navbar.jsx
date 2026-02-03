@@ -17,13 +17,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-4 md:px-6 lg:px-0">
 
         {/* Logo */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center">
           <img
             src="/logo.png"
             alt="Chai House Logo"
-            className="w-35 h-7"
+            className="w-55 h-8 object-contain"
             loading="lazy"
           />
+          <div className="-ml-1 italic">Chai House</div>
         </div>
 
         {/* Desktop Navigation */}
@@ -63,9 +64,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-300 ${
-          menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`lg:hidden overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="bg-gradient-to-b from-black to-green-900 px-6 py-5 space-y-4">
           {navLinks.map((link) => (
