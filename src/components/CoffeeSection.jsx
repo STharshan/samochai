@@ -336,14 +336,14 @@ export default function CoffeeSection() {
           <div className="flex-1 flex justify-center my-8 lg:my-0" data-aos="fade-up">
             {/* Mobile Image */}
             <img
-              src="/cup4.png"
+              src="/new1.png"
               alt="Coffee Cup"
               loading="lazy"
               className="block lg:hidden w-[200px] md:w-[260px] object-contain glow-image"
             />
             {/* Desktop Image */}
             <img
-              src="/cup4.png"
+              src="/new1.png"
               alt="Coffee Cup"
               loading="lazy"
               className="hidden lg:block w-[300px] xl:w-[250px] object-contain glow-image"
