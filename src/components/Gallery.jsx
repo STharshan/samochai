@@ -9,7 +9,6 @@ const images = [
   "/Sausage.png",
   "/Salmon.png",
   "/Chicken.png",
-  "/Tuna Baguette.png",
   "/Samosas.png",
   "/croissant.png",
   "/masala.png",
