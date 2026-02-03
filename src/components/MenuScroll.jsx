@@ -2,7 +2,6 @@ import React from "react";
 import { HashLink } from "react-router-hash-link";
 
 const topImages = [
-  "/Tuna Baguette.png",
   "/Samosas.png",
   "/croissant.png",
   "/masala.png",
@@ -13,10 +12,6 @@ const topImages = [
 ];
 
 const bottomImages = [
-  "/Chocolate.png",
-  "/White.png",
-  "/Chocolate2.png",
-  "/Double Chocolate.png",
   "/Fruit n nut.png",
   "/Sausage.png",
   "/Salmon.png",

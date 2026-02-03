@@ -53,18 +53,18 @@ export default function WhatWeOffer() {
 
     return (
         <section id="about" className="relative scroll-m-10 py-12 px-4 sm:px-6 md:px-12 overflow-visible bg-white">
-            <div className="max-w-7xl mx-auto text-center font-serif relative z-10">
+            <div className="max-w-7xl mx-auto text-center relative z-10">
                 {/* Heading */}
-                <span className="inline-block text-xs sm:text-sm font-medium px-3 sm:px-4 py-1 rounded-full mb-3 sm:mb-4 bg-[#E8D28A]/20 text-[#C8A950]">
+                <span className="inline-block text-xs sm:text-sm font-medium px-3 sm:px-4 py-1 rounded-full mb-3 sm:mb-4 bg-[#E8D28A]/50 text-[#C8A950]">
                     Our Story
                 </span>
 
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[Playfair_Display] font-bold mb-3 sm:mb-4 text-[#111111] px-2">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-[#111111] px-2">
                     Why We're the Best in Street Food & Chai
                 </h2>
 
-                <p className="text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-8 sm:mb-12 md:mb-14 font-[Inter] text-[#333333] px-2">
-                    Born in the heart of Sylhet lively streets, SAMOCHAI isn't just a restaurant — it's a true reflection of the city's street food and chai culture.
+                <p className="text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-8 sm:mb-12 md:mb-14 text-[#333333] px-2">
+                    Born in the heart of Sylhet lively streets, SAMOCHAI isn't just a restaurant - it's a true reflection of the city's street food and chai culture.
                 </p>
 
                 {/* Card Slider */}
@@ -94,7 +94,7 @@ export default function WhatWeOffer() {
                                 </div>
 
                                 {/* Card Content */}
-                                <div className="p-4 sm:p-5 md:p-6 text-left flex flex-col justify-between flex-grow font-[Inter]">
+                                <div className="p-4 sm:p-5 md:p-6 text-left flex flex-col justify-between flex-grow">
                                     <div>
                                         <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-2 text-[#111111]">
                                             {s.title}
