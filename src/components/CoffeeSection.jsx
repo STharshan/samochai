@@ -357,7 +357,7 @@ export default function CoffeeSection() {
                 <Coffee size={20} />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-black">PREMIUM MATCHA</h3>
+                <h3 className="text-lg font-semibold text-white">PREMIUM MATCHA</h3>
                 <p className="text-white text-sm mt-1 max-w-xs">
                   Handpicked leaves stone-ground to perfection — for a smooth, rich, and earthy experience.
                 </p>
@@ -369,7 +369,7 @@ export default function CoffeeSection() {
                 <CupSoda size={20} />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-black">ORIGINAL BLEND</h3>
+                <h3 className="text-lg font-semibold text-white">ORIGINAL BLEND</h3>
                 <p className="text-white text-sm mt-1 max-w-xs">
                   Crafted with care to deliver calm focus and lasting energy - the natural way.
                 </p>
