@@ -83,37 +83,30 @@ html, body {
 }
 
 @keyframes scroll-left {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-50%);
+  to {
+    transform: translateX(calc(-100% / 3));
   }
 }
 
 @keyframes scroll-right {
-  0% {
-    transform: translateX(-50%);
+  from {
+    transform: translateX(calc(-100% / 3));
   }
-  100% {
+  to {
     transform: translateX(0);
   }
 }
 
 .animate-scroll-left {
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 60s linear infinite;
+  width: max-content;
 }
 
 .animate-scroll-right {
-  animation: scroll-right 20s linear infinite;
+  animation: scroll-right 60s linear infinite;
+  width: max-content;
 }
 
-@media (max-width: 768px) {
-  .animate-scroll-left {
-    animation-duration: 5s;
-  }
-
-  .animate-scroll-right {
-    animation-duration: 5s;
-  }
-}
