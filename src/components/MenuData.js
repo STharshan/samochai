@@ -74,7 +74,7 @@ export const allItems = [
         image: "/Double Cheese Bagel.png",
     },
     {
-        title: "Cheese & Tomato Baget",
+        title: "Cheese & Tomato Bagel",
         price: "£2.25",
         desc: "Freshly baked bagel filled with melted cheese and juicy tomato.",
         category: "Hot & Cold Sandwiches",
