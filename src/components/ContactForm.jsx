@@ -115,10 +115,6 @@ const ContactForm = () => {
             className="w-full mt-4 bg-[#0a1f17] text-white rounded-lg p-3 outline-none"
           />
 
-          {/* Privacy Note added for consistency */}
-          <p className="text-[10px] text-gray-400 mt-4 text-center">
-            By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.
-          </p>
 
           <button
             onClick={() => handleSubmit("+447955363123")}
@@ -126,6 +122,9 @@ const ContactForm = () => {
           >
             Send Order via WhatsApp
           </button>
+          <p className="text-[10px] text-gray-400 mt-4 text-center">
+            By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.
+          </p>
         </div>
       </div>
     </section>
