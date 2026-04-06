@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaCheck, FaInstagram } from "react-icons/fa";
 
 const Mission = () => {
-    const [activeTab, setActiveTab] = useState("");
+    const [activeTab, setActiveTab] = useState("mission");
 
     const tabs = [
         { id: "mission", label: "OUR MISSION" },

@@ -49,7 +49,7 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-5">Our Menu</h3>
           <ul className="space-y-2 text-md font-semibold">
-            <li><a href="#menu" className="hover:text-[#E8D28A]">Hot & Clod Sandwiches</a></li>
+            <li><a href="#menu" className="hover:text-[#E8D28A]">Hot & Cold Sandwiches</a></li>
             <li><a href="#menu" className="hover:text-[#E8D28A]">Street Food</a></li>
             <li><a href="#menu" className="hover:text-[#E8D28A]">Mishti Milkshakes</a></li>
             <li><a href="#menu" className="hover:text-[#E8D28A]">Cold Drinks</a></li>
@@ -104,7 +104,7 @@ const Footer = () => {
         {/* Left: Terms & Privacy */}
         <div className="flex gap-4 text-sm">
           <Link
-            to="/terms&condition"
+            to="/terms-and-conditions"
             className="text-white hover:text-[#E8D28A] transition duration-300"
           >
             Terms & Conditions

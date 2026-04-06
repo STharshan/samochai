@@ -4,10 +4,10 @@ import CoffeeSection from "../components/CoffeeSection"
 import Contact from "../components/Contact"
 import Gallery from "../components/Gallery"
 import Mission from "../components/Mission"
-import NavbarWithHero from "../components/NavbarWithHero"
+import NavbarWithHero from "../components/HeroSection"
 import TestimonialCarousel from "../components/TestimonialCarousel"
-import WhatWeOffer from '../components/WhatWe'
-import SmoothCarousel from '../components/MenuScroll'
+import WhatWeOffer from '../components/WhatWeOffer'
+import MenuScroll from '../components/MenuScroll'
 import MenuDisplay from '../components/MenuDisplay'
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
             <NavbarWithHero />
             <WhatWeOffer />
             <ChaiSection />
-            <SmoothCarousel />
+            <MenuScroll />
             <MenuDisplay />
             <Mission />
             <CoffeeSection />

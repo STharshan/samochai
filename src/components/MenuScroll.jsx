@@ -20,7 +20,7 @@ const bottomImages = [
   "/tuna.png",
 ];
 
-const SmoothCarousel = () => {
+const MenuScroll = () => {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -90,4 +90,4 @@ const SmoothCarousel = () => {
   );
 };
 
-export default SmoothCarousel;
+export default MenuScroll;

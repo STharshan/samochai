@@ -22,7 +22,7 @@ const MenuDisplay = () => {
       id="menu"
       className="w-full min-h-screen flex flex-col scroll-m-10 items-center justify-center bg-zinc-900 bg-cover bg-center bg-no-repeat p-4 md:p-10"
       style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070')`,
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/menubg.jpg')`,
       }}
     >
       <h1 className="text-white text-3xl md:text-5xl font-light mb-8 md:mb-12 uppercase tracking-widest text-center">

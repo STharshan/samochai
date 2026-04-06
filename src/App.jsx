@@ -18,8 +18,8 @@ function App() {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
-      once: false,
-      mirror: true,
+     once: true,  
+      mirror: false,
       offset: 80,
     });
   }, []);
@@ -31,7 +31,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/terms&condition" element={<TermsConditions />} />
+        <Route path="/terms-and-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

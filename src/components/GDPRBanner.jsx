@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function GDPRConsent() {
   const [visible, setVisible] = useState(false); // Show consent banner
@@ -46,12 +47,12 @@ export default function GDPRConsent() {
             We use cookies to improve your experience.{" "}
           </p>
           <p className="mb-3">
-            <a
-              href="/privacy-policy"
+            <Link
+              to="/privacy-policy"
               className="underline text-green-800 hover:text-[#12392c]"
             >
               See our Privacy Policy
-            </a>
+            </Link>
 
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
