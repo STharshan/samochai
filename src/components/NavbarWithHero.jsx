@@ -1,7 +1,5 @@
 import React from "react";
-import Menu from "./Menu";
-import Contact from "./Contact";
-import HeroContact from "./HeroContact";
+import ContactForm from "./ContactForm";
 
 const HeroSection = () => {
   return (
@@ -39,8 +37,7 @@ const HeroSection = () => {
           </a>
         </div>
 
-        {/* RIGHT MENU PREVIEW */}
-        <HeroContact />
+        <ContactForm />
 
       </div>
     </section>

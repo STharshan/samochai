@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const About = () => {
 
@@ -7,7 +7,7 @@ const About = () => {
       id="about"
       className="relative w-full bg-white text-black py-20 px-6 overflow-hidden scroll-m-10"
     >
-      {/* 🔹 Enhanced Keyframes for Pulse Spin */}
+      {/*Enhanced Keyframes for Pulse Spin */}
       <style>
         {`
           @keyframes pulseSpin {
@@ -35,22 +35,22 @@ const About = () => {
         `}
       </style>
 
-      {/* 🔹 Dotted background pattern */}
+      {/*Dotted background pattern */}
       <div
-        className="absolute inset-0 bg-[radial-linear(#E8D28A_2px,transparent_2px)] [background-size:20px_20px]"
+        className="absolute inset-0 bg-[radial-gradient(#E8D28A_2px,transparent_2px)] [background-size:20px_20px]"
         style={{
           WebkitMaskImage:
-            "linear-linear(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
+            "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
           WebkitMaskRepeat: "no-repeat",
           WebkitMaskSize: "cover",
           maskImage:
-            "linear-linear(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
+            "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
           maskRepeat: "no-repeat",
           maskSize: "cover",
         }}
       />
 
-      {/* 🔹 Main Content */}
+      {/*Main Content */}
       <div className="relative z-10">
         {/* Heading */}
         <div className="text-center mb-12">

@@ -88,7 +88,12 @@ const MenuDisplay = () => {
                 {currentCategory}
               </h2>
 
-              <div className="space-y-6 overflow-y-auto max-h-[500px] pr-2 custom-scrollbar">
+              {/* Scrollbar styled via Tailwind arbitrary values */}
+              <div className="space-y-6 overflow-y-auto max-h-[500px] pr-2 
+                [&::-webkit-scrollbar]:w-[5px] 
+                [&::-webkit-scrollbar-track]:bg-zinc-100 
+                [&::-webkit-scrollbar-thumb]:bg-zinc-300 
+                [&::-webkit-scrollbar-thumb]:rounded-full">
                 {currentItems.map((item, idx) => (
                   <div key={idx} className="group border-b border-zinc-100 pb-4 last:border-0">
                     <div className="flex justify-between items-start">
@@ -127,20 +132,6 @@ const MenuDisplay = () => {
           ))}
         </div>
       </div>
-
-      {/* Scrollbar CSS */}
-      <style jsx>{`
-        .custom-scrollbar::-webkit-scrollbar {
-          width: 5px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-          background: #f1f1f1;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: #ccc;
-          border-radius: 10px;
-        }
-      `}</style>
     </div>
   );
 };

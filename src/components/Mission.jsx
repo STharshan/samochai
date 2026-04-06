@@ -38,16 +38,16 @@ const Mission = () => {
                 `}
             </style>
 
-            {/* 🔹 Dotted background pattern */}
+            {/*Dotted background pattern */}
             <div
-                className="absolute inset-0 bg-[radial-linear(#E8D28A_2px,transparent_2px)] [background-size:20px_20px]"
+                className="absolute inset-0 bg-[radial-gradient(#E8D28A_2px,transparent_2px)] [background-size:20px_20px]"
                 style={{
                     WebkitMaskImage:
-                        "linear-linear(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
+                        "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
                     WebkitMaskRepeat: "no-repeat",
                     WebkitMaskSize: "cover",
                     maskImage:
-                        "linear-linear(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
+                        "linear-gradient(135deg, black 0%, transparent 40%, transparent 60%, black 100%)",
                     maskRepeat: "no-repeat",
                     maskSize: "cover",
                 }}

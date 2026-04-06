@@ -2,6 +2,7 @@ import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FiMapPin, FiPhone, FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -37,10 +38,10 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-5">Quick Links</h3>
           <ul className="space-y-2 text-md font-semibold">
-            <li><a href="#" className="hover:text-[#E8D28A]">Home</a></li>
-            <li><a href="#about" className="hover:text-[#E8D28A]">About</a></li>
-            <li><a href="#menu" className="hover:text-[#E8D28A]">Menu</a></li>
-            <li><a href="#contact" className="hover:text-[#E8D28A]">Contact</a></li>
+            <li><HashLink to="/#" className="hover:text-[#E8D28A]">Home</HashLink></li>
+            <li><HashLink to="#about" className="hover:text-[#E8D28A]">About</HashLink></li>
+            <li><HashLink to="#menu" className="hover:text-[#E8D28A]">Menu</HashLink></li>
+            <li><HashLink to="#contact" className="hover:text-[#E8D28A]">Contact</HashLink></li>
           </ul>
         </div>
 
